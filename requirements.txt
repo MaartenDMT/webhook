@@ -2,3 +2,5 @@
 # package>=version
 ccxt
 pandas
+python-dotenv
+flask
