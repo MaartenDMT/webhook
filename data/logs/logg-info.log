@@ -1,0 +1,1632 @@
+2023-01-27 17:51:55,121 - __main__ - INFO - Current position: []
+2023-01-27 17:51:55,122 - __main__ - INFO - ============================
+2023-01-27 17:51:55,301 - __main__ - INFO - not in position right now
+2023-01-27 17:51:56,241 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.7745483916903166
+2023-01-27 17:51:56,507 - __main__ - INFO - Subject: AAVEUSDT
+LONG ENTER
+Total Money: 85.37317046
+2023-01-27 17:51:58,511 - __main__ - INFO - ============================
+2023-01-27 17:51:59,669 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '5.14033374', 'maintMargin': '0.61684000', 'unrealizedProfit': '0.00000000', 'positionInitialMargin': '5.14033374', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '88.12', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.7', 'notional': '61.68400000', 'isolatedWallet': '0', 'updateTime': '1674838318336', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 17:51:59,670 - __main__ - INFO - ============================
+2023-01-27 17:51:59,691 - __main__ - INFO - already in position
+2023-01-27 17:52:01,146 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '5.14091707', 'maintMargin': '0.61691000', 'unrealizedProfit': '0.00700000', 'positionInitialMargin': '5.14091707', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '88.12', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.7', 'notional': '61.69100000', 'isolatedWallet': '0', 'updateTime': '1674838318336', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 17:52:01,148 - __main__ - INFO - ============================
+2023-01-27 17:52:01,150 - __main__ - INFO - already in position
+2023-01-27 17:52:02,614 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '5.14091707', 'maintMargin': '0.61691000', 'unrealizedProfit': '0.00700000', 'positionInitialMargin': '5.14091707', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '88.12', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.7', 'notional': '61.69100000', 'isolatedWallet': '0', 'updateTime': '1674838318336', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 17:52:02,617 - __main__ - INFO - ============================
+2023-01-27 17:52:02,619 - __main__ - INFO - already in position
+2023-01-27 17:52:02,927 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 18:47:37,464 - __main__ - INFO - Current position: []
+2023-01-27 18:47:37,464 - __main__ - INFO - Current position: []
+2023-01-27 18:47:37,468 - __main__ - INFO - ============================
+2023-01-27 18:47:37,468 - __main__ - INFO - ============================
+2023-01-27 18:47:37,485 - __main__ - INFO - not in position right now
+2023-01-27 18:47:37,485 - __main__ - INFO - not in position right now
+2023-01-27 18:47:38,313 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.4326962696414343
+2023-01-27 18:47:38,313 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.4326962696414343
+2023-01-27 18:47:38,564 - __main__ - INFO - Subject: AAVEUSDT
+LONG ENTER
+Total Money: 70.63834926
+2023-01-27 18:47:38,564 - __main__ - INFO - Subject: AAVEUSDT
+LONG ENTER
+Total Money: 70.63834926
+2023-01-27 18:47:40,574 - __main__ - INFO - ============================
+2023-01-27 18:47:40,574 - __main__ - INFO - ============================
+2023-01-27 18:47:41,100 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.92833356', 'maintMargin': '0.35140000', 'unrealizedProfit': '0.00000000', 'positionInitialMargin': '2.92833356', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.85', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.4', 'notional': '35.14000000', 'isolatedWallet': '0', 'updateTime': '1674841658474', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 18:47:41,100 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.92833356', 'maintMargin': '0.35140000', 'unrealizedProfit': '0.00000000', 'positionInitialMargin': '2.92833356', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.85', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.4', 'notional': '35.14000000', 'isolatedWallet': '0', 'updateTime': '1674841658474', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 18:47:41,102 - __main__ - INFO - ============================
+2023-01-27 18:47:41,102 - __main__ - INFO - ============================
+2023-01-27 18:47:41,105 - __main__ - INFO - already in position
+2023-01-27 18:47:41,105 - __main__ - INFO - already in position
+2023-01-27 18:47:41,911 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.92833356', 'maintMargin': '0.35140000', 'unrealizedProfit': '0.00000000', 'positionInitialMargin': '2.92833356', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.85', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.4', 'notional': '35.14000000', 'isolatedWallet': '0', 'updateTime': '1674841658474', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 18:47:41,911 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.92833356', 'maintMargin': '0.35140000', 'unrealizedProfit': '0.00000000', 'positionInitialMargin': '2.92833356', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.85', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.4', 'notional': '35.14000000', 'isolatedWallet': '0', 'updateTime': '1674841658474', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 18:47:41,914 - __main__ - INFO - ============================
+2023-01-27 18:47:41,914 - __main__ - INFO - ============================
+2023-01-27 18:47:41,916 - __main__ - INFO - already in position
+2023-01-27 18:47:41,916 - __main__ - INFO - already in position
+2023-01-27 18:47:44,037 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.92833356', 'maintMargin': '0.35140000', 'unrealizedProfit': '0.00000000', 'positionInitialMargin': '2.92833356', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.85', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.4', 'notional': '35.14000000', 'isolatedWallet': '0', 'updateTime': '1674841658474', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 18:47:44,037 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.92833356', 'maintMargin': '0.35140000', 'unrealizedProfit': '0.00000000', 'positionInitialMargin': '2.92833356', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.85', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.4', 'notional': '35.14000000', 'isolatedWallet': '0', 'updateTime': '1674841658474', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 18:47:44,039 - __main__ - INFO - ============================
+2023-01-27 18:47:44,039 - __main__ - INFO - ============================
+2023-01-27 18:47:44,041 - __main__ - INFO - already in position
+2023-01-27 18:47:44,041 - __main__ - INFO - already in position
+2023-01-27 18:47:44,356 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 18:47:44,356 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 18:48:12,922 - __main__ - INFO - Current position: []
+2023-01-27 18:48:12,923 - __main__ - INFO - ============================
+2023-01-27 18:48:12,927 - __main__ - INFO - not in position right now
+2023-01-27 18:48:13,740 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 18:48:19,114 - __main__ - INFO - Current position: []
+2023-01-27 18:48:19,115 - __main__ - INFO - ============================
+2023-01-27 18:48:19,119 - __main__ - INFO - not in position right now
+2023-01-27 18:55:24,966 - __main__ - INFO - Current position: []
+2023-01-27 18:55:24,966 - __main__ - INFO - ============================
+2023-01-27 18:55:24,970 - __main__ - INFO - not in position right now
+2023-01-27 18:55:26,536 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 18:55:32,338 - __main__ - INFO - Current position: []
+2023-01-27 18:55:32,339 - __main__ - INFO - ============================
+2023-01-27 18:55:32,342 - __main__ - INFO - not in position right now
+2023-01-27 19:39:23,101 - __main__ - INFO - Current position: []
+2023-01-27 19:39:23,101 - __main__ - INFO - ============================
+2023-01-27 19:39:23,104 - __main__ - INFO - not in position right now
+2023-01-27 19:39:25,253 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:39:30,127 - __main__ - INFO - Current position: []
+2023-01-27 19:39:30,127 - __main__ - INFO - ============================
+2023-01-27 19:39:30,130 - __main__ - INFO - not in position right now
+2023-01-27 19:40:52,146 - __main__ - INFO - Current position: []
+2023-01-27 19:40:52,146 - __main__ - INFO - Current position: []
+2023-01-27 19:40:52,147 - __main__ - INFO - ============================
+2023-01-27 19:40:52,147 - __main__ - INFO - ============================
+2023-01-27 19:40:52,150 - __main__ - INFO - not in position right now
+2023-01-27 19:40:52,150 - __main__ - INFO - not in position right now
+2023-01-27 19:40:52,879 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:40:52,879 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:40:56,196 - __main__ - INFO - Current position: []
+2023-01-27 19:40:56,196 - __main__ - INFO - Current position: []
+2023-01-27 19:40:56,197 - __main__ - INFO - ============================
+2023-01-27 19:40:56,197 - __main__ - INFO - ============================
+2023-01-27 19:40:56,201 - __main__ - INFO - not in position right now
+2023-01-27 19:40:56,201 - __main__ - INFO - not in position right now
+2023-01-27 19:41:26,127 - __main__ - INFO - Current position: []
+2023-01-27 19:41:26,128 - __main__ - INFO - ============================
+2023-01-27 19:41:26,131 - __main__ - INFO - not in position right now
+2023-01-27 19:41:26,996 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:41:30,981 - __main__ - INFO - Current position: []
+2023-01-27 19:41:30,981 - __main__ - INFO - ============================
+2023-01-27 19:41:30,984 - __main__ - INFO - not in position right now
+2023-01-27 19:41:33,934 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:41:34,180 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:41:34,181 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:41:34,181 - __main__ - INFO - ============================
+2023-01-27 19:41:37,008 - __main__ - INFO - Current position: []
+2023-01-27 19:41:37,008 - __main__ - INFO - ============================
+2023-01-27 19:41:37,011 - __main__ - INFO - not in position right now
+2023-01-27 19:41:39,188 - __main__ - INFO - Current position: []
+2023-01-27 19:41:39,188 - __main__ - INFO - ============================
+2023-01-27 19:41:39,191 - __main__ - INFO - not in position right now
+2023-01-27 19:41:39,191 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:41:39,192 - __main__ - INFO - ============================
+2023-01-27 19:41:42,011 - __main__ - INFO - Current position: []
+2023-01-27 19:41:42,011 - __main__ - INFO - ============================
+2023-01-27 19:41:42,015 - __main__ - INFO - not in position right now
+2023-01-27 19:41:44,976 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:41:45,876 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:41:45,876 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:41:45,877 - __main__ - INFO - ============================
+2023-01-27 19:41:48,700 - __main__ - INFO - Current position: []
+2023-01-27 19:41:48,701 - __main__ - INFO - ============================
+2023-01-27 19:41:48,704 - __main__ - INFO - not in position right now
+2023-01-27 19:46:59,572 - __main__ - INFO - Current position: []
+2023-01-27 19:46:59,573 - __main__ - INFO - ============================
+2023-01-27 19:46:59,576 - __main__ - INFO - not in position right now
+2023-01-27 19:47:00,303 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:47:04,322 - __main__ - INFO - Current position: []
+2023-01-27 19:47:04,322 - __main__ - INFO - ============================
+2023-01-27 19:47:04,325 - __main__ - INFO - not in position right now
+2023-01-27 19:47:07,967 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:47:08,865 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:47:08,866 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:47:08,866 - __main__ - INFO - ============================
+2023-01-27 19:47:11,693 - __main__ - INFO - Current position: []
+2023-01-27 19:47:11,694 - __main__ - INFO - ============================
+2023-01-27 19:47:11,697 - __main__ - INFO - not in position right now
+2023-01-27 19:47:14,526 - __main__ - INFO - Current position: []
+2023-01-27 19:47:14,527 - __main__ - INFO - ============================
+2023-01-27 19:47:14,529 - __main__ - INFO - not in position right now
+2023-01-27 19:47:14,530 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:47:14,530 - __main__ - INFO - ============================
+2023-01-27 19:47:17,348 - __main__ - INFO - Current position: []
+2023-01-27 19:47:17,349 - __main__ - INFO - ============================
+2023-01-27 19:47:17,352 - __main__ - INFO - not in position right now
+2023-01-27 19:47:20,967 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:47:21,876 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:47:21,876 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:47:21,877 - __main__ - INFO - ============================
+2023-01-27 19:47:24,709 - __main__ - INFO - Current position: []
+2023-01-27 19:47:24,710 - __main__ - INFO - ============================
+2023-01-27 19:47:24,714 - __main__ - INFO - not in position right now
+2023-01-27 19:47:27,533 - __main__ - INFO - Current position: []
+2023-01-27 19:47:27,533 - __main__ - INFO - ============================
+2023-01-27 19:47:27,537 - __main__ - INFO - not in position right now
+2023-01-27 19:47:27,538 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:47:27,538 - __main__ - INFO - ============================
+2023-01-27 19:47:30,350 - __main__ - INFO - Current position: []
+2023-01-27 19:47:30,350 - __main__ - INFO - ============================
+2023-01-27 19:47:30,353 - __main__ - INFO - not in position right now
+2023-01-27 19:47:33,960 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:47:34,866 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:47:34,867 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:47:34,868 - __main__ - INFO - ============================
+2023-01-27 19:47:37,708 - __main__ - INFO - Current position: []
+2023-01-27 19:47:37,709 - __main__ - INFO - ============================
+2023-01-27 19:47:37,713 - __main__ - INFO - not in position right now
+2023-01-27 19:47:39,881 - __main__ - INFO - Current position: []
+2023-01-27 19:47:39,882 - __main__ - INFO - ============================
+2023-01-27 19:47:39,885 - __main__ - INFO - not in position right now
+2023-01-27 19:47:39,886 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:47:39,886 - __main__ - INFO - ============================
+2023-01-27 19:47:39,887 - __main__ - INFO - <trading.TradeCrypto object at 0x0000024A53BDFBE0>
+2023-01-27 19:50:45,784 - __main__ - INFO - Current position: []
+2023-01-27 19:50:45,784 - __main__ - INFO - Current position: []
+2023-01-27 19:50:45,785 - __main__ - INFO - ============================
+2023-01-27 19:50:45,785 - __main__ - INFO - ============================
+2023-01-27 19:50:45,789 - __main__ - INFO - not in position right now
+2023-01-27 19:50:45,789 - __main__ - INFO - not in position right now
+2023-01-27 19:50:47,253 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:50:47,253 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:50:50,502 - __main__ - INFO - Current position: []
+2023-01-27 19:50:50,502 - __main__ - INFO - Current position: []
+2023-01-27 19:50:50,503 - __main__ - INFO - ============================
+2023-01-27 19:50:50,503 - __main__ - INFO - ============================
+2023-01-27 19:50:50,507 - __main__ - INFO - not in position right now
+2023-01-27 19:50:50,507 - __main__ - INFO - not in position right now
+2023-01-27 19:50:53,467 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:50:53,467 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:50:54,366 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:50:54,366 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:50:54,367 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:50:54,367 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:50:54,368 - __main__ - INFO - ============================
+2023-01-27 19:50:54,368 - __main__ - INFO - ============================
+2023-01-27 19:50:57,202 - __main__ - INFO - Current position: []
+2023-01-27 19:50:57,202 - __main__ - INFO - Current position: []
+2023-01-27 19:50:57,203 - __main__ - INFO - ============================
+2023-01-27 19:50:57,203 - __main__ - INFO - ============================
+2023-01-27 19:50:57,206 - __main__ - INFO - not in position right now
+2023-01-27 19:50:57,206 - __main__ - INFO - not in position right now
+2023-01-27 19:51:00,031 - __main__ - INFO - Current position: []
+2023-01-27 19:51:00,031 - __main__ - INFO - Current position: []
+2023-01-27 19:51:00,032 - __main__ - INFO - ============================
+2023-01-27 19:51:00,032 - __main__ - INFO - ============================
+2023-01-27 19:51:00,035 - __main__ - INFO - not in position right now
+2023-01-27 19:51:00,035 - __main__ - INFO - not in position right now
+2023-01-27 19:51:00,036 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:51:00,036 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:51:00,037 - __main__ - INFO - ============================
+2023-01-27 19:51:00,037 - __main__ - INFO - ============================
+2023-01-27 19:51:02,206 - __main__ - INFO - Current position: []
+2023-01-27 19:51:02,206 - __main__ - INFO - Current position: []
+2023-01-27 19:51:02,207 - __main__ - INFO - ============================
+2023-01-27 19:51:02,207 - __main__ - INFO - ============================
+2023-01-27 19:51:02,209 - __main__ - INFO - not in position right now
+2023-01-27 19:51:02,209 - __main__ - INFO - not in position right now
+2023-01-27 19:51:05,831 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:51:05,831 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:51:06,754 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:51:06,754 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:51:06,754 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:51:06,754 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:51:06,756 - __main__ - INFO - ============================
+2023-01-27 19:51:06,756 - __main__ - INFO - ============================
+2023-01-27 19:51:09,567 - __main__ - INFO - Current position: []
+2023-01-27 19:51:09,567 - __main__ - INFO - Current position: []
+2023-01-27 19:51:09,568 - __main__ - INFO - ============================
+2023-01-27 19:51:09,568 - __main__ - INFO - ============================
+2023-01-27 19:51:09,572 - __main__ - INFO - not in position right now
+2023-01-27 19:51:09,572 - __main__ - INFO - not in position right now
+2023-01-27 19:51:12,407 - __main__ - INFO - Current position: []
+2023-01-27 19:51:12,407 - __main__ - INFO - Current position: []
+2023-01-27 19:51:12,408 - __main__ - INFO - ============================
+2023-01-27 19:51:12,408 - __main__ - INFO - ============================
+2023-01-27 19:51:12,412 - __main__ - INFO - not in position right now
+2023-01-27 19:51:12,412 - __main__ - INFO - not in position right now
+2023-01-27 19:51:12,413 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:51:12,413 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:51:12,414 - __main__ - INFO - ============================
+2023-01-27 19:51:12,414 - __main__ - INFO - ============================
+2023-01-27 19:51:14,586 - __main__ - INFO - Current position: []
+2023-01-27 19:51:14,586 - __main__ - INFO - Current position: []
+2023-01-27 19:51:14,587 - __main__ - INFO - ============================
+2023-01-27 19:51:14,587 - __main__ - INFO - ============================
+2023-01-27 19:51:14,590 - __main__ - INFO - not in position right now
+2023-01-27 19:51:14,590 - __main__ - INFO - not in position right now
+2023-01-27 19:51:18,205 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:51:18,205 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:51:19,106 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:51:19,106 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:51:19,107 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:51:19,107 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:51:19,109 - __main__ - INFO - ============================
+2023-01-27 19:51:19,109 - __main__ - INFO - ============================
+2023-01-27 19:51:22,026 - __main__ - INFO - Current position: []
+2023-01-27 19:51:22,026 - __main__ - INFO - Current position: []
+2023-01-27 19:51:22,027 - __main__ - INFO - ============================
+2023-01-27 19:51:22,027 - __main__ - INFO - ============================
+2023-01-27 19:51:22,030 - __main__ - INFO - not in position right now
+2023-01-27 19:51:22,030 - __main__ - INFO - not in position right now
+2023-01-27 19:51:24,856 - __main__ - INFO - Current position: []
+2023-01-27 19:51:24,856 - __main__ - INFO - Current position: []
+2023-01-27 19:51:24,857 - __main__ - INFO - ============================
+2023-01-27 19:51:24,857 - __main__ - INFO - ============================
+2023-01-27 19:51:24,861 - __main__ - INFO - not in position right now
+2023-01-27 19:51:24,861 - __main__ - INFO - not in position right now
+2023-01-27 19:51:24,862 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:51:24,862 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:51:24,863 - __main__ - INFO - ============================
+2023-01-27 19:51:24,863 - __main__ - INFO - ============================
+2023-01-27 19:51:24,864 - __main__ - INFO - <trading.TradeCrypto object at 0x0000024A6D2F0280>
+2023-01-27 19:51:24,864 - __main__ - INFO - <trading.TradeCrypto object at 0x0000024A6D2F0280>
+2023-01-27 19:54:44,637 - __main__ - INFO - Current position: []
+2023-01-27 19:54:44,637 - __main__ - INFO - ============================
+2023-01-27 19:54:44,642 - __main__ - INFO - not in position right now
+2023-01-27 19:54:47,653 - __main__ - INFO - Current position: []
+2023-01-27 19:54:47,654 - __main__ - INFO - ============================
+2023-01-27 19:54:47,657 - __main__ - INFO - not in position right now
+2023-01-27 19:54:50,487 - __main__ - INFO - Current position: []
+2023-01-27 19:54:50,487 - __main__ - INFO - ============================
+2023-01-27 19:54:50,490 - __main__ - INFO - not in position right now
+2023-01-27 19:54:50,491 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:54:50,491 - __main__ - INFO - ============================
+2023-01-27 19:54:51,994 - __main__ - INFO - Current position: []
+2023-01-27 19:54:51,995 - __main__ - INFO - ============================
+2023-01-27 19:54:52,000 - __main__ - INFO - not in position right now
+2023-01-27 19:54:55,976 - __main__ - INFO - Current position: []
+2023-01-27 19:54:55,977 - __main__ - INFO - ============================
+2023-01-27 19:54:55,980 - __main__ - INFO - not in position right now
+2023-01-27 19:54:57,476 - __main__ - INFO - Current position: []
+2023-01-27 19:54:57,476 - __main__ - INFO - ============================
+2023-01-27 19:54:57,480 - __main__ - INFO - not in position right now
+2023-01-27 19:54:57,480 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:54:57,481 - __main__ - INFO - ============================
+2023-01-27 19:54:57,481 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:55:02,200 - __main__ - INFO - Current position: []
+2023-01-27 19:55:02,201 - __main__ - INFO - ============================
+2023-01-27 19:55:02,205 - __main__ - INFO - not in position right now
+2023-01-27 19:55:05,898 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:55:06,801 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:55:06,802 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:55:06,803 - __main__ - INFO - ============================
+2023-01-27 19:55:09,634 - __main__ - INFO - Current position: []
+2023-01-27 19:55:09,635 - __main__ - INFO - ============================
+2023-01-27 19:55:09,637 - __main__ - INFO - not in position right now
+2023-01-27 19:55:12,479 - __main__ - INFO - Current position: []
+2023-01-27 19:55:12,480 - __main__ - INFO - ============================
+2023-01-27 19:55:12,482 - __main__ - INFO - not in position right now
+2023-01-27 19:55:12,483 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:55:12,483 - __main__ - INFO - ============================
+2023-01-27 19:55:15,319 - __main__ - INFO - Current position: []
+2023-01-27 19:55:15,319 - __main__ - INFO - ============================
+2023-01-27 19:55:15,323 - __main__ - INFO - not in position right now
+2023-01-27 19:55:18,922 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:55:19,832 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:55:19,832 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:55:19,833 - __main__ - INFO - ============================
+2023-01-27 19:55:22,676 - __main__ - INFO - Current position: []
+2023-01-27 19:55:22,676 - __main__ - INFO - ============================
+2023-01-27 19:55:22,679 - __main__ - INFO - not in position right now
+2023-01-27 19:55:25,491 - __main__ - INFO - Current position: []
+2023-01-27 19:55:25,492 - __main__ - INFO - ============================
+2023-01-27 19:55:25,495 - __main__ - INFO - not in position right now
+2023-01-27 19:55:25,496 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:55:25,496 - __main__ - INFO - ============================
+2023-01-27 19:55:28,322 - __main__ - INFO - Current position: []
+2023-01-27 19:55:28,322 - __main__ - INFO - ============================
+2023-01-27 19:55:28,326 - __main__ - INFO - not in position right now
+2023-01-27 19:55:31,935 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:55:32,846 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:55:32,846 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:55:32,848 - __main__ - INFO - ============================
+2023-01-27 19:55:35,025 - __main__ - INFO - Current position: []
+2023-01-27 19:55:35,026 - __main__ - INFO - ============================
+2023-01-27 19:55:35,028 - __main__ - INFO - not in position right now
+2023-01-27 19:55:37,859 - __main__ - INFO - Current position: []
+2023-01-27 19:55:37,860 - __main__ - INFO - ============================
+2023-01-27 19:55:37,863 - __main__ - INFO - not in position right now
+2023-01-27 19:55:37,863 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:55:37,864 - __main__ - INFO - ============================
+2023-01-27 19:55:37,864 - __main__ - INFO - Succeeded
+2023-01-27 19:58:05,720 - __main__ - INFO - exchange: Binance 
+2023-01-27 19:58:08,546 - __main__ - INFO - Current position: []
+2023-01-27 19:58:08,547 - __main__ - INFO - ============================
+2023-01-27 19:58:08,550 - __main__ - INFO - not in position right now
+2023-01-27 19:58:11,457 - __main__ - INFO - Current position: []
+2023-01-27 19:58:11,458 - __main__ - INFO - ============================
+2023-01-27 19:58:11,461 - __main__ - INFO - not in position right now
+2023-01-27 19:58:13,650 - __main__ - INFO - Current position: []
+2023-01-27 19:58:13,650 - __main__ - INFO - ============================
+2023-01-27 19:58:13,653 - __main__ - INFO - not in position right now
+2023-01-27 19:58:13,653 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:58:13,654 - __main__ - INFO - ============================
+2023-01-27 19:58:15,161 - __main__ - INFO - Current position: []
+2023-01-27 19:58:15,161 - __main__ - INFO - ============================
+2023-01-27 19:58:15,164 - __main__ - INFO - not in position right now
+2023-01-27 19:58:19,137 - __main__ - INFO - Current position: []
+2023-01-27 19:58:19,138 - __main__ - INFO - ============================
+2023-01-27 19:58:19,140 - __main__ - INFO - not in position right now
+2023-01-27 19:58:21,305 - __main__ - INFO - Current position: []
+2023-01-27 19:58:21,306 - __main__ - INFO - ============================
+2023-01-27 19:58:21,309 - __main__ - INFO - not in position right now
+2023-01-27 19:58:21,310 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:58:21,311 - __main__ - INFO - ============================
+2023-01-27 19:58:21,312 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 19:58:21,312 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-27 19:58:26,592 - __main__ - INFO - Current position: []
+2023-01-27 19:58:26,593 - __main__ - INFO - ============================
+2023-01-27 19:58:26,596 - __main__ - INFO - not in position right now
+2023-01-27 19:58:29,569 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:58:30,475 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:58:30,475 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:58:30,476 - __main__ - INFO - ============================
+2023-01-27 19:58:33,310 - __main__ - INFO - Current position: []
+2023-01-27 19:58:33,311 - __main__ - INFO - ============================
+2023-01-27 19:58:33,314 - __main__ - INFO - not in position right now
+2023-01-27 19:58:35,483 - __main__ - INFO - Current position: []
+2023-01-27 19:58:35,483 - __main__ - INFO - ============================
+2023-01-27 19:58:35,487 - __main__ - INFO - not in position right now
+2023-01-27 19:58:35,487 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:58:35,488 - __main__ - INFO - ============================
+2023-01-27 19:58:38,307 - __main__ - INFO - Current position: []
+2023-01-27 19:58:38,309 - __main__ - INFO - ============================
+2023-01-27 19:58:38,313 - __main__ - INFO - not in position right now
+2023-01-27 19:58:41,303 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:58:42,202 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:58:42,202 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:58:42,203 - __main__ - INFO - ============================
+2023-01-27 19:58:45,035 - __main__ - INFO - Current position: []
+2023-01-27 19:58:45,036 - __main__ - INFO - ============================
+2023-01-27 19:58:45,039 - __main__ - INFO - not in position right now
+2023-01-27 19:58:47,866 - __main__ - INFO - Current position: []
+2023-01-27 19:58:47,866 - __main__ - INFO - ============================
+2023-01-27 19:58:47,869 - __main__ - INFO - not in position right now
+2023-01-27 19:58:47,870 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:58:47,871 - __main__ - INFO - ============================
+2023-01-27 19:58:50,690 - __main__ - INFO - Current position: []
+2023-01-27 19:58:50,691 - __main__ - INFO - ============================
+2023-01-27 19:58:50,694 - __main__ - INFO - not in position right now
+2023-01-27 19:58:54,293 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 19:58:55,191 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 19:58:55,192 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 19:58:55,193 - __main__ - INFO - ============================
+2023-01-27 19:58:57,357 - __main__ - INFO - Current position: []
+2023-01-27 19:58:57,358 - __main__ - INFO - ============================
+2023-01-27 19:58:57,360 - __main__ - INFO - not in position right now
+2023-01-27 19:59:00,198 - __main__ - INFO - Current position: []
+2023-01-27 19:59:00,199 - __main__ - INFO - ============================
+2023-01-27 19:59:00,202 - __main__ - INFO - not in position right now
+2023-01-27 19:59:00,202 - __main__ - INFO - NO POSITION YET...
+2023-01-27 19:59:00,202 - __main__ - INFO - ============================
+2023-01-27 19:59:00,203 - __main__ - INFO - Succeeded
+2023-01-27 20:03:57,169 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:03:59,599 - __main__ - INFO - Current position: []
+2023-01-27 20:03:59,600 - __main__ - INFO - ============================
+2023-01-27 20:03:59,604 - __main__ - INFO - not in position right now
+2023-01-27 20:04:02,637 - __main__ - INFO - Current position: []
+2023-01-27 20:04:02,638 - __main__ - INFO - ============================
+2023-01-27 20:04:02,641 - __main__ - INFO - not in position right now
+2023-01-27 20:04:04,142 - __main__ - INFO - Current position: []
+2023-01-27 20:04:04,143 - __main__ - INFO - ============================
+2023-01-27 20:04:04,147 - __main__ - INFO - not in position right now
+2023-01-27 20:04:04,147 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:04:04,148 - __main__ - INFO - ============================
+2023-01-27 20:04:06,980 - __main__ - INFO - Current position: []
+2023-01-27 20:04:06,981 - __main__ - INFO - ============================
+2023-01-27 20:04:06,984 - __main__ - INFO - not in position right now
+2023-01-27 20:04:10,385 - __main__ - INFO - Current position: []
+2023-01-27 20:04:10,386 - __main__ - INFO - ============================
+2023-01-27 20:04:10,389 - __main__ - INFO - not in position right now
+2023-01-27 20:04:12,558 - __main__ - INFO - Current position: []
+2023-01-27 20:04:12,558 - __main__ - INFO - ============================
+2023-01-27 20:04:12,561 - __main__ - INFO - not in position right now
+2023-01-27 20:04:12,562 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:04:12,562 - __main__ - INFO - ============================
+2023-01-27 20:04:12,563 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 20:04:12,564 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-27 20:04:17,926 - __main__ - INFO - Current position: []
+2023-01-27 20:04:17,926 - __main__ - INFO - ============================
+2023-01-27 20:04:17,930 - __main__ - INFO - not in position right now
+2023-01-27 20:04:21,529 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:04:22,437 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:04:22,438 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:04:22,438 - __main__ - INFO - ============================
+2023-01-27 20:05:31,602 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:05:34,259 - __main__ - INFO - Current position: []
+2023-01-27 20:05:34,259 - __main__ - INFO - ============================
+2023-01-27 20:05:34,263 - __main__ - INFO - not in position right now
+2023-01-27 20:05:37,293 - __main__ - INFO - Current position: []
+2023-01-27 20:05:37,294 - __main__ - INFO - ============================
+2023-01-27 20:05:37,297 - __main__ - INFO - not in position right now
+2023-01-27 20:05:39,465 - __main__ - INFO - Current position: []
+2023-01-27 20:05:39,467 - __main__ - INFO - ============================
+2023-01-27 20:05:39,470 - __main__ - INFO - not in position right now
+2023-01-27 20:05:39,471 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:05:39,471 - __main__ - INFO - ============================
+2023-01-27 20:05:41,637 - __main__ - INFO - Current position: []
+2023-01-27 20:05:41,637 - __main__ - INFO - ============================
+2023-01-27 20:05:41,641 - __main__ - INFO - not in position right now
+2023-01-27 20:07:52,585 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:07:54,988 - __main__ - INFO - Current position: []
+2023-01-27 20:07:54,989 - __main__ - INFO - ============================
+2023-01-27 20:07:54,994 - __main__ - INFO - not in position right now
+2023-01-27 20:07:57,910 - __main__ - INFO - Current position: []
+2023-01-27 20:07:57,911 - __main__ - INFO - ============================
+2023-01-27 20:07:57,914 - __main__ - INFO - not in position right now
+2023-01-27 20:08:52,740 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:08:55,399 - __main__ - INFO - Current position: []
+2023-01-27 20:08:55,412 - __main__ - INFO - ============================
+2023-01-27 20:08:55,423 - __main__ - INFO - not in position right now
+2023-01-27 20:08:57,666 - __main__ - INFO - Current position: []
+2023-01-27 20:08:57,667 - __main__ - INFO - ============================
+2023-01-27 20:08:57,670 - __main__ - INFO - not in position right now
+2023-01-27 20:08:59,837 - __main__ - INFO - Current position: []
+2023-01-27 20:08:59,838 - __main__ - INFO - ============================
+2023-01-27 20:08:59,841 - __main__ - INFO - not in position right now
+2023-01-27 20:08:59,842 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:08:59,843 - __main__ - INFO - ============================
+2023-01-27 20:09:02,012 - __main__ - INFO - Current position: []
+2023-01-27 20:09:02,013 - __main__ - INFO - ============================
+2023-01-27 20:09:02,016 - __main__ - INFO - not in position right now
+2023-01-27 20:09:45,620 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:09:49,063 - __main__ - INFO - Current position: []
+2023-01-27 20:09:49,064 - __main__ - INFO - ============================
+2023-01-27 20:09:49,069 - __main__ - INFO - not in position right now
+2023-01-27 20:09:52,644 - __main__ - INFO - Current position: []
+2023-01-27 20:09:52,644 - __main__ - INFO - ============================
+2023-01-27 20:09:52,648 - __main__ - INFO - not in position right now
+2023-01-27 20:09:54,818 - __main__ - INFO - Current position: []
+2023-01-27 20:09:54,819 - __main__ - INFO - ============================
+2023-01-27 20:09:54,822 - __main__ - INFO - not in position right now
+2023-01-27 20:09:54,823 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:09:54,823 - __main__ - INFO - ============================
+2023-01-27 20:09:56,324 - __main__ - INFO - Current position: []
+2023-01-27 20:09:56,325 - __main__ - INFO - ============================
+2023-01-27 20:09:56,328 - __main__ - INFO - not in position right now
+2023-01-27 20:10:00,280 - __main__ - INFO - Current position: []
+2023-01-27 20:10:00,280 - __main__ - INFO - ============================
+2023-01-27 20:10:00,283 - __main__ - INFO - not in position right now
+2023-01-27 20:10:02,456 - __main__ - INFO - Current position: []
+2023-01-27 20:10:02,456 - __main__ - INFO - ============================
+2023-01-27 20:10:02,459 - __main__ - INFO - not in position right now
+2023-01-27 20:10:02,460 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:10:02,460 - __main__ - INFO - ============================
+2023-01-27 20:10:02,461 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 20:10:02,462 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-27 20:10:07,994 - __main__ - INFO - Current position: []
+2023-01-27 20:10:07,995 - __main__ - INFO - ============================
+2023-01-27 20:10:07,997 - __main__ - INFO - not in position right now
+2023-01-27 20:10:11,601 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:10:12,506 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:10:12,506 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:10:12,508 - __main__ - INFO - ============================
+2023-01-27 20:11:54,804 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:11:57,751 - __main__ - INFO - Current position: []
+2023-01-27 20:11:57,752 - __main__ - INFO - ============================
+2023-01-27 20:11:57,755 - __main__ - INFO - not in position right now
+2023-01-27 20:12:01,338 - __main__ - INFO - Current position: []
+2023-01-27 20:12:01,338 - __main__ - INFO - ============================
+2023-01-27 20:12:01,342 - __main__ - INFO - not in position right now
+2023-01-27 20:12:03,523 - __main__ - INFO - Current position: []
+2023-01-27 20:12:03,524 - __main__ - INFO - ============================
+2023-01-27 20:12:03,527 - __main__ - INFO - not in position right now
+2023-01-27 20:12:03,527 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:12:03,528 - __main__ - INFO - ============================
+2023-01-27 20:12:05,693 - __main__ - INFO - Current position: []
+2023-01-27 20:12:05,693 - __main__ - INFO - ============================
+2023-01-27 20:12:05,697 - __main__ - INFO - not in position right now
+2023-01-27 20:12:09,870 - __main__ - INFO - Current position: []
+2023-01-27 20:12:09,871 - __main__ - INFO - ============================
+2023-01-27 20:12:09,873 - __main__ - INFO - not in position right now
+2023-01-27 20:12:12,042 - __main__ - INFO - Current position: []
+2023-01-27 20:12:12,042 - __main__ - INFO - ============================
+2023-01-27 20:12:12,045 - __main__ - INFO - not in position right now
+2023-01-27 20:12:12,046 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:12:12,046 - __main__ - INFO - ============================
+2023-01-27 20:12:12,047 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 20:12:12,047 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-27 20:13:33,704 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:13:36,664 - __main__ - INFO - Current position: []
+2023-01-27 20:13:36,665 - __main__ - INFO - ============================
+2023-01-27 20:13:36,669 - __main__ - INFO - not in position right now
+2023-01-27 20:13:37,507 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.3262190977951309
+2023-01-27 20:13:38,417 - __main__ - INFO - Subject: AAVEUSDT
+LONG ENTER
+Total Money: 70.25543519
+2023-01-27 20:13:38,418 - __main__ - INFO - ============================
+2023-01-27 20:13:39,927 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17723445', 'maintMargin': '0.26126811', 'unrealizedProfit': '0.00281141', 'positionInitialMargin': '2.17723445', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.08', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.12681141', 'isolatedWallet': '0', 'updateTime': '1674846818432', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:13:39,928 - __main__ - INFO - ============================
+2023-01-27 20:13:39,930 - __main__ - INFO - already in position
+2023-01-27 20:13:42,103 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17719015', 'maintMargin': '0.26126279', 'unrealizedProfit': '0.00227982', 'positionInitialMargin': '2.17719015', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.08', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.12627982', 'isolatedWallet': '0', 'updateTime': '1674846818432', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:13:42,105 - __main__ - INFO - ============================
+2023-01-27 20:13:42,108 - __main__ - INFO - already in position
+2023-01-27 20:13:44,290 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17716851', 'maintMargin': '0.26126020', 'unrealizedProfit': '0.00202013', 'positionInitialMargin': '2.17716851', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.08', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.12602013', 'isolatedWallet': '0', 'updateTime': '1674846818432', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:13:44,291 - __main__ - INFO - ============================
+2023-01-27 20:13:44,293 - __main__ - INFO - already in position
+2023-01-27 20:13:44,294 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 20:13:44,295 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-27 20:13:49,815 - __main__ - INFO - Current position: []
+2023-01-27 20:13:49,815 - __main__ - INFO - ============================
+2023-01-27 20:13:49,818 - __main__ - INFO - not in position right now
+2023-01-27 20:13:52,799 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:13:53,697 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:13:53,699 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:13:53,700 - __main__ - INFO - ============================
+2023-01-27 20:13:55,206 - __main__ - INFO - Current position: []
+2023-01-27 20:13:55,207 - __main__ - INFO - ============================
+2023-01-27 20:13:55,209 - __main__ - INFO - not in position right now
+2023-01-27 20:13:58,043 - __main__ - INFO - Current position: []
+2023-01-27 20:13:58,044 - __main__ - INFO - ============================
+2023-01-27 20:13:58,046 - __main__ - INFO - not in position right now
+2023-01-27 20:13:58,047 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:13:58,047 - __main__ - INFO - ============================
+2023-01-27 20:14:00,872 - __main__ - INFO - Current position: []
+2023-01-27 20:14:00,873 - __main__ - INFO - ============================
+2023-01-27 20:14:00,876 - __main__ - INFO - not in position right now
+2023-01-27 20:14:04,493 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:14:05,390 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:14:05,458 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:14:05,459 - __main__ - INFO - ============================
+2023-01-27 20:14:08,310 - __main__ - INFO - Current position: []
+2023-01-27 20:14:08,311 - __main__ - INFO - ============================
+2023-01-27 20:14:08,313 - __main__ - INFO - not in position right now
+2023-01-27 20:14:11,130 - __main__ - INFO - Current position: []
+2023-01-27 20:14:11,131 - __main__ - INFO - ============================
+2023-01-27 20:14:11,134 - __main__ - INFO - not in position right now
+2023-01-27 20:14:11,135 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:14:11,136 - __main__ - INFO - ============================
+2023-01-27 20:14:13,315 - __main__ - INFO - Current position: []
+2023-01-27 20:14:13,315 - __main__ - INFO - ============================
+2023-01-27 20:14:13,318 - __main__ - INFO - not in position right now
+2023-01-27 20:14:16,933 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:14:17,836 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:14:17,836 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:14:17,837 - __main__ - INFO - ============================
+2023-01-27 20:14:20,006 - __main__ - INFO - Current position: []
+2023-01-27 20:14:20,007 - __main__ - INFO - ============================
+2023-01-27 20:14:20,012 - __main__ - INFO - not in position right now
+2023-01-27 20:14:22,861 - __main__ - INFO - Current position: []
+2023-01-27 20:14:22,862 - __main__ - INFO - ============================
+2023-01-27 20:14:22,864 - __main__ - INFO - not in position right now
+2023-01-27 20:14:22,865 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:14:22,865 - __main__ - INFO - ============================
+2023-01-27 20:14:22,866 - __main__ - INFO - <bound method TradeCrypto.__str__ of <trading.TradeCrypto object at 0x0000015DCDBDDCA0>>
+2023-01-27 20:20:01,140 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:20:01,140 - __main__ - INFO - exchange: Binance 
+2023-01-27 20:20:02,764 - __main__ - INFO - Current position: []
+2023-01-27 20:20:02,764 - __main__ - INFO - Current position: []
+2023-01-27 20:20:02,765 - __main__ - INFO - ============================
+2023-01-27 20:20:02,765 - __main__ - INFO - ============================
+2023-01-27 20:20:02,769 - __main__ - INFO - not in position right now
+2023-01-27 20:20:02,769 - __main__ - INFO - not in position right now
+2023-01-27 20:20:03,514 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.3239074486052118
+2023-01-27 20:20:03,514 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.3239074486052118
+2023-01-27 20:20:03,770 - __main__ - INFO - Subject: AAVEUSDT
+LONG ENTER
+Total Money: 70.09909703
+2023-01-27 20:20:03,770 - __main__ - INFO - Subject: AAVEUSDT
+LONG ENTER
+Total Money: 70.09909703
+2023-01-27 20:20:03,771 - __main__ - INFO - ============================
+2023-01-27 20:20:03,771 - __main__ - INFO - ============================
+2023-01-27 20:20:05,290 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17746564', 'maintMargin': '0.26129585', 'unrealizedProfit': '-0.01241436', 'positionInitialMargin': '2.17746564', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.14', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.12958563', 'isolatedWallet': '0', 'updateTime': '1674847203793', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:20:05,290 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17746564', 'maintMargin': '0.26129585', 'unrealizedProfit': '-0.01241436', 'positionInitialMargin': '2.17746564', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.14', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.12958563', 'isolatedWallet': '0', 'updateTime': '1674847203793', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:20:05,293 - __main__ - INFO - ============================
+2023-01-27 20:20:05,293 - __main__ - INFO - ============================
+2023-01-27 20:20:05,295 - __main__ - INFO - already in position
+2023-01-27 20:20:05,295 - __main__ - INFO - already in position
+2023-01-27 20:20:06,814 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17752780', 'maintMargin': '0.26130331', 'unrealizedProfit': '-0.01166847', 'positionInitialMargin': '2.17752780', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.14', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.13033153', 'isolatedWallet': '0', 'updateTime': '1674847203793', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:20:06,814 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17752780', 'maintMargin': '0.26130331', 'unrealizedProfit': '-0.01166847', 'positionInitialMargin': '2.17752780', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.14', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.13033153', 'isolatedWallet': '0', 'updateTime': '1674847203793', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:20:06,816 - __main__ - INFO - ============================
+2023-01-27 20:20:06,816 - __main__ - INFO - ============================
+2023-01-27 20:20:06,819 - __main__ - INFO - already in position
+2023-01-27 20:20:06,819 - __main__ - INFO - already in position
+2023-01-27 20:20:08,993 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17754999', 'maintMargin': '0.26130597', 'unrealizedProfit': '-0.01140219', 'positionInitialMargin': '2.17754999', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.14', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.13059780', 'isolatedWallet': '0', 'updateTime': '1674847203793', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:20:08,993 - __main__ - INFO - Current position: [{'symbol': 'AAVEUSDT', 'initialMargin': '2.17754999', 'maintMargin': '0.26130597', 'unrealizedProfit': '-0.01140219', 'positionInitialMargin': '2.17754999', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '87.14', 'maxNotional': '5000', 'positionSide': 'BOTH', 'positionAmt': '0.3', 'notional': '26.13059780', 'isolatedWallet': '0', 'updateTime': '1674847203793', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-27 20:20:08,994 - __main__ - INFO - ============================
+2023-01-27 20:20:08,994 - __main__ - INFO - ============================
+2023-01-27 20:20:08,996 - __main__ - INFO - already in position
+2023-01-27 20:20:08,996 - __main__ - INFO - already in position
+2023-01-27 20:20:08,997 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 20:20:08,997 - __main__ - INFO - AAVEUSD_PERP
+2023-01-27 20:20:08,998 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-27 20:20:08,998 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-27 20:20:12,958 - __main__ - INFO - Current position: []
+2023-01-27 20:20:12,958 - __main__ - INFO - Current position: []
+2023-01-27 20:20:12,959 - __main__ - INFO - ============================
+2023-01-27 20:20:12,959 - __main__ - INFO - ============================
+2023-01-27 20:20:12,962 - __main__ - INFO - not in position right now
+2023-01-27 20:20:12,962 - __main__ - INFO - not in position right now
+2023-01-27 20:20:16,583 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:20:16,583 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:20:16,829 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:20:16,829 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:20:16,829 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:20:16,829 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:20:16,831 - __main__ - INFO - ============================
+2023-01-27 20:20:16,831 - __main__ - INFO - ============================
+2023-01-27 20:20:19,658 - __main__ - INFO - Current position: []
+2023-01-27 20:20:19,658 - __main__ - INFO - Current position: []
+2023-01-27 20:20:19,659 - __main__ - INFO - ============================
+2023-01-27 20:20:19,659 - __main__ - INFO - ============================
+2023-01-27 20:20:19,663 - __main__ - INFO - not in position right now
+2023-01-27 20:20:19,663 - __main__ - INFO - not in position right now
+2023-01-27 20:20:22,606 - __main__ - INFO - Current position: []
+2023-01-27 20:20:22,606 - __main__ - INFO - Current position: []
+2023-01-27 20:20:22,607 - __main__ - INFO - ============================
+2023-01-27 20:20:22,607 - __main__ - INFO - ============================
+2023-01-27 20:20:22,611 - __main__ - INFO - not in position right now
+2023-01-27 20:20:22,611 - __main__ - INFO - not in position right now
+2023-01-27 20:20:22,612 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:20:22,612 - __main__ - INFO - NO POSITION YET...
+2023-01-27 20:20:22,612 - __main__ - INFO - ============================
+2023-01-27 20:20:22,612 - __main__ - INFO - ============================
+2023-01-27 20:20:25,439 - __main__ - INFO - Current position: []
+2023-01-27 20:20:25,439 - __main__ - INFO - Current position: []
+2023-01-27 20:20:25,440 - __main__ - INFO - ============================
+2023-01-27 20:20:25,440 - __main__ - INFO - ============================
+2023-01-27 20:20:25,443 - __main__ - INFO - not in position right now
+2023-01-27 20:20:25,443 - __main__ - INFO - not in position right now
+2023-01-27 20:20:29,058 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:20:29,058 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-27 20:20:29,959 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:20:29,959 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-27 20:20:29,961 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:20:29,961 - __main__ - INFO - Subject: AAVE
+LONG ENTER
+Total Money: 0.0
+2023-01-27 20:20:29,964 - __main__ - INFO - ============================
+2023-01-27 20:20:29,964 - __main__ - INFO - ============================
+2023-01-27 20:20:32,801 - __main__ - INFO - Current position: []
+2023-01-27 20:20:32,801 - __main__ - INFO - Current position: []
+2023-01-27 20:20:32,802 - __main__ - INFO - ============================
+2023-01-27 20:20:32,802 - __main__ - INFO - ============================
+2023-01-27 20:20:32,805 - __main__ - INFO - not in position right now
+2023-01-27 20:20:32,805 - __main__ - INFO - not in position right now
+2023-01-28 10:39:08,075 - __main__ - INFO - exchange: Binance 
+2023-01-28 10:39:10,572 - __main__ - INFO - Current position: []
+2023-01-28 10:39:10,572 - __main__ - INFO - ============================
+2023-01-28 10:39:10,709 - __main__ - INFO - not in position right now
+2023-01-28 10:39:11,695 - __main__ - INFO - ENTERING LONG POSITION WITH: 9.682746402658639e-05
+2023-01-28 10:39:12,602 - __main__ - INFO - an exception occured - binance {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-28 10:39:12,603 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: 58.51602928
+2023-01-28 10:39:12,604 - __main__ - INFO - ============================
+2023-01-28 10:39:14,106 - __main__ - INFO - Current position: []
+2023-01-28 10:39:14,107 - __main__ - INFO - ============================
+2023-01-28 10:39:14,110 - __main__ - INFO - not in position right now
+2023-01-28 10:39:16,267 - __main__ - INFO - Current position: []
+2023-01-28 10:39:16,267 - __main__ - INFO - ============================
+2023-01-28 10:39:16,270 - __main__ - INFO - not in position right now
+2023-01-28 10:39:16,270 - __main__ - INFO - NO POSITION YET...
+2023-01-28 10:39:16,271 - __main__ - INFO - ============================
+2023-01-28 10:39:18,432 - __main__ - INFO - Current position: []
+2023-01-28 10:39:18,433 - __main__ - INFO - ============================
+2023-01-28 10:39:18,436 - __main__ - INFO - not in position right now
+2023-01-28 10:39:19,577 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.00010101707007699333
+2023-01-28 10:39:19,822 - __main__ - INFO - an exception occured - binance {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-28 10:39:19,822 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: 58.51602928
+2023-01-28 10:39:19,824 - __main__ - INFO - ============================
+2023-01-28 10:39:22,645 - __main__ - INFO - Current position: []
+2023-01-28 10:39:22,646 - __main__ - INFO - ============================
+2023-01-28 10:39:22,648 - __main__ - INFO - not in position right now
+2023-01-28 10:39:24,822 - __main__ - INFO - Current position: []
+2023-01-28 10:39:24,822 - __main__ - INFO - ============================
+2023-01-28 10:39:24,825 - __main__ - INFO - not in position right now
+2023-01-28 10:39:24,825 - __main__ - INFO - NO POSITION YET...
+2023-01-28 10:39:24,826 - __main__ - INFO - ============================
+2023-01-28 10:39:24,826 - __main__ - INFO - BTC/USD
+2023-01-28 10:39:24,827 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 10:39:30,199 - __main__ - INFO - Current position: []
+2023-01-28 10:39:30,200 - __main__ - INFO - ============================
+2023-01-28 10:39:30,202 - __main__ - INFO - not in position right now
+2023-01-28 10:39:33,340 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-28 10:39:34,248 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-28 10:39:34,248 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 0.0
+2023-01-28 10:39:34,249 - __main__ - INFO - ============================
+2023-01-28 10:39:36,424 - __main__ - INFO - Current position: []
+2023-01-28 10:39:36,425 - __main__ - INFO - ============================
+2023-01-28 10:39:36,427 - __main__ - INFO - not in position right now
+2023-01-28 10:39:39,250 - __main__ - INFO - Current position: []
+2023-01-28 10:39:39,251 - __main__ - INFO - ============================
+2023-01-28 10:39:39,254 - __main__ - INFO - not in position right now
+2023-01-28 10:39:39,255 - __main__ - INFO - NO POSITION YET...
+2023-01-28 10:39:39,255 - __main__ - INFO - ============================
+2023-01-28 10:39:41,434 - __main__ - INFO - Current position: []
+2023-01-28 10:39:41,434 - __main__ - INFO - ============================
+2023-01-28 10:39:41,437 - __main__ - INFO - not in position right now
+2023-01-28 10:39:44,381 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0
+2023-01-28 10:39:45,287 - __main__ - INFO - an exception occured - binancecoinm {"code":-4003,"msg":"Quantity less than zero."}
+2023-01-28 10:39:45,287 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 0.0
+2023-01-28 10:39:45,288 - __main__ - INFO - ============================
+2023-01-28 10:39:48,107 - __main__ - INFO - Current position: []
+2023-01-28 10:39:48,108 - __main__ - INFO - ============================
+2023-01-28 10:39:48,112 - __main__ - INFO - not in position right now
+2023-01-28 10:39:50,942 - __main__ - INFO - Current position: []
+2023-01-28 10:39:50,943 - __main__ - INFO - ============================
+2023-01-28 10:39:50,946 - __main__ - INFO - not in position right now
+2023-01-28 10:39:50,946 - __main__ - INFO - NO POSITION YET...
+2023-01-28 10:39:50,947 - __main__ - INFO - ============================
+2023-01-28 10:39:50,947 - __main__ - INFO - <bound method TradeCrypto.__str__ of <trading.TradeCrypto object at 0x0000027F490ADCA0>>
+2023-01-28 11:15:29,038 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:16:54,517 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:17:32,224 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:17:34,973 - __main__ - INFO - Current position: []
+2023-01-28 11:17:34,974 - __main__ - INFO - ============================
+2023-01-28 11:17:34,978 - __main__ - INFO - not in position right now
+2023-01-28 11:17:37,032 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.0508521853353746
+2023-01-28 11:17:37,708 - __main__ - INFO - {'info': {'orderId': '3278929390', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu2c9262c28d0abdfd37c28', 'price': '0', 'avgPrice': '22992.20000', 'origQty': '0.050', 'executedQty': '0.050', 'cumQty': '0.050', 'cumQuote': '1149.61000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901057720'}, 'id': '3278929390', 'clientOrderId': 'x-xcKtGhcu2c9262c28d0abdfd37c28', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22992.2, 'stopPrice': None, 'amount': 0.05, 'cost': 1149.61, 'average': 22992.2, 'filled': 0.05, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:17:37,710 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -88.22833992
+2023-01-28 11:17:37,711 - __main__ - INFO - ============================
+2023-01-28 11:17:40,094 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '95.81166453', 'maintMargin': '4.59895952', 'unrealizedProfit': '0.12988243', 'positionInitialMargin': '95.81166453', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.2', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.050', 'notional': '1149.73988243', 'isolatedWallet': '0', 'updateTime': '1674901057720', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:17:40,095 - __main__ - INFO - ============================
+2023-01-28 11:17:40,097 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:17:42,911 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '95.81443683', 'maintMargin': '4.59909259', 'unrealizedProfit': '0.16314998', 'positionInitialMargin': '95.81443683', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.2', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.050', 'notional': '1149.77314998', 'isolatedWallet': '0', 'updateTime': '1674901057720', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:17:42,912 - __main__ - INFO - ============================
+2023-01-28 11:17:42,913 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:17:45,277 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '95.81486971', 'maintMargin': '4.59911337', 'unrealizedProfit': '0.16834462', 'positionInitialMargin': '95.81486971', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.2', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.050', 'notional': '1149.77834462', 'isolatedWallet': '0', 'updateTime': '1674901057720', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:17:45,278 - __main__ - INFO - ============================
+2023-01-28 11:17:45,280 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:17:45,281 - __main__ - INFO - BTC/USD
+2023-01-28 11:17:45,282 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 11:17:48,951 - __main__ - INFO - Current position: []
+2023-01-28 11:17:48,952 - __main__ - INFO - ============================
+2023-01-28 11:17:48,955 - __main__ - INFO - not in position right now
+2023-01-28 11:17:51,316 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.12402624493016
+2023-01-28 11:17:51,575 - __main__ - INFO - {'info': {'orderId': '433863576', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcud771c15235ccbac13501c9', 'price': '0', 'avgPrice': '23000.5', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04347734', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901071576'}, 'id': '433863576', 'clientOrderId': 'x-xcKtGhcud771c15235ccbac13501c9', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 23000.5, 'stopPrice': None, 'amount': 10.0, 'cost': 230005.0, 'average': 23000.5, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:17:51,577 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.04511781
+2023-01-28 11:17:51,578 - __main__ - INFO - ============================
+2023-01-28 11:17:53,688 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362286', 'maintMargin': '0.00017389', 'unrealizedProfit': '0.00000297', 'positionInitialMargin': '0.00362286', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.47999714', 'maxQty': '50', 'notionalValue': '0.04347437', 'isolatedWallet': '0', 'updateTime': '1674901071576', 'positionAmt': '10'}]
+2023-01-28 11:17:53,689 - __main__ - INFO - ============================
+2023-01-28 11:17:53,691 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:17:56,216 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362300', 'maintMargin': '0.00017390', 'unrealizedProfit': '0.00000129', 'positionInitialMargin': '0.00362300', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.47999714', 'maxQty': '50', 'notionalValue': '0.04347605', 'isolatedWallet': '0', 'updateTime': '1674901071576', 'positionAmt': '10'}]
+2023-01-28 11:17:56,217 - __main__ - INFO - ============================
+2023-01-28 11:17:56,219 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:17:58,749 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362301', 'maintMargin': '0.00017390', 'unrealizedProfit': '0.00000118', 'positionInitialMargin': '0.00362301', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.47999714', 'maxQty': '50', 'notionalValue': '0.04347616', 'isolatedWallet': '0', 'updateTime': '1674901071576', 'positionAmt': '10'}]
+2023-01-28 11:17:58,751 - __main__ - INFO - ============================
+2023-01-28 11:17:58,754 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:17:58,755 - __main__ - INFO - Succeeded
+2023-01-28 11:24:26,360 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:24:26,360 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:24:28,891 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '95.75683670', 'maintMargin': '4.59632779', 'unrealizedProfit': '-0.52805151', 'positionInitialMargin': '95.75683670', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.2', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.050', 'notional': '1149.08194849', 'isolatedWallet': '0', 'updateTime': '1674901057720', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:24:28,891 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '95.75683670', 'maintMargin': '4.59632779', 'unrealizedProfit': '-0.52805151', 'positionInitialMargin': '95.75683670', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.2', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.050', 'notional': '1149.08194849', 'isolatedWallet': '0', 'updateTime': '1674901057720', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:24:28,893 - __main__ - INFO - ============================
+2023-01-28 11:24:28,893 - __main__ - INFO - ============================
+2023-01-28 11:24:28,896 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:24:28,896 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:24:28,897 - __main__ - INFO - BTC/USD
+2023-01-28 11:24:28,897 - __main__ - INFO - BTC/USD
+2023-01-28 11:24:28,897 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 11:24:28,897 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 11:24:31,781 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362585', 'maintMargin': '0.00017404', 'unrealizedProfit': '-0.00003296', 'positionInitialMargin': '0.00362585', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.47999714', 'maxQty': '50', 'notionalValue': '0.04351031', 'isolatedWallet': '0', 'updateTime': '1674901071576', 'positionAmt': '10'}]
+2023-01-28 11:24:31,781 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362585', 'maintMargin': '0.00017404', 'unrealizedProfit': '-0.00003296', 'positionInitialMargin': '0.00362585', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.47999714', 'maxQty': '50', 'notionalValue': '0.04351031', 'isolatedWallet': '0', 'updateTime': '1674901071576', 'positionAmt': '10'}]
+2023-01-28 11:24:31,783 - __main__ - INFO - ============================
+2023-01-28 11:24:31,783 - __main__ - INFO - ============================
+2023-01-28 11:24:31,786 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:24:31,786 - __main__ - INFO - already in position {position_info['positionSide']}
+2023-01-28 11:24:31,787 - __main__ - INFO - Succeeded
+2023-01-28 11:24:31,787 - __main__ - INFO - Succeeded
+2023-01-28 11:27:11,206 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:27:14,467 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '95.77739882', 'maintMargin': '4.59731477', 'unrealizedProfit': '-0.28130604', 'positionInitialMargin': '95.77739882', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.2', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.050', 'notional': '1149.32869395', 'isolatedWallet': '0', 'updateTime': '1674901057720', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:27:14,468 - __main__ - INFO - ============================
+2023-01-28 11:27:14,471 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:14,472 - __main__ - INFO - not in position right now
+2023-01-28 11:27:16,543 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.09231933522117117
+2023-01-28 11:27:17,225 - __main__ - INFO - {'info': {'orderId': '3278930438', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu1aa6c49a2665cf715f6724', 'price': '0', 'avgPrice': '22987.19891', 'origQty': '0.092', 'executedQty': '0.092', 'cumQty': '0.092', 'cumQuote': '2114.82230', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901637246'}, 'id': '3278930438', 'clientOrderId': 'x-xcKtGhcu1aa6c49a2665cf715f6724', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22987.19891, 'stopPrice': None, 'amount': 0.092, 'cost': 2114.8223, 'average': 22987.19891, 'filled': 0.092, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:27:17,226 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -88.50964596
+2023-01-28 11:27:17,227 - __main__ - INFO - ============================
+2023-01-28 11:27:19,182 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '272.05106698', 'maintMargin': '13.05845017', 'unrealizedProfit': '0.18024261', 'positionInitialMargin': '272.05106698', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22988.95985915', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.142', 'notional': '3264.61254261', 'isolatedWallet': '0', 'updateTime': '1674901637246', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:27:19,183 - __main__ - INFO - ============================
+2023-01-28 11:27:19,187 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:19,187 - __main__ - INFO - not in position right now
+2023-01-28 11:27:21,560 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '272.04534806', 'maintMargin': '13.05817566', 'unrealizedProfit': '0.11161565', 'positionInitialMargin': '272.04534806', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22988.95985915', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.142', 'notional': '3264.54391565', 'isolatedWallet': '0', 'updateTime': '1674901637246', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:27:21,561 - __main__ - INFO - ============================
+2023-01-28 11:27:21,563 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:21,564 - __main__ - INFO - not in position right now
+2023-01-28 11:27:21,565 - __main__ - INFO - NO POSITION YET...
+2023-01-28 11:27:21,565 - __main__ - INFO - ============================
+2023-01-28 11:27:23,530 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '272.04821648', 'maintMargin': '13.05831334', 'unrealizedProfit': '0.14603662', 'positionInitialMargin': '272.04821648', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22988.95985915', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.142', 'notional': '3264.57833662', 'isolatedWallet': '0', 'updateTime': '1674901637246', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:27:23,531 - __main__ - INFO - ============================
+2023-01-28 11:27:23,533 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:23,534 - __main__ - INFO - not in position right now
+2023-01-28 11:27:25,149 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.031966010278685175
+2023-01-28 11:27:26,066 - __main__ - INFO - {'info': {'orderId': '3278930457', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcudedd2a2b5ec4b692cf780f', 'price': '0', 'avgPrice': '22990.00000', 'origQty': '0.031', 'executedQty': '0.031', 'cumQty': '0.031', 'cumQuote': '712.69000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901646090'}, 'id': '3278930457', 'clientOrderId': 'x-xcKtGhcudedd2a2b5ec4b692cf780f', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22990.0, 'stopPrice': None, 'amount': 0.031, 'cost': 712.69, 'average': 22990.0, 'filled': 0.031, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:27:26,067 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -88.0823033
+2023-01-28 11:27:26,068 - __main__ - INFO - ============================
+2023-01-28 11:27:28,455 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '331.43562012', 'maintMargin': '15.90890849', 'unrealizedProfit': '0.10482331', 'positionInitialMargin': '331.43562012', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22989.14624277', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.173', 'notional': '3977.22712331', 'isolatedWallet': '0', 'updateTime': '1674901646090', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:27:28,456 - __main__ - INFO - ============================
+2023-01-28 11:27:28,459 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:28,460 - __main__ - INFO - not in position right now
+2023-01-28 11:27:30,863 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '331.46411119', 'maintMargin': '15.91027606', 'unrealizedProfit': '0.44671613', 'positionInitialMargin': '331.46411119', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22989.14624277', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.173', 'notional': '3977.56901613', 'isolatedWallet': '0', 'updateTime': '1674901646090', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:27:30,864 - __main__ - INFO - ============================
+2023-01-28 11:27:30,867 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:30,867 - __main__ - INFO - not in position right now
+2023-01-28 11:27:30,868 - __main__ - INFO - NO POSITION YET...
+2023-01-28 11:27:30,868 - __main__ - INFO - ============================
+2023-01-28 11:27:30,869 - __main__ - INFO - BTC/USD
+2023-01-28 11:27:30,869 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 11:27:34,454 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362364', 'maintMargin': '0.00017393', 'unrealizedProfit': '-0.00000639', 'positionInitialMargin': '0.00362364', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.47999714', 'maxQty': '50', 'notionalValue': '0.04348374', 'isolatedWallet': '0', 'updateTime': '1674901071576', 'positionAmt': '10'}]
+2023-01-28 11:27:34,455 - __main__ - INFO - ============================
+2023-01-28 11:27:34,457 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:34,458 - __main__ - INFO - not in position right now
+2023-01-28 11:27:36,829 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.118148883547336
+2023-01-28 11:27:37,536 - __main__ - INFO - {'info': {'orderId': '433869923', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu3117dcd51f48010213d3ca', 'price': '0', 'avgPrice': '22996.8', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04348423', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901657539'}, 'id': '433869923', 'clientOrderId': 'x-xcKtGhcu3117dcd51f48010213d3ca', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22996.8, 'stopPrice': None, 'amount': 10.0, 'cost': 229968.0, 'average': 22996.8, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:27:37,538 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.0450897
+2023-01-28 11:27:37,539 - __main__ - INFO - ============================
+2023-01-28 11:27:40,092 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00724767', 'maintMargin': '0.00034788', 'unrealizedProfit': '-0.00001045', 'positionInitialMargin': '0.00724767', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22998.65985033', 'maxQty': '50', 'notionalValue': '0.08697204', 'isolatedWallet': '0', 'updateTime': '1674901657539', 'positionAmt': '20'}]
+2023-01-28 11:27:40,093 - __main__ - INFO - ============================
+2023-01-28 11:27:40,096 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:40,097 - __main__ - INFO - not in position right now
+2023-01-28 11:27:42,203 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00724773', 'maintMargin': '0.00034789', 'unrealizedProfit': '-0.00001124', 'positionInitialMargin': '0.00724773', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22998.65985033', 'maxQty': '50', 'notionalValue': '0.08697283', 'isolatedWallet': '0', 'updateTime': '1674901657539', 'positionAmt': '20'}]
+2023-01-28 11:27:42,204 - __main__ - INFO - ============================
+2023-01-28 11:27:42,207 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:42,208 - __main__ - INFO - not in position right now
+2023-01-28 11:27:42,209 - __main__ - INFO - NO POSITION YET...
+2023-01-28 11:27:42,210 - __main__ - INFO - ============================
+2023-01-28 11:27:43,869 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00724710', 'maintMargin': '0.00034786', 'unrealizedProfit': '-0.00000363', 'positionInitialMargin': '0.00724710', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22998.65985033', 'maxQty': '50', 'notionalValue': '0.08696522', 'isolatedWallet': '0', 'updateTime': '1674901657539', 'positionAmt': '20'}]
+2023-01-28 11:27:43,871 - __main__ - INFO - ============================
+2023-01-28 11:27:43,874 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:43,875 - __main__ - INFO - not in position right now
+2023-01-28 11:27:46,306 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.111363677417756
+2023-01-28 11:27:47,234 - __main__ - INFO - {'info': {'orderId': '433870031', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcufe581aa6b2211d73794604', 'price': '0', 'avgPrice': '22998.6', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04348091', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901667242'}, 'id': '433870031', 'clientOrderId': 'x-xcKtGhcufe581aa6b2211d73794604', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22998.6, 'stopPrice': None, 'amount': 10.0, 'cost': 229986.0, 'average': 22998.6, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:27:47,236 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.04507073
+2023-01-28 11:27:47,236 - __main__ - INFO - ============================
+2023-01-28 11:27:48,896 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01087044', 'maintMargin': '0.00052178', 'unrealizedProfit': '-0.00000277', 'positionInitialMargin': '0.01087044', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22998.63656683', 'maxQty': '50', 'notionalValue': '0.13044528', 'isolatedWallet': '0', 'updateTime': '1674901667242', 'positionAmt': '30'}]
+2023-01-28 11:27:48,897 - __main__ - INFO - ============================
+2023-01-28 11:27:48,900 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:48,900 - __main__ - INFO - not in position right now
+2023-01-28 11:27:50,551 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01086967', 'maintMargin': '0.00052174', 'unrealizedProfit': '0.00000647', 'positionInitialMargin': '0.01086967', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22998.63656683', 'maxQty': '50', 'notionalValue': '0.13043603', 'isolatedWallet': '0', 'updateTime': '1674901667242', 'positionAmt': '30'}]
+2023-01-28 11:27:50,553 - __main__ - INFO - ============================
+2023-01-28 11:27:50,556 - __main__ - INFO - already in position 0    BOTH
+Name: positionSide, dtype: object
+2023-01-28 11:27:50,557 - __main__ - INFO - not in position right now
+2023-01-28 11:27:50,558 - __main__ - INFO - NO POSITION YET...
+2023-01-28 11:27:50,558 - __main__ - INFO - ============================
+2023-01-28 11:27:50,558 - __main__ - INFO - Succeeded
+2023-01-28 11:29:05,062 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:29:08,400 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '331.48488071', 'maintMargin': '15.91127300', 'unrealizedProfit': '0.69595040', 'positionInitialMargin': '331.48488071', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22989.14624277', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.173', 'notional': '3977.81825040', 'isolatedWallet': '0', 'updateTime': '1674901646090', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:29:08,401 - __main__ - INFO - ============================
+2023-01-28 11:29:08,403 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:08,404 - __main__ - INFO - not in position right now
+2023-01-28 11:29:10,037 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.07998652448296105
+2023-01-28 11:29:10,284 - __main__ - INFO - {'info': {'orderId': '3278930631', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu921a2507e34c92dffa41eb', 'price': '0', 'avgPrice': '22999.60000', 'origQty': '0.079', 'executedQty': '0.079', 'cumQty': '0.079', 'cumQuote': '1816.96840', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901750308'}, 'id': '3278930631', 'clientOrderId': 'x-xcKtGhcu921a2507e34c92dffa41eb', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22999.6, 'stopPrice': None, 'amount': 0.079, 'cost': 1816.9684, 'average': 22999.6, 'filled': 0.079, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:29:10,285 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -87.53238952
+2023-01-28 11:29:10,286 - __main__ - INFO - ============================
+2023-01-28 11:29:11,786 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '482.86975980', 'maintMargin': '23.17774661', 'unrealizedProfit': '0.34595409', 'positionInitialMargin': '482.86975980', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.4234127', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.252', 'notional': '5794.43665409', 'isolatedWallet': '0', 'updateTime': '1674901750308', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:29:11,787 - __main__ - INFO - ============================
+2023-01-28 11:29:11,789 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:11,790 - __main__ - INFO - not in position right now
+2023-01-28 11:29:14,173 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '482.89215460', 'maintMargin': '23.17882156', 'unrealizedProfit': '0.61469170', 'positionInitialMargin': '482.89215460', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.4234127', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.252', 'notional': '5794.70539170', 'isolatedWallet': '0', 'updateTime': '1674901750308', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:29:14,174 - __main__ - INFO - ============================
+2023-01-28 11:29:14,176 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:14,177 - __main__ - INFO - not in position right now
+2023-01-28 11:29:14,177 - __main__ - INFO - NO POSITION YET...
+2023-01-28 11:29:14,178 - __main__ - INFO - ============================
+2023-01-28 11:29:16,148 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '482.88453863', 'maintMargin': '23.17845600', 'unrealizedProfit': '0.52329999', 'positionInitialMargin': '482.88453863', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.4234127', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.252', 'notional': '5794.61400000', 'isolatedWallet': '0', 'updateTime': '1674901750308', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:29:16,149 - __main__ - INFO - ============================
+2023-01-28 11:29:16,151 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:16,152 - __main__ - INFO - not in position right now
+2023-01-28 11:29:17,962 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.020954961126657682
+2023-01-28 11:29:18,204 - __main__ - INFO - {'info': {'orderId': '3278930644', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcua3043ebfc76f1b569217c6', 'price': '0', 'avgPrice': '22999.60000', 'origQty': '0.020', 'executedQty': '0.020', 'cumQty': '0.020', 'cumQuote': '459.99200', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901758231'}, 'id': '3278930644', 'clientOrderId': 'x-xcKtGhcua3043ebfc76f1b569217c6', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22999.6, 'stopPrice': None, 'amount': 0.02, 'cost': 459.992, 'average': 22999.6, 'filled': 0.02, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:29:18,206 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -87.70503993
+2023-01-28 11:29:18,207 - __main__ - INFO - ============================
+2023-01-28 11:29:19,715 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.21097503', 'maintMargin': '25.01812480', 'unrealizedProfit': '0.44850000', 'positionInitialMargin': '521.21097503', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6254.53120000', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:29:19,716 - __main__ - INFO - ============================
+2023-01-28 11:29:19,718 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:19,719 - __main__ - INFO - not in position right now
+2023-01-28 11:29:21,240 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.19284169', 'maintMargin': '25.01725440', 'unrealizedProfit': '0.23090000', 'positionInitialMargin': '521.19284169', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6254.31360000', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:29:21,241 - __main__ - INFO - ============================
+2023-01-28 11:29:21,243 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:21,244 - __main__ - INFO - not in position right now
+2023-01-28 11:29:21,244 - __main__ - INFO - NO POSITION YET...
+2023-01-28 11:29:21,245 - __main__ - INFO - ============================
+2023-01-28 11:29:21,246 - __main__ - INFO - BTC/USD
+2023-01-28 11:29:21,246 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 11:29:24,817 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01086789', 'maintMargin': '0.00052165', 'unrealizedProfit': '0.00002784', 'positionInitialMargin': '0.01086789', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22998.63656683', 'maxQty': '50', 'notionalValue': '0.13041467', 'isolatedWallet': '0', 'updateTime': '1674901667242', 'positionAmt': '30'}]
+2023-01-28 11:29:24,818 - __main__ - INFO - ============================
+2023-01-28 11:29:24,820 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:24,821 - __main__ - INFO - not in position right now
+2023-01-28 11:29:27,711 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.100775370436631
+2023-01-28 11:29:28,400 - __main__ - INFO - {'info': {'orderId': '433871146', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu7ffdfd58a5e57d4fd0bd7c', 'price': '0', 'avgPrice': '23003.8', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04347100', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901768415'}, 'id': '433871146', 'clientOrderId': 'x-xcKtGhcu7ffdfd58a5e57d4fd0bd7c', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 23003.8, 'stopPrice': None, 'amount': 10.0, 'cost': 230038.0, 'average': 23003.8, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:29:28,402 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.04508047
+2023-01-28 11:29:28,403 - __main__ - INFO - ============================
+2023-01-28 11:29:30,498 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01449048', 'maintMargin': '0.00069554', 'unrealizedProfit': '0.00002768', 'positionInitialMargin': '0.01449048', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22999.93470466', 'maxQty': '50', 'notionalValue': '0.17388585', 'isolatedWallet': '0', 'updateTime': '1674901768415', 'positionAmt': '40'}]
+2023-01-28 11:29:30,499 - __main__ - INFO - ============================
+2023-01-28 11:29:30,501 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:30,502 - __main__ - INFO - not in position right now
+2023-01-28 11:29:33,034 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01449075', 'maintMargin': '0.00069555', 'unrealizedProfit': '0.00002454', 'positionInitialMargin': '0.01449075', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22999.93470466', 'maxQty': '50', 'notionalValue': '0.17388899', 'isolatedWallet': '0', 'updateTime': '1674901768415', 'positionAmt': '40'}]
+2023-01-28 11:29:33,035 - __main__ - INFO - ============================
+2023-01-28 11:29:33,037 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:33,038 - __main__ - INFO - not in position right now
+2023-01-28 11:29:33,038 - __main__ - INFO - NO POSITION YET...
+2023-01-28 11:29:33,039 - __main__ - INFO - ============================
+2023-01-28 11:29:35,597 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01449036', 'maintMargin': '0.00069553', 'unrealizedProfit': '0.00002913', 'positionInitialMargin': '0.01449036', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22999.93470466', 'maxQty': '50', 'notionalValue': '0.17388440', 'isolatedWallet': '0', 'updateTime': '1674901768415', 'positionAmt': '40'}]
+2023-01-28 11:29:35,597 - __main__ - INFO - ============================
+2023-01-28 11:29:35,599 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:35,600 - __main__ - INFO - not in position right now
+2023-01-28 11:29:38,460 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.09329148667655
+2023-01-28 11:29:38,719 - __main__ - INFO - {'info': {'orderId': '433871267', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu3442e774da7ab62f7f3d46', 'price': '0', 'avgPrice': '23003.9', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04347088', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674901778732'}, 'id': '433871267', 'clientOrderId': 'x-xcKtGhcu3442e774da7ab62f7f3d46', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 23003.9, 'stopPrice': None, 'amount': 10.0, 'cost': 230039.0, 'average': 23003.9, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 11:29:38,721 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.04506004
+2023-01-28 11:29:38,722 - __main__ - INFO - ============================
+2023-01-28 11:29:41,030 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01811267', 'maintMargin': '0.00086940', 'unrealizedProfit': '0.00003229', 'positionInitialMargin': '0.01811267', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.72765436', 'maxQty': '50', 'notionalValue': '0.21735213', 'isolatedWallet': '0', 'updateTime': '1674901778732', 'positionAmt': '50'}]
+2023-01-28 11:29:41,031 - __main__ - INFO - ============================
+2023-01-28 11:29:41,033 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:41,034 - __main__ - INFO - not in position right now
+2023-01-28 11:29:42,692 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01811294', 'maintMargin': '0.00086942', 'unrealizedProfit': '0.00002914', 'positionInitialMargin': '0.01811294', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.72765436', 'maxQty': '50', 'notionalValue': '0.21735528', 'isolatedWallet': '0', 'updateTime': '1674901778732', 'positionAmt': '50'}]
+2023-01-28 11:29:42,693 - __main__ - INFO - ============================
+2023-01-28 11:29:42,695 - __main__ - INFO - already in position BOTH
+2023-01-28 11:29:42,695 - __main__ - INFO - not in position right now
+2023-01-28 11:29:42,696 - __main__ - INFO - NO POSITION YET...
+2023-01-28 11:29:42,696 - __main__ - INFO - ============================
+2023-01-28 11:29:42,697 - __main__ - INFO - Succeeded
+2023-01-28 11:31:32,510 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:31:35,380 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.32514471', 'maintMargin': '25.02360494', 'unrealizedProfit': '1.81853612', 'positionInitialMargin': '521.32514471', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6255.90123612', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:31:35,381 - __main__ - INFO - ============================
+2023-01-28 11:31:35,384 - __main__ - INFO - already in position BOTH
+2023-01-28 11:31:35,384 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:31:35,385 - __main__ - INFO - ============================
+2023-01-28 11:31:35,385 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:32:21,297 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:32:21,297 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:32:23,708 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.40056265', 'maintMargin': '25.02722500', 'unrealizedProfit': '2.72355127', 'positionInitialMargin': '521.40056265', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6256.80625127', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:32:23,708 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.40056265', 'maintMargin': '25.02722500', 'unrealizedProfit': '2.72355127', 'positionInitialMargin': '521.40056265', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6256.80625127', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:32:23,710 - __main__ - INFO - ============================
+2023-01-28 11:32:23,710 - __main__ - INFO - ============================
+2023-01-28 11:32:23,712 - __main__ - INFO - already in position BOTH
+2023-01-28 11:32:23,712 - __main__ - INFO - already in position BOTH
+2023-01-28 11:32:23,713 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:32:23,713 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:32:23,714 - __main__ - INFO - ============================
+2023-01-28 11:32:23,714 - __main__ - INFO - ============================
+2023-01-28 11:32:23,714 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:32:23,714 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:34:30,716 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:34:33,957 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.44897504', 'maintMargin': '25.02954880', 'unrealizedProfit': '3.30450000', 'positionInitialMargin': '521.44897504', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6257.38720000', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:34:33,958 - __main__ - INFO - ============================
+2023-01-28 11:34:33,962 - __main__ - INFO - already in position BOTH
+2023-01-28 11:34:33,963 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:34:33,963 - __main__ - INFO - ============================
+2023-01-28 11:34:34,651 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:34:34,946 - __main__ - INFO - BTC/USD
+2023-01-28 11:34:34,947 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 11:34:38,154 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01810705', 'maintMargin': '0.00086913', 'unrealizedProfit': '0.00009981', 'positionInitialMargin': '0.01810705', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.72765436', 'maxQty': '50', 'notionalValue': '0.21728461', 'isolatedWallet': '0', 'updateTime': '1674901778732', 'positionAmt': '50'}]
+2023-01-28 11:34:38,155 - __main__ - INFO - ============================
+2023-01-28 11:34:38,157 - __main__ - INFO - already in position BOTH
+2023-01-28 11:34:38,157 - __main__ - INFO - already in  a LONG position symbol BTCUSD_PERP
+2023-01-28 11:34:38,158 - __main__ - INFO - ============================
+2023-01-28 11:34:38,158 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:35:25,604 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:35:28,838 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.35488002', 'maintMargin': '25.02503223', 'unrealizedProfit': '2.17535982', 'positionInitialMargin': '521.35488002', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6256.25805982', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:35:28,839 - __main__ - INFO - ============================
+2023-01-28 11:35:28,841 - __main__ - INFO - already in position BOTH
+2023-01-28 11:35:28,842 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:35:28,842 - __main__ - INFO - ============================
+2023-01-28 11:35:29,524 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:35:29,728 - __main__ - INFO - BTC/USD
+2023-01-28 11:35:29,728 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 11:35:32,903 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01811069', 'maintMargin': '0.00086931', 'unrealizedProfit': '0.00005613', 'positionInitialMargin': '0.01811069', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.72765436', 'maxQty': '50', 'notionalValue': '0.21732828', 'isolatedWallet': '0', 'updateTime': '1674901778732', 'positionAmt': '50'}]
+2023-01-28 11:35:32,904 - __main__ - INFO - ============================
+2023-01-28 11:35:32,906 - __main__ - INFO - already in position BOTH
+2023-01-28 11:35:32,907 - __main__ - INFO - already in  a LONG position symbol BTCUSD_PERP
+2023-01-28 11:35:32,907 - __main__ - INFO - ============================
+2023-01-28 11:35:33,595 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:35:33,851 - __main__ - INFO - Succeeded
+2023-01-28 11:42:07,383 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:42:10,638 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.06590835', 'maintMargin': '25.01116160', 'unrealizedProfit': '-1.29229999', 'positionInitialMargin': '521.06590835', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6252.79040000', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:42:10,639 - __main__ - INFO - ============================
+2023-01-28 11:42:10,641 - __main__ - INFO - already in position BOTH
+2023-01-28 11:42:10,641 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:42:10,641 - __main__ - INFO - ============================
+2023-01-28 11:42:11,324 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:44:14,478 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:44:17,699 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '521.15385193', 'maintMargin': '25.01538289', 'unrealizedProfit': '-0.23697705', 'positionInitialMargin': '521.15385193', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6253.84572294', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:44:17,700 - __main__ - INFO - ============================
+2023-01-28 11:44:17,703 - __main__ - INFO - already in position BOTH
+2023-01-28 11:44:17,704 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:44:17,704 - __main__ - INFO - ============================
+2023-01-28 11:44:18,387 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:49:02,433 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:49:05,293 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '520.95919807', 'maintMargin': '25.00603950', 'unrealizedProfit': '-2.57282320', 'positionInitialMargin': '520.95919807', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6251.50987679', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:49:05,294 - __main__ - INFO - ============================
+2023-01-28 11:49:05,297 - __main__ - INFO - already in position BOTH
+2023-01-28 11:49:05,297 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:49:05,298 - __main__ - INFO - ============================
+2023-01-28 11:49:06,001 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:55:31,448 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:55:34,698 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '520.68674591', 'maintMargin': '24.99296180', 'unrealizedProfit': '-5.84224887', 'positionInitialMargin': '520.68674591', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6248.24045112', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:55:34,698 - __main__ - INFO - ============================
+2023-01-28 11:55:34,701 - __main__ - INFO - already in position BOTH
+2023-01-28 11:55:34,701 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:55:34,702 - __main__ - INFO - ============================
+2023-01-28 11:55:35,405 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 11:57:06,619 - __main__ - INFO - exchange: Binance 
+2023-01-28 11:57:09,910 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '520.72705272', 'maintMargin': '24.99489653', 'unrealizedProfit': '-5.35856720', 'positionInitialMargin': '520.72705272', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6248.72413279', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 11:57:09,912 - __main__ - INFO - ============================
+2023-01-28 11:57:09,916 - __main__ - INFO - already in position BOTH
+2023-01-28 11:57:09,917 - __main__ - INFO - already in  a LONG position symbol BTCUSDT
+2023-01-28 11:57:09,917 - __main__ - INFO - ============================
+2023-01-28 11:57:09,918 - __main__ - INFO - BTC/USD
+2023-01-28 11:57:09,919 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 11:57:13,654 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01812499', 'maintMargin': '0.00086999', 'unrealizedProfit': '-0.00011552', 'positionInitialMargin': '0.01812499', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.72765436', 'maxQty': '50', 'notionalValue': '0.21749994', 'isolatedWallet': '0', 'updateTime': '1674901778732', 'positionAmt': '50'}]
+2023-01-28 11:57:13,655 - __main__ - INFO - ============================
+2023-01-28 11:57:13,657 - __main__ - INFO - already in position BOTH
+2023-01-28 11:57:13,658 - __main__ - INFO - already in  a LONG position symbol BTCUSD_PERP
+2023-01-28 11:57:13,658 - __main__ - INFO - ============================
+2023-01-28 11:57:13,659 - __main__ - INFO - Succeeded
+2023-01-28 12:04:04,346 - __main__ - INFO - exchange: Binance 
+2023-01-28 12:04:07,568 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '520.99790834', 'maintMargin': '25.00789760', 'unrealizedProfit': '-2.10829999', 'positionInitialMargin': '520.99790834', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22992.95110294', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.272', 'notional': '6251.97440000', 'isolatedWallet': '0', 'updateTime': '1674901758231', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:04:07,569 - __main__ - INFO - ============================
+2023-01-28 12:04:07,571 - __main__ - INFO - already in position BOTH
+2023-01-28 12:04:07,571 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:04:07,571 - __main__ - INFO - ============================
+2023-01-28 12:04:07,572 - __main__ - INFO - BTC/USD
+2023-01-28 12:04:07,572 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 12:04:10,737 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.01812112', 'maintMargin': '0.00086981', 'unrealizedProfit': '-0.00006910', 'positionInitialMargin': '0.01812112', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '23000.72765436', 'maxQty': '50', 'notionalValue': '0.21745352', 'isolatedWallet': '0', 'updateTime': '1674901778732', 'positionAmt': '50'}]
+2023-01-28 12:04:10,738 - __main__ - INFO - ============================
+2023-01-28 12:04:10,740 - __main__ - INFO - already in position BOTH
+2023-01-28 12:04:10,741 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:04:10,741 - __main__ - INFO - ============================
+2023-01-28 12:04:10,742 - __main__ - INFO - Succeeded
+2023-01-28 12:07:06,123 - __main__ - INFO - exchange: Binance 
+2023-01-28 12:07:09,312 - __main__ - INFO - Current position: []
+2023-01-28 12:07:09,312 - __main__ - INFO - ============================
+2023-01-28 12:07:09,315 - __main__ - INFO - not in position right now
+2023-01-28 12:07:11,366 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.09686260767757328
+2023-01-28 12:07:12,269 - __main__ - INFO - {'info': {'orderId': '3278934591', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu72513fa0af8335bb30dead', 'price': '0', 'avgPrice': '22970.80000', 'origQty': '0.096', 'executedQty': '0.096', 'cumQty': '0.096', 'cumQuote': '2205.19680', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674904032339'}, 'id': '3278934591', 'clientOrderId': 'x-xcKtGhcu72513fa0af8335bb30dead', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22970.8, 'stopPrice': None, 'amount': 0.096, 'cost': 2205.1968, 'average': 22970.8, 'filled': 0.096, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:07:12,271 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -90.93503991
+2023-01-28 12:07:12,272 - __main__ - INFO - ============================
+2023-01-28 12:07:14,867 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '183.72544744', 'maintMargin': '8.81882077', 'unrealizedProfit': '-0.49160707', 'positionInitialMargin': '183.72544744', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22970.8', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.096', 'notional': '2204.70519292', 'isolatedWallet': '0', 'updateTime': '1674904032339', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:07:14,868 - __main__ - INFO - ============================
+2023-01-28 12:07:14,871 - __main__ - INFO - already in position BOTH
+2023-01-28 12:07:14,871 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:07:14,872 - __main__ - INFO - ============================
+2023-01-28 12:07:15,880 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:07:15,881 - __main__ - INFO - entryprice: 22970.8
+2023-01-28 12:07:15,881 - __main__ - INFO - entry - price: 229.708
+2023-01-28 12:07:15,882 - __main__ - INFO - stoploss: 22818.675496688742
+2023-01-28 12:07:15,882 - __main__ - INFO - quantity:0.096
+2023-01-28 12:07:17,088 - __main__ - INFO - {'info': {'orderId': '3278934595', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcubcda56cc80690909c3b92', 'price': '0', 'avgPrice': '0.00000', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22818.70', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674904037158'}, 'id': '3278934595', 'clientOrderId': 'x-xcKtGhcubcda56cc80690909c3b92', 'timestamp': 1674904037158, 'datetime': '2023-01-28T11:07:17.158Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22818.7, 'amount': None, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:07:17,090 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (STOP LOSS): 0.096
+Total Money: -91.42664698
+2023-01-28 12:07:17,091 - __main__ - INFO -     symbol entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSDT    22970.8      -0.49160707              0       0.096         BOTH
+2023-01-28 12:07:17,137 - __main__ - INFO - ============================
+2023-01-28 12:07:17,137 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:12:17,473 - __main__ - INFO - exchange: Binance 
+2023-01-28 12:12:20,362 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '183.71054996', 'maintMargin': '8.81810569', 'unrealizedProfit': '-0.67037680', 'positionInitialMargin': '183.71054996', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22970.8', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.096', 'notional': '2204.52642319', 'isolatedWallet': '0', 'updateTime': '1674904032339', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:12:20,362 - __main__ - INFO - ============================
+2023-01-28 12:12:20,365 - __main__ - INFO - already in position BOTH
+2023-01-28 12:12:20,365 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:12:20,365 - __main__ - INFO - ============================
+2023-01-28 12:12:20,366 - __main__ - INFO - BTC/USD
+2023-01-28 12:12:20,366 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 12:12:24,356 - __main__ - INFO - Current position: []
+2023-01-28 12:12:24,357 - __main__ - INFO - ============================
+2023-01-28 12:12:24,360 - __main__ - INFO - not in position right now
+2023-01-28 12:12:26,985 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.136230962121148
+2023-01-28 12:12:27,272 - __main__ - INFO - {'info': {'orderId': '433897602', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu1e742db24e9c01d41e75c2', 'price': '0', 'avgPrice': '22971.7', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04353191', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674904347337'}, 'id': '433897602', 'clientOrderId': 'x-xcKtGhcu1e742db24e9c01d41e75c2', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22971.7, 'stopPrice': None, 'amount': 10.0, 'cost': 229717.0, 'average': 22971.7, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:12:27,273 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.04472106
+2023-01-28 12:12:27,274 - __main__ - INFO - ============================
+2023-01-28 12:12:28,933 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362777', 'maintMargin': '0.00017413', 'unrealizedProfit': '-0.00000137', 'positionInitialMargin': '0.00362777', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22971.64999904', 'maxQty': '50', 'notionalValue': '0.04353328', 'isolatedWallet': '0', 'updateTime': '1674904347337', 'positionAmt': '10'}]
+2023-01-28 12:12:28,934 - __main__ - INFO - ============================
+2023-01-28 12:12:28,936 - __main__ - INFO - already in position BOTH
+2023-01-28 12:12:28,936 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:12:28,937 - __main__ - INFO - ============================
+2023-01-28 12:12:29,950 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:12:29,951 - __main__ - INFO - entryprice: 22971.64999904
+2023-01-28 12:12:29,952 - __main__ - INFO - entry - price: 229.7164999904
+2023-01-28 12:12:29,953 - __main__ - INFO - stoploss: 22819.519866596027
+2023-01-28 12:12:29,954 - __main__ - INFO - quantity:10.0
+2023-01-28 12:12:30,652 - __main__ - INFO - {'info': {'orderId': '433897645', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcub4ae99710231667362df49', 'price': '0', 'avgPrice': '0.0', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22819.5', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674904350718'}, 'id': '433897645', 'clientOrderId': 'x-xcKtGhcub4ae99710231667362df49', 'timestamp': 1674904350718, 'datetime': '2023-01-28T11:12:30.718Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22819.5, 'amount': None, 'cost': None, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:12:30,654 - __main__ - INFO - Subject: BTC
+LONG EXIT (STOP LOSS): 10.0
+Total Money: 5.04469794
+2023-01-28 12:12:30,655 - __main__ - INFO -         symbol      entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSD_PERP  22971.64999904      -0.00000137              0          10         BOTH
+2023-01-28 12:12:30,683 - __main__ - INFO - ============================
+2023-01-28 12:12:30,684 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:12:30,685 - __main__ - INFO - quantity:5.0
+2023-01-28 12:12:30,685 - __main__ - INFO - takeprofit :23124.794332366935
+2023-01-28 12:12:31,611 - __main__ - INFO - {'info': {'orderId': '433897647', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcub01f5c535ebd3aef864592', 'price': '23124.8', 'avgPrice': '0.0', 'origQty': '5', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23124.8', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904351675'}, 'id': '433897647', 'clientOrderId': 'x-xcKtGhcub01f5c535ebd3aef864592', 'timestamp': 1674904351675, 'datetime': '2023-01-28T11:12:31.675Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23124.8, 'stopPrice': 23124.8, 'amount': 5.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 5.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:12:31,612 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 1): 5.0
+Total Money: 5.04469794
+2023-01-28 12:12:31,613 - __main__ - INFO - ============================
+2023-01-28 12:12:31,614 - __main__ - INFO - TAKE PROFIT 2
+2023-01-28 12:12:31,614 - __main__ - INFO - quantity:10.0
+2023-01-28 12:12:31,615 - __main__ - INFO - takeprofit :23201.366499030402
+2023-01-28 12:12:32,544 - __main__ - INFO - {'info': {'orderId': '433897668', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu1c468a6cc6c6f18a6d010b', 'price': '23201.4', 'avgPrice': '0.0', 'origQty': '10', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23201.4', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904352595'}, 'id': '433897668', 'clientOrderId': 'x-xcKtGhcu1c468a6cc6c6f18a6d010b', 'timestamp': 1674904352595, 'datetime': '2023-01-28T11:12:32.595Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23201.4, 'stopPrice': 23201.4, 'amount': 10.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 10.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:12:32,545 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 2): 10.0
+Total Money: 5.04469794
+2023-01-28 12:12:32,546 - __main__ - INFO - ============================
+2023-01-28 12:12:32,546 - __main__ - INFO - TAKE PROFIT 3
+2023-01-28 12:12:32,547 - __main__ - INFO - quantity:10.0
+2023-01-28 12:12:32,547 - __main__ - INFO - takeprofit :23277.938665693866
+2023-01-28 12:12:33,468 - __main__ - INFO - {'info': {'orderId': '433897672', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcuc1879136ebbc2dd8202e11', 'price': '23277.9', 'avgPrice': '0.0', 'origQty': '10', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23277.9', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904353533'}, 'id': '433897672', 'clientOrderId': 'x-xcKtGhcuc1879136ebbc2dd8202e11', 'timestamp': 1674904353533, 'datetime': '2023-01-28T11:12:33.533Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23277.9, 'stopPrice': 23277.9, 'amount': 10.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 10.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:12:33,469 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 3): 10.0
+Total Money: 5.04469794
+2023-01-28 12:12:33,470 - __main__ - INFO - ============================
+2023-01-28 12:12:36,016 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362719', 'maintMargin': '0.00017410', 'unrealizedProfit': '0.00000552', 'positionInitialMargin': '0.00362719', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22971.64999904', 'maxQty': '50', 'notionalValue': '0.04352639', 'isolatedWallet': '0', 'updateTime': '1674904347337', 'positionAmt': '10'}]
+2023-01-28 12:12:36,017 - __main__ - INFO - ============================
+2023-01-28 12:12:36,019 - __main__ - INFO - already in position BOTH
+2023-01-28 12:12:36,020 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:12:36,020 - __main__ - INFO - ============================
+2023-01-28 12:12:39,557 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362706', 'maintMargin': '0.00017409', 'unrealizedProfit': '0.00000715', 'positionInitialMargin': '0.00362706', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22971.64999904', 'maxQty': '50', 'notionalValue': '0.04352475', 'isolatedWallet': '0', 'updateTime': '1674904347337', 'positionAmt': '10'}]
+2023-01-28 12:12:39,559 - __main__ - INFO - ============================
+2023-01-28 12:12:39,561 - __main__ - INFO - already in position BOTH
+2023-01-28 12:12:39,562 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:12:39,562 - __main__ - INFO - ============================
+2023-01-28 12:12:39,563 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 12:14:23,137 - __main__ - INFO - exchange: Binance 
+2023-01-28 12:14:25,946 - __main__ - INFO - Current position: []
+2023-01-28 12:14:25,947 - __main__ - INFO - ============================
+2023-01-28 12:14:25,952 - __main__ - INFO - not in position right now
+2023-01-28 12:14:28,048 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.09663955880215637
+2023-01-28 12:14:28,758 - __main__ - INFO - {'info': {'orderId': '3278935315', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu2a62fb9a63059a5ecd45aa', 'price': '0', 'avgPrice': '22957.70000', 'origQty': '0.096', 'executedQty': '0.096', 'cumQty': '0.096', 'cumQuote': '2203.93920', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674904468836'}, 'id': '3278935315', 'clientOrderId': 'x-xcKtGhcu2a62fb9a63059a5ecd45aa', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22957.7, 'stopPrice': None, 'amount': 0.096, 'cost': 2203.9392, 'average': 22957.7, 'filled': 0.096, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:14:28,760 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -92.41343991
+2023-01-28 12:14:28,761 - __main__ - INFO - ============================
+2023-01-28 12:14:30,944 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '183.62599492', 'maintMargin': '8.81404705', 'unrealizedProfit': '-0.42743719', 'positionInitialMargin': '183.62599492', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22957.7', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.096', 'notional': '2203.51176280', 'isolatedWallet': '0', 'updateTime': '1674904468836', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:14:30,945 - __main__ - INFO - ============================
+2023-01-28 12:14:30,947 - __main__ - INFO - already in position BOTH
+2023-01-28 12:14:30,947 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:14:30,948 - __main__ - INFO - ============================
+2023-01-28 12:14:31,960 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:14:31,961 - __main__ - INFO - entryprice: 22957.7
+2023-01-28 12:14:31,962 - __main__ - INFO - entry - price: 229.577
+2023-01-28 12:14:31,962 - __main__ - INFO - stoploss: 22805.66225165563
+2023-01-28 12:14:31,963 - __main__ - INFO - quantity:0.096
+2023-01-28 12:14:32,666 - __main__ - INFO - {'info': {'orderId': '3278935323', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcude9367298088adb78a207c', 'price': '0', 'avgPrice': '0.00000', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22805.70', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674904472746'}, 'id': '3278935323', 'clientOrderId': 'x-xcKtGhcude9367298088adb78a207c', 'timestamp': 1674904472746, 'datetime': '2023-01-28T11:14:32.746Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22805.7, 'amount': None, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:14:32,668 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (STOP LOSS): 0.096
+Total Money: -92.8408771
+2023-01-28 12:14:32,669 - __main__ - INFO -     symbol entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSDT    22957.7      -0.42743719              0       0.096         BOTH
+2023-01-28 12:14:32,707 - __main__ - INFO - ============================
+2023-01-28 12:14:32,708 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:16:46,406 - __main__ - INFO - exchange: Binance 
+2023-01-28 12:16:49,165 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '183.69960561', 'maintMargin': '8.81758036', 'unrealizedProfit': '0.45589102', 'positionInitialMargin': '183.69960561', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22957.7', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.096', 'notional': '2204.39509102', 'isolatedWallet': '0', 'updateTime': '1674904468836', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:16:49,167 - __main__ - INFO - ============================
+2023-01-28 12:16:49,170 - __main__ - INFO - already in position BOTH
+2023-01-28 12:16:49,170 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:16:49,171 - __main__ - INFO - ============================
+2023-01-28 12:16:49,171 - __main__ - INFO - BTC/USD
+2023-01-28 12:16:49,172 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 12:16:52,347 - __main__ - INFO - Current position: []
+2023-01-28 12:16:52,347 - __main__ - INFO - ============================
+2023-01-28 12:16:52,351 - __main__ - INFO - not in position right now
+2023-01-28 12:16:54,730 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.133133124940137
+2023-01-28 12:16:55,019 - __main__ - INFO - {'info': {'orderId': '433900571', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcubccd1589fda6587cbe3f83', 'price': '0', 'avgPrice': '22971.2', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04353269', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674904615090'}, 'id': '433900571', 'clientOrderId': 'x-xcKtGhcubccd1589fda6587cbe3f83', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22971.2, 'stopPrice': None, 'amount': 10.0, 'cost': 229712.0, 'average': 22971.2, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:16:55,021 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.04295974
+2023-01-28 12:16:55,021 - __main__ - INFO - ============================
+2023-01-28 12:16:57,780 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362734', 'maintMargin': '0.00017411', 'unrealizedProfit': '0.00000453', 'positionInitialMargin': '0.00362734', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22971.23999837', 'maxQty': '50', 'notionalValue': '0.04352815', 'isolatedWallet': '0', 'updateTime': '1674904615090', 'positionAmt': '10'}]
+2023-01-28 12:16:57,780 - __main__ - INFO - ============================
+2023-01-28 12:16:57,782 - __main__ - INFO - already in position BOTH
+2023-01-28 12:16:57,783 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:16:57,783 - __main__ - INFO - ============================
+2023-01-28 12:16:58,787 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:16:58,787 - __main__ - INFO - entryprice: 22971.23999837
+2023-01-28 12:16:58,788 - __main__ - INFO - entry - price: 229.7123999837
+2023-01-28 12:16:58,788 - __main__ - INFO - stoploss: 22819.112581162255
+2023-01-28 12:16:58,789 - __main__ - INFO - quantity:10.0
+2023-01-28 12:16:59,497 - __main__ - INFO - {'info': {'orderId': '433900618', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu6f929f0aaeb376fb9fdd4f', 'price': '0', 'avgPrice': '0.0', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22819.1', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674904619575'}, 'id': '433900618', 'clientOrderId': 'x-xcKtGhcu6f929f0aaeb376fb9fdd4f', 'timestamp': 1674904619575, 'datetime': '2023-01-28T11:16:59.575Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22819.1, 'amount': None, 'cost': None, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:16:59,498 - __main__ - INFO - Subject: BTC
+LONG EXIT (STOP LOSS): 10.0
+Total Money: 5.04294252
+2023-01-28 12:16:59,499 - __main__ - INFO -         symbol      entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSD_PERP  22971.23999837       0.00000453              0          10         BOTH
+2023-01-28 12:16:59,525 - __main__ - INFO - ============================
+2023-01-28 12:16:59,526 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:16:59,526 - __main__ - INFO - quantity:5.0
+2023-01-28 12:16:59,527 - __main__ - INFO - takeprofit :23124.381598359134
+2023-01-28 12:17:00,236 - __main__ - INFO - {'info': {'orderId': '433900630', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu8bee42783d07102b38762b', 'price': '23124.4', 'avgPrice': '0.0', 'origQty': '5', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23124.4', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904620294'}, 'id': '433900630', 'clientOrderId': 'x-xcKtGhcu8bee42783d07102b38762b', 'timestamp': 1674904620294, 'datetime': '2023-01-28T11:17:00.294Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23124.4, 'stopPrice': 23124.4, 'amount': 5.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 5.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:17:00,238 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 1): 5.0
+Total Money: 5.04294252
+2023-01-28 12:17:00,239 - __main__ - INFO - ============================
+2023-01-28 12:17:00,239 - __main__ - INFO - TAKE PROFIT 2
+2023-01-28 12:17:00,240 - __main__ - INFO - quantity:10.0
+2023-01-28 12:17:00,240 - __main__ - INFO - takeprofit :23200.9523983537
+2023-01-28 12:17:01,170 - __main__ - INFO - {'info': {'orderId': '433900639', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcua8f881da302a9a0291d3', 'price': '23201', 'avgPrice': '0.0', 'origQty': '10', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23201', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904621239'}, 'id': '433900639', 'clientOrderId': 'x-xcKtGhcua8f881da302a9a0291d3', 'timestamp': 1674904621239, 'datetime': '2023-01-28T11:17:01.239Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23201.0, 'stopPrice': 23201.0, 'amount': 10.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 10.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:17:01,173 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 2): 10.0
+Total Money: 5.04294252
+2023-01-28 12:17:01,175 - __main__ - INFO - ============================
+2023-01-28 12:17:01,175 - __main__ - INFO - TAKE PROFIT 3
+2023-01-28 12:17:01,176 - __main__ - INFO - quantity:10.0
+2023-01-28 12:17:01,177 - __main__ - INFO - takeprofit :23277.52319834827
+2023-01-28 12:17:01,866 - __main__ - INFO - {'info': {'orderId': '433900647', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu586e1de2276e8aca097edf', 'price': '23277.5', 'avgPrice': '0.0', 'origQty': '10', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23277.5', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904621945'}, 'id': '433900647', 'clientOrderId': 'x-xcKtGhcu586e1de2276e8aca097edf', 'timestamp': 1674904621945, 'datetime': '2023-01-28T11:17:01.945Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23277.5, 'stopPrice': 23277.5, 'amount': 10.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 10.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:17:01,869 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 3): 10.0
+Total Money: 5.04294252
+2023-01-28 12:17:01,870 - __main__ - INFO - ============================
+2023-01-28 12:17:04,443 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362721', 'maintMargin': '0.00017410', 'unrealizedProfit': '0.00000610', 'positionInitialMargin': '0.00362721', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22971.23999837', 'maxQty': '50', 'notionalValue': '0.04352659', 'isolatedWallet': '0', 'updateTime': '1674904615090', 'positionAmt': '10'}]
+2023-01-28 12:17:04,444 - __main__ - INFO - ============================
+2023-01-28 12:17:04,446 - __main__ - INFO - already in position BOTH
+2023-01-28 12:17:04,447 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:17:04,447 - __main__ - INFO - ============================
+2023-01-28 12:17:08,004 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362708', 'maintMargin': '0.00017410', 'unrealizedProfit': '0.00000766', 'positionInitialMargin': '0.00362708', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22971.23999837', 'maxQty': '50', 'notionalValue': '0.04352503', 'isolatedWallet': '0', 'updateTime': '1674904615090', 'positionAmt': '10'}]
+2023-01-28 12:17:08,005 - __main__ - INFO - ============================
+2023-01-28 12:17:08,007 - __main__ - INFO - already in position BOTH
+2023-01-28 12:17:08,008 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:17:08,008 - __main__ - INFO - ============================
+2023-01-28 12:17:08,009 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 12:17:08,276 - __main__ - INFO - Succeeded
+2023-01-28 12:19:30,877 - __main__ - INFO - exchange: Binance 
+2023-01-28 12:19:34,077 - __main__ - INFO - Current position: []
+2023-01-28 12:19:34,078 - __main__ - INFO - ============================
+2023-01-28 12:19:34,081 - __main__ - INFO - not in position right now
+2023-01-28 12:19:35,748 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.04542403995610425
+2023-01-28 12:19:36,428 - __main__ - INFO - {'info': {'orderId': '3278935931', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcub91c24deedf35b881e7fd9', 'price': '0', 'avgPrice': '22963.50000', 'origQty': '0.045', 'executedQty': '0.045', 'cumQty': '0.045', 'cumQuote': '1033.35750', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674904776514'}, 'id': '3278935931', 'clientOrderId': 'x-xcKtGhcub91c24deedf35b881e7fd9', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22963.5, 'stopPrice': None, 'amount': 0.045, 'cost': 1033.3575, 'average': 22963.5, 'filled': 0.045, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:19:36,430 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -91.93343991
+2023-01-28 12:19:36,431 - __main__ - INFO - ============================
+2023-01-28 12:19:38,589 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '86.10693128', 'maintMargin': '4.13313237', 'unrealizedProfit': '-0.07440727', 'positionInitialMargin': '86.10693128', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22963.5', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.045', 'notional': '1033.28309272', 'isolatedWallet': '0', 'updateTime': '1674904776514', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:19:38,590 - __main__ - INFO - ============================
+2023-01-28 12:19:38,593 - __main__ - INFO - already in position BOTH
+2023-01-28 12:19:38,593 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:19:38,594 - __main__ - INFO - ============================
+2023-01-28 12:19:39,601 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:19:39,602 - __main__ - INFO - entryprice: 22963.5
+2023-01-28 12:19:39,602 - __main__ - INFO - entry - price: 229.635
+2023-01-28 12:19:39,603 - __main__ - INFO - stoploss: 22811.423841059604
+2023-01-28 12:19:39,603 - __main__ - INFO - quantity:0.045
+2023-01-28 12:19:40,291 - __main__ - INFO - {'info': {'orderId': '3278935938', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu5713c4d081cdcb2661ba41', 'price': '0', 'avgPrice': '0.00000', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22811.40', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674904780375'}, 'id': '3278935938', 'clientOrderId': 'x-xcKtGhcu5713c4d081cdcb2661ba41', 'timestamp': 1674904780375, 'datetime': '2023-01-28T11:19:40.375Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22811.4, 'amount': None, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:19:40,292 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (STOP LOSS): 0.045
+Total Money: -92.00784718
+2023-01-28 12:19:40,293 - __main__ - INFO -     symbol entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSDT    22963.5      -0.07440727              0       0.045         BOTH
+2023-01-28 12:19:40,317 - __main__ - INFO - ============================
+2023-01-28 12:19:40,318 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:20:56,652 - __main__ - INFO - exchange: Binance 
+2023-01-28 12:20:59,950 - __main__ - INFO - Current position: []
+2023-01-28 12:20:59,951 - __main__ - INFO - ============================
+2023-01-28 12:20:59,954 - __main__ - INFO - not in position right now
+2023-01-28 12:21:01,610 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.04538110395815002
+2023-01-28 12:21:02,342 - __main__ - INFO - {'info': {'orderId': '3278936046', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcue5826a4d65018c2b0df24a', 'price': '0', 'avgPrice': '22958.50000', 'origQty': '0.045', 'executedQty': '0.045', 'cumQty': '0.045', 'cumQuote': '1033.13250', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674904862428'}, 'id': '3278936046', 'clientOrderId': 'x-xcKtGhcue5826a4d65018c2b0df24a', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22958.5, 'stopPrice': None, 'amount': 0.045, 'cost': 1033.1325, 'average': 22958.5, 'filled': 0.045, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:21:02,343 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -92.17193991
+2023-01-28 12:21:02,344 - __main__ - INFO - ============================
+2023-01-28 12:21:04,298 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '86.08800321', 'maintMargin': '4.13222382', 'unrealizedProfit': '-0.07654408', 'positionInitialMargin': '86.08800321', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22958.5', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.045', 'notional': '1033.05595591', 'isolatedWallet': '0', 'updateTime': '1674904862428', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:21:04,299 - __main__ - INFO - ============================
+2023-01-28 12:21:04,301 - __main__ - INFO - already in position BOTH
+2023-01-28 12:21:04,301 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:21:04,302 - __main__ - INFO - ============================
+2023-01-28 12:21:05,313 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:21:05,314 - __main__ - INFO - entryprice: 22958.5
+2023-01-28 12:21:05,314 - __main__ - INFO - entry - price: 229.585
+2023-01-28 12:21:05,314 - __main__ - INFO - stoploss: 22806.456953642384
+2023-01-28 12:21:05,315 - __main__ - INFO - quantity:0.045
+2023-01-28 12:21:05,997 - __main__ - INFO - {'info': {'orderId': '3278936050', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu5877285cefaef4981a3e09', 'price': '0', 'avgPrice': '0.00000', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22806.50', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674904866084'}, 'id': '3278936050', 'clientOrderId': 'x-xcKtGhcu5877285cefaef4981a3e09', 'timestamp': 1674904866084, 'datetime': '2023-01-28T11:21:06.084Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22806.5, 'amount': None, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:21:05,999 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (STOP LOSS): 0.045
+Total Money: -92.24848399
+2023-01-28 12:21:05,999 - __main__ - INFO -     symbol entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSDT    22958.5      -0.07654408              0       0.045         BOTH
+2023-01-28 12:21:06,035 - __main__ - INFO - ============================
+2023-01-28 12:21:06,036 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:21:06,036 - __main__ - INFO - quantity:0.0225
+2023-01-28 12:21:06,037 - __main__ - INFO - takeprofit :23111.556666666667
+2023-01-28 12:21:06,720 - __main__ - INFO - {'info': {'orderId': '3278936051', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu83287a0236a52eb55c1f02', 'price': '23111.60', 'avgPrice': '0.00000', 'origQty': '0.022', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23111.60', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904866807'}, 'id': '3278936051', 'clientOrderId': 'x-xcKtGhcu83287a0236a52eb55c1f02', 'timestamp': 1674904866807, 'datetime': '2023-01-28T11:21:06.807Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23111.6, 'stopPrice': 23111.6, 'amount': 0.022, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 0.022, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:21:06,722 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (TAKE PROFIT 1): 0.0225
+Total Money: -92.24848399
+2023-01-28 12:21:06,722 - __main__ - INFO - ============================
+2023-01-28 12:21:06,723 - __main__ - INFO - TAKE PROFIT 2
+2023-01-28 12:21:06,723 - __main__ - INFO - quantity:0.045
+2023-01-28 12:21:06,724 - __main__ - INFO - takeprofit :23188.085
+2023-01-28 12:21:07,401 - __main__ - INFO - {'info': {'orderId': '3278936052', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu29ea32bcd936a9744d147c', 'price': '23188.10', 'avgPrice': '0.00000', 'origQty': '0.045', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23188.10', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904867488'}, 'id': '3278936052', 'clientOrderId': 'x-xcKtGhcu29ea32bcd936a9744d147c', 'timestamp': 1674904867488, 'datetime': '2023-01-28T11:21:07.488Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23188.1, 'stopPrice': 23188.1, 'amount': 0.045, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 0.045, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:21:07,402 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (TAKE PROFIT 2): 0.045
+Total Money: -92.24848399
+2023-01-28 12:21:07,403 - __main__ - INFO - ============================
+2023-01-28 12:21:07,403 - __main__ - INFO - TAKE PROFIT 3
+2023-01-28 12:21:07,404 - __main__ - INFO - quantity:0.045
+2023-01-28 12:21:07,404 - __main__ - INFO - takeprofit :23264.613333333335
+2023-01-28 12:21:08,087 - __main__ - INFO - {'info': {'orderId': '3278936054', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu1fb4e9200ef9f843880899', 'price': '23264.60', 'avgPrice': '0.00000', 'origQty': '0.045', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23264.60', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674904868173'}, 'id': '3278936054', 'clientOrderId': 'x-xcKtGhcu1fb4e9200ef9f843880899', 'timestamp': 1674904868173, 'datetime': '2023-01-28T11:21:08.173Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23264.6, 'stopPrice': 23264.6, 'amount': 0.045, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 0.045, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:21:08,089 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (TAKE PROFIT 3): 0.045
+Total Money: -92.24848399
+2023-01-28 12:21:08,089 - __main__ - INFO - ============================
+2023-01-28 12:21:10,282 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '86.08895190', 'maintMargin': '4.13226936', 'unrealizedProfit': '-0.06515978', 'positionInitialMargin': '86.08895190', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22958.5', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.045', 'notional': '1033.06734021', 'isolatedWallet': '0', 'updateTime': '1674904862428', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:21:10,283 - __main__ - INFO - ============================
+2023-01-28 12:21:10,285 - __main__ - INFO - already in position BOTH
+2023-01-28 12:21:10,286 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:21:10,286 - __main__ - INFO - ============================
+2023-01-28 12:21:13,280 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '86.09155509', 'maintMargin': '4.13239431', 'unrealizedProfit': '-0.03392147', 'positionInitialMargin': '86.09155509', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22958.5', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.045', 'notional': '1033.09857852', 'isolatedWallet': '0', 'updateTime': '1674904862428', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:21:13,281 - __main__ - INFO - ============================
+2023-01-28 12:21:13,283 - __main__ - INFO - already in position BOTH
+2023-01-28 12:21:13,283 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:21:13,283 - __main__ - INFO - ============================
+2023-01-28 12:21:13,284 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 12:21:13,522 - __main__ - INFO - BTC/USD
+2023-01-28 12:21:13,522 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 12:21:17,532 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362834', 'maintMargin': '0.00017416', 'unrealizedProfit': '-0.00000738', 'positionInitialMargin': '0.00362834', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22971.23999837', 'maxQty': '50', 'notionalValue': '0.04354008', 'isolatedWallet': '0', 'updateTime': '1674904615090', 'positionAmt': '10'}]
+2023-01-28 12:21:17,532 - __main__ - INFO - ============================
+2023-01-28 12:21:17,534 - __main__ - INFO - already in position BOTH
+2023-01-28 12:21:17,535 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:21:17,535 - __main__ - INFO - ============================
+2023-01-28 12:21:17,535 - __main__ - INFO - Succeeded
+2023-01-28 12:26:37,725 - __main__ - INFO - exchange: Binance 
+2023-01-28 12:26:40,930 - __main__ - INFO - Current position: []
+2023-01-28 12:26:40,931 - __main__ - INFO - ============================
+2023-01-28 12:26:40,935 - __main__ - INFO - not in position right now
+2023-01-28 12:26:42,976 - __main__ - INFO - ENTERING LONG POSITION WITH: 0.04536737335178608
+2023-01-28 12:26:43,656 - __main__ - INFO - {'info': {'orderId': '3278936557', 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu4907af94e031930351d604', 'price': '0', 'avgPrice': '22977.60000', 'origQty': '0.045', 'executedQty': '0.045', 'cumQty': '0.045', 'cumQuote': '1033.99200', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674905203750'}, 'id': '3278936557', 'clientOrderId': 'x-xcKtGhcu4907af94e031930351d604', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22977.6, 'stopPrice': None, 'amount': 0.045, 'cost': 1033.992, 'average': 22977.6, 'filled': 0.045, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:26:43,658 - __main__ - INFO - Subject: BTCUSDT
+LONG ENTER
+Total Money: -91.24943991
+2023-01-28 12:26:43,659 - __main__ - INFO - ============================
+2023-01-28 12:26:45,162 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '86.16313865', 'maintMargin': '4.13583032', 'unrealizedProfit': '-0.03441880', 'positionInitialMargin': '86.16313865', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22977.6', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.045', 'notional': '1033.95758119', 'isolatedWallet': '0', 'updateTime': '1674905203750', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:26:45,164 - __main__ - INFO - ============================
+2023-01-28 12:26:45,166 - __main__ - INFO - already in position BOTH
+2023-01-28 12:26:45,167 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:26:45,167 - __main__ - INFO - ============================
+2023-01-28 12:26:46,176 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:26:46,177 - __main__ - INFO - entryprice: 22977.6
+2023-01-28 12:26:46,177 - __main__ - INFO - entry - price: 229.77599999999998
+2023-01-28 12:26:46,178 - __main__ - INFO - stoploss: 22825.43046357616
+2023-01-28 12:26:46,178 - __main__ - INFO - quantity:0.045
+2023-01-28 12:26:46,418 - __main__ - INFO - {'info': {'orderId': '3278936561', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcubcc684fa3482c1c14306ec', 'price': '0', 'avgPrice': '0.00000', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22825.40', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674905206513'}, 'id': '3278936561', 'clientOrderId': 'x-xcKtGhcubcc684fa3482c1c14306ec', 'timestamp': 1674905206513, 'datetime': '2023-01-28T11:26:46.513Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22825.4, 'amount': None, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:26:46,419 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (STOP LOSS): 0.045
+Total Money: -91.28385871
+2023-01-28 12:26:46,420 - __main__ - INFO -     symbol entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSDT    22977.6      -0.03441880              0       0.045         BOTH
+2023-01-28 12:26:46,444 - __main__ - INFO - ============================
+2023-01-28 12:26:46,445 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:26:46,445 - __main__ - INFO - quantity:0.0225
+2023-01-28 12:26:46,446 - __main__ - INFO - takeprofit :23130.784
+2023-01-28 12:26:47,131 - __main__ - INFO - {'info': {'orderId': '3278936563', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu786fc133766aeee32b4bff', 'price': '23130.80', 'avgPrice': '0.00000', 'origQty': '0.022', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23130.80', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905207224'}, 'id': '3278936563', 'clientOrderId': 'x-xcKtGhcu786fc133766aeee32b4bff', 'timestamp': 1674905207224, 'datetime': '2023-01-28T11:26:47.224Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23130.8, 'stopPrice': 23130.8, 'amount': 0.022, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 0.022, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:26:47,132 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (TAKE PROFIT 1): 0.0225
+Total Money: -91.28385871
+2023-01-28 12:26:47,133 - __main__ - INFO - ============================
+2023-01-28 12:26:47,134 - __main__ - INFO - TAKE PROFIT 2
+2023-01-28 12:26:47,134 - __main__ - INFO - quantity:0.045
+2023-01-28 12:26:47,135 - __main__ - INFO - takeprofit :23207.376
+2023-01-28 12:26:48,040 - __main__ - INFO - {'info': {'orderId': '3278936565', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcua74799a881694fb02fb910', 'price': '23207.40', 'avgPrice': '0.00000', 'origQty': '0.045', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23207.40', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905208135'}, 'id': '3278936565', 'clientOrderId': 'x-xcKtGhcua74799a881694fb02fb910', 'timestamp': 1674905208135, 'datetime': '2023-01-28T11:26:48.135Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23207.4, 'stopPrice': 23207.4, 'amount': 0.045, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 0.045, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:26:48,042 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (TAKE PROFIT 2): 0.045
+Total Money: -91.28385871
+2023-01-28 12:26:48,042 - __main__ - INFO - ============================
+2023-01-28 12:26:48,043 - __main__ - INFO - TAKE PROFIT 3
+2023-01-28 12:26:48,043 - __main__ - INFO - quantity:0.045
+2023-01-28 12:26:48,044 - __main__ - INFO - takeprofit :23283.967999999997
+2023-01-28 12:26:48,943 - __main__ - INFO - {'info': {'orderId': '3278936568', 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu219f7d86d2d1fae13201f4', 'price': '23284', 'avgPrice': '0.00000', 'origQty': '0.045', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23284', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905209038'}, 'id': '3278936568', 'clientOrderId': 'x-xcKtGhcu219f7d86d2d1fae13201f4', 'timestamp': 1674905209038, 'datetime': '2023-01-28T11:26:49.038Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USDT', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23284.0, 'stopPrice': 23284.0, 'amount': 0.045, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 0.045, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:26:48,945 - __main__ - INFO - Subject: BTCUSDT
+LONG EXIT (TAKE PROFIT 3): 0.045
+Total Money: -91.28385871
+2023-01-28 12:26:48,946 - __main__ - INFO - ============================
+2023-01-28 12:26:51,327 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '86.16752155', 'maintMargin': '4.13604070', 'unrealizedProfit': '0.01817597', 'positionInitialMargin': '86.16752155', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22977.6', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.045', 'notional': '1034.01017597', 'isolatedWallet': '0', 'updateTime': '1674905203750', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:26:51,328 - __main__ - INFO - ============================
+2023-01-28 12:26:51,330 - __main__ - INFO - already in position BOTH
+2023-01-28 12:26:51,330 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:26:51,331 - __main__ - INFO - ============================
+2023-01-28 12:26:54,707 - __main__ - INFO - Current position: [{'symbol': 'BTCUSDT', 'initialMargin': '86.17348205', 'maintMargin': '4.13632680', 'unrealizedProfit': '0.08970188', 'positionInitialMargin': '86.17348205', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'entryPrice': '22977.6', 'maxNotional': '10000000', 'positionSide': 'BOTH', 'positionAmt': '0.045', 'notional': '1034.08170188', 'isolatedWallet': '0', 'updateTime': '1674905203750', 'bidNotional': '0', 'askNotional': '0'}]
+2023-01-28 12:26:54,708 - __main__ - INFO - ============================
+2023-01-28 12:26:54,710 - __main__ - INFO - already in position BOTH
+2023-01-28 12:26:54,711 - __main__ - INFO - already in  a LONG= True position symbol BTCUSDT
+2023-01-28 12:26:54,711 - __main__ - INFO - ============================
+2023-01-28 12:26:54,712 - __main__ - INFO - IN A LONG POSITION WITH: 
+2023-01-28 12:26:54,994 - __main__ - INFO - BTC/USD
+2023-01-28 12:26:54,995 - __main__ - INFO - exchange: Binance COIN-M 
+2023-01-28 12:26:58,097 - __main__ - INFO - Current position: []
+2023-01-28 12:26:58,097 - __main__ - INFO - ============================
+2023-01-28 12:26:58,100 - __main__ - INFO - not in position right now
+2023-01-28 12:27:00,465 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.1293309668129
+2023-01-28 12:27:01,166 - __main__ - INFO - {'info': {'orderId': '433906758', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu7c36de414201c1314c2c5', 'price': '0', 'avgPrice': '22970.0', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04353504', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674905221242'}, 'id': '433906758', 'clientOrderId': 'x-xcKtGhcu7c36de414201c1314c2c5', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22970.0, 'stopPrice': None, 'amount': 10.0, 'cost': 229700.0, 'average': 22970.0, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:01,167 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.0411992
+2023-01-28 12:27:01,168 - __main__ - INFO - ============================
+2023-01-28 12:27:03,699 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362586', 'maintMargin': '0.00017404', 'unrealizedProfit': '0.00002462', 'positionInitialMargin': '0.00362586', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22970.00000000', 'maxQty': '50', 'notionalValue': '0.04351042', 'isolatedWallet': '0', 'updateTime': '1674905221242', 'positionAmt': '10'}]
+2023-01-28 12:27:03,700 - __main__ - INFO - ============================
+2023-01-28 12:27:03,702 - __main__ - INFO - already in position BOTH
+2023-01-28 12:27:03,702 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:27:03,703 - __main__ - INFO - ============================
+2023-01-28 12:27:04,704 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:27:04,705 - __main__ - INFO - entryprice: 22970.0
+2023-01-28 12:27:04,705 - __main__ - INFO - entry - price: 229.7
+2023-01-28 12:27:04,706 - __main__ - INFO - stoploss: 22817.88079470199
+2023-01-28 12:27:04,707 - __main__ - INFO - quantity:10.0
+2023-01-28 12:27:05,408 - __main__ - INFO - {'info': {'orderId': '433906791', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcuec50bc33ed84185d60097c', 'price': '0', 'avgPrice': '0.0', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22817.9', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674905225485'}, 'id': '433906791', 'clientOrderId': 'x-xcKtGhcuec50bc33ed84185d60097c', 'timestamp': 1674905225485, 'datetime': '2023-01-28T11:27:05.485Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22817.9, 'amount': None, 'cost': None, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:05,410 - __main__ - INFO - Subject: BTC
+LONG EXIT (STOP LOSS): 10.0
+Total Money: 5.04120206
+2023-01-28 12:27:05,411 - __main__ - INFO -         symbol      entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSD_PERP  22970.00000000       0.00002462              0          10         BOTH
+2023-01-28 12:27:05,439 - __main__ - INFO - ============================
+2023-01-28 12:27:05,439 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:27:05,440 - __main__ - INFO - quantity:5.0
+2023-01-28 12:27:05,440 - __main__ - INFO - takeprofit :23123.133333333335
+2023-01-28 12:27:06,137 - __main__ - INFO - {'info': {'orderId': '433906799', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcub5d584e1ae0360c9eb86ff', 'price': '23123.1', 'avgPrice': '0.0', 'origQty': '5', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23123.1', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905226219'}, 'id': '433906799', 'clientOrderId': 'x-xcKtGhcub5d584e1ae0360c9eb86ff', 'timestamp': 1674905226219, 'datetime': '2023-01-28T11:27:06.219Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23123.1, 'stopPrice': 23123.1, 'amount': 5.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 5.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:06,140 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 1): 5.0
+Total Money: 5.04120206
+2023-01-28 12:27:06,141 - __main__ - INFO - ============================
+2023-01-28 12:27:06,141 - __main__ - INFO - TAKE PROFIT 2
+2023-01-28 12:27:06,142 - __main__ - INFO - quantity:10.0
+2023-01-28 12:27:06,143 - __main__ - INFO - takeprofit :23199.7
+2023-01-28 12:27:06,841 - __main__ - INFO - {'info': {'orderId': '433906810', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu1b55b4aa496e19f392ec6e', 'price': '23199.7', 'avgPrice': '0.0', 'origQty': '10', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23199.7', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905226924'}, 'id': '433906810', 'clientOrderId': 'x-xcKtGhcu1b55b4aa496e19f392ec6e', 'timestamp': 1674905226924, 'datetime': '2023-01-28T11:27:06.924Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23199.7, 'stopPrice': 23199.7, 'amount': 10.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 10.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:06,842 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 2): 10.0
+Total Money: 5.04120206
+2023-01-28 12:27:06,843 - __main__ - INFO - ============================
+2023-01-28 12:27:06,843 - __main__ - INFO - TAKE PROFIT 3
+2023-01-28 12:27:06,844 - __main__ - INFO - quantity:10.0
+2023-01-28 12:27:06,845 - __main__ - INFO - takeprofit :23276.266666666666
+2023-01-28 12:27:07,765 - __main__ - INFO - {'info': {'orderId': '433906818', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcub3f64d4008cc5a8acc0a2a', 'price': '23276.3', 'avgPrice': '0.0', 'origQty': '10', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23276.3', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905227849'}, 'id': '433906818', 'clientOrderId': 'x-xcKtGhcub3f64d4008cc5a8acc0a2a', 'timestamp': 1674905227849, 'datetime': '2023-01-28T11:27:07.849Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23276.3, 'stopPrice': 23276.3, 'amount': 10.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 10.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:07,766 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 3): 10.0
+Total Money: 5.04120206
+2023-01-28 12:27:07,767 - __main__ - INFO - ============================
+2023-01-28 12:27:10,302 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362586', 'maintMargin': '0.00017404', 'unrealizedProfit': '0.00002462', 'positionInitialMargin': '0.00362586', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22970.00000000', 'maxQty': '50', 'notionalValue': '0.04351042', 'isolatedWallet': '0', 'updateTime': '1674905221242', 'positionAmt': '10'}]
+2023-01-28 12:27:10,304 - __main__ - INFO - ============================
+2023-01-28 12:27:10,310 - __main__ - INFO - already in position BOTH
+2023-01-28 12:27:10,311 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:27:10,312 - __main__ - INFO - ============================
+2023-01-28 12:27:13,856 - __main__ - INFO - Current position: []
+2023-01-28 12:27:13,857 - __main__ - INFO - ============================
+2023-01-28 12:27:13,860 - __main__ - INFO - not in position right now
+2023-01-28 12:27:16,226 - __main__ - INFO - ENTERING LONG POSITION WITH: 10.127935601620845
+2023-01-28 12:27:16,485 - __main__ - INFO - {'info': {'orderId': '433906918', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGhcu7e7312af0dcc1d14a0f4e1', 'price': '0', 'avgPrice': '22970.0', 'origQty': '10', 'executedQty': '10', 'cumQty': '10', 'cumBase': '0.04353504', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': '1674905236565'}, 'id': '433906918', 'clientOrderId': 'x-xcKtGhcu7e7312af0dcc1d14a0f4e1', 'timestamp': None, 'datetime': None, 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'buy', 'price': 22970.0, 'stopPrice': None, 'amount': 10.0, 'cost': 229700.0, 'average': 22970.0, 'filled': 10.0, 'remaining': 0.0, 'status': 'closed', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:16,494 - __main__ - INFO - Subject: BTC
+LONG ENTER
+Total Money: 5.04050475
+2023-01-28 12:27:16,496 - __main__ - INFO - ============================
+2023-01-28 12:27:18,827 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362586', 'maintMargin': '0.00017404', 'unrealizedProfit': '0.00002462', 'positionInitialMargin': '0.00362586', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22970.00000000', 'maxQty': '50', 'notionalValue': '0.04351042', 'isolatedWallet': '0', 'updateTime': '1674905236565', 'positionAmt': '10'}]
+2023-01-28 12:27:18,828 - __main__ - INFO - ============================
+2023-01-28 12:27:18,831 - __main__ - INFO - already in position BOTH
+2023-01-28 12:27:18,832 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:27:18,832 - __main__ - INFO - ============================
+2023-01-28 12:27:19,839 - __main__ - INFO - SETTING STOPLOSS FOR LONG POSITION
+2023-01-28 12:27:19,840 - __main__ - INFO - entryprice: 22970.0
+2023-01-28 12:27:19,840 - __main__ - INFO - entry - price: 229.7
+2023-01-28 12:27:19,841 - __main__ - INFO - stoploss: 22817.88079470199
+2023-01-28 12:27:19,841 - __main__ - INFO - quantity:10.0
+2023-01-28 12:27:20,103 - __main__ - INFO - {'info': {'orderId': '433906954', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu3c3b1f374380365e6499e9', 'price': '0', 'avgPrice': '0.0', 'origQty': '0', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': True, 'closePosition': True, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '22817.9', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': '1674905240185'}, 'id': '433906954', 'clientOrderId': 'x-xcKtGhcu3c3b1f374380365e6499e9', 'timestamp': 1674905240185, 'datetime': '2023-01-28T11:27:20.185Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'stop_market', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': None, 'stopPrice': 22817.9, 'amount': None, 'cost': None, 'average': None, 'filled': 0.0, 'remaining': None, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:20,104 - __main__ - INFO - Subject: BTC
+LONG EXIT (STOP LOSS): 10.0
+Total Money: 5.04050761
+2023-01-28 12:27:20,105 - __main__ - INFO -         symbol      entryPrice unrealizedProfit isolatedWallet positionAmt positionSide
+0  BTCUSD_PERP  22970.00000000       0.00002462              0          10         BOTH
+2023-01-28 12:27:20,137 - __main__ - INFO - ============================
+2023-01-28 12:27:20,138 - __main__ - INFO - TAKE PROFIT 1
+2023-01-28 12:27:20,140 - __main__ - INFO - quantity:5.0
+2023-01-28 12:27:20,140 - __main__ - INFO - takeprofit :23123.133333333335
+2023-01-28 12:27:20,401 - __main__ - INFO - {'info': {'orderId': '433906957', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcuf357b950a3c21995f36589', 'price': '23123.1', 'avgPrice': '0.0', 'origQty': '5', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23123.1', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905240483'}, 'id': '433906957', 'clientOrderId': 'x-xcKtGhcuf357b950a3c21995f36589', 'timestamp': 1674905240483, 'datetime': '2023-01-28T11:27:20.483Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23123.1, 'stopPrice': 23123.1, 'amount': 5.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 5.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:20,402 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 1): 5.0
+Total Money: 5.04050761
+2023-01-28 12:27:20,403 - __main__ - INFO - ============================
+2023-01-28 12:27:20,403 - __main__ - INFO - TAKE PROFIT 2
+2023-01-28 12:27:20,404 - __main__ - INFO - quantity:10.0
+2023-01-28 12:27:20,405 - __main__ - INFO - takeprofit :23199.7
+2023-01-28 12:27:20,671 - __main__ - INFO - {'info': {'orderId': '433906958', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu895d8d6c30afd8c6758a43', 'price': '23199.7', 'avgPrice': '0.0', 'origQty': '10', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23199.7', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905240753'}, 'id': '433906958', 'clientOrderId': 'x-xcKtGhcu895d8d6c30afd8c6758a43', 'timestamp': 1674905240753, 'datetime': '2023-01-28T11:27:20.753Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23199.7, 'stopPrice': 23199.7, 'amount': 10.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 10.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:20,673 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 2): 10.0
+Total Money: 5.04050761
+2023-01-28 12:27:20,674 - __main__ - INFO - ============================
+2023-01-28 12:27:20,674 - __main__ - INFO - TAKE PROFIT 3
+2023-01-28 12:27:20,675 - __main__ - INFO - quantity:10.0
+2023-01-28 12:27:20,676 - __main__ - INFO - takeprofit :23276.266666666666
+2023-01-28 12:27:20,935 - __main__ - INFO - {'info': {'orderId': '433906959', 'symbol': 'BTCUSD_PERP', 'pair': 'BTCUSD', 'status': 'NEW', 'clientOrderId': 'x-xcKtGhcu8446550c729b2a84b14c8e', 'price': '23276.3', 'avgPrice': '0.0', 'origQty': '10', 'executedQty': '0', 'cumQty': '0', 'cumBase': '0', 'timeInForce': 'GTC', 'type': 'TAKE_PROFIT', 'reduceOnly': True, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '23276.3', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'TAKE_PROFIT', 'updateTime': '1674905241018'}, 'id': '433906959', 'clientOrderId': 'x-xcKtGhcu8446550c729b2a84b14c8e', 'timestamp': 1674905241018, 'datetime': '2023-01-28T11:27:21.018Z', 'lastTradeTimestamp': None, 'symbol': 'BTC/USD', 'type': 'take_profit', 'timeInForce': 'GTC', 'postOnly': False, 'side': 'sell', 'price': 23276.3, 'stopPrice': 23276.3, 'amount': 10.0, 'cost': 0.0, 'average': None, 'filled': 0.0, 'remaining': 10.0, 'status': 'open', 'fee': None, 'trades': [], 'fees': []}
+2023-01-28 12:27:20,936 - __main__ - INFO - Subject: BTC
+LONG EXIT (TAKE PROFIT 3): 10.0
+Total Money: 5.04050761
+2023-01-28 12:27:20,937 - __main__ - INFO - ============================
+2023-01-28 12:27:23,261 - __main__ - INFO - Current position: [{'symbol': 'BTCUSD_PERP', 'initialMargin': '0.00362586', 'maintMargin': '0.00017404', 'unrealizedProfit': '0.00002462', 'positionInitialMargin': '0.00362586', 'openOrderInitialMargin': '0', 'leverage': '12', 'isolated': False, 'positionSide': 'BOTH', 'entryPrice': '22970.00000000', 'maxQty': '50', 'notionalValue': '0.04351042', 'isolatedWallet': '0', 'updateTime': '1674905236565', 'positionAmt': '10'}]
+2023-01-28 12:27:23,261 - __main__ - INFO - ============================
+2023-01-28 12:27:23,264 - __main__ - INFO - already in position BOTH
+2023-01-28 12:27:23,264 - __main__ - INFO - already in  a LONG= True position symbol BTCUSD_PERP
+2023-01-28 12:27:23,265 - __main__ - INFO - ============================
+2023-01-28 12:27:24,270 - __main__ - INFO - Succeeded
