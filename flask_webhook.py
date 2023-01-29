@@ -11,21 +11,22 @@ path='.env'
 load_dotenv(path)
 
 exchange = ccxt.binance({
-    "apiKey": os.environ.get('API_KEY_TEST'),
-    "secret": os.environ.get('API_SECRET_TEST'),
+    "apiKey": os.environ.get('API_KEY'),
+    "secret": os.environ.get('API_SECRET'),
     'enableRateLimit': True,
     'options': {
         'defaultType': 'future',
     },
 })
-exchange.set_sandbox_mode(True)
+#exchange.set_sandbox_mode(True)
 
 exchange2 = ccxt.binancecoinm({
-    "apiKey": os.environ.get('API_KEY_TEST'),
-    "secret": os.environ.get('API_SECRET_TEST'),
+    "apiKey": os.environ.get('API_KEY'),
+    "secret": os.environ.get('API_SECRET'),
     'enableRateLimit': True,  
 })
-exchange2.set_sandbox_mode(True)    
+#exchange2.set_sandbox_mode(True)    
+
 app = Flask(__name__)
 
 @app.route('/webhook/', methods=['POST'])
