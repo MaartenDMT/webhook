@@ -270,7 +270,7 @@ class TradeCrypto:
 
       if shortPosition:
         self.logger.info("IN A SHORT POSITION WITH:")
-        self.logger.info("STOP LOSS PRICE: {}", float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1])
+        self.logger.info("STOP LOSS PRICE: {}", float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1]))
         self.logger.info("TAKE PROFIT 1 PRICE: {}", float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp1)
         self.logger.info("TAKE PROFIT 2 PRICE: {}", float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp2)
         self.logger.info("TAKEPROFIT 1 is - {}",float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1)
@@ -512,7 +512,7 @@ class TradeCrypto:
 
       if shortPosition:
         self.logger.info("IN A SHORT POSITION WITH:")
-        self.logger.info("STOP LOSS PRICE: {}", float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1])
+        self.logger.info("STOP LOSS PRICE: {}", float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1]))
         self.logger.info("TAKE PROFIT 1 PRICE: {}", float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp1)
         self.logger.info("TAKE PROFIT 2 PRICE: {}", float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp2)
         self.logger.info("TAKEPROFIT 1 is - {}",float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1)
