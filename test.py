@@ -1,6 +1,6 @@
 import requests
 
-url = 'https://play.svix.com/in/c_2AjQV9k38x6YQ8Zg9WgQsRj7XnM/'
+url = 'https://play.svix.com/view/c_Q0l1PbA3m6RbYHyiBlaJEVhW0Sl/'
 
 payload = {"ticker": "BTCUSDT" ,
 "side" : 1,
