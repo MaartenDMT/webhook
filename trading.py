@@ -18,7 +18,7 @@ class TradeCrypto:
     self.tp2 = 6 / (self.leverage / 2)
     self.tp3 = 8 / (self.leverage / 2)
     self.stopLoss = 4 / (self.leverage / 2)
-    self.ProcessingMoney = 10
+    self.ProcessingMoney = 25
     self.ex = ex
     self.logger = logger
     
