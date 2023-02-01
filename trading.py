@@ -137,7 +137,7 @@ class TradeCrypto:
 
             # TAKE PROFIT 2
             self.logger.info("TAKE PROFIT 2")
-            get_amount = float(position_info["positionAmt"][len(position_info.index) - 1]) / 2
+            get_amount = float(position_info["positionAmt"][len(position_info.index) - 1]) / 3
             takep2 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2 + float(position_info["entryPrice"][len(position_info.index) - 1])
             self.takeProfitLong2(exchange,symbol, get_amount, takep2)
             takeprofit2 = True
@@ -152,7 +152,7 @@ class TradeCrypto:
 
             # TAKE PROFIT 3
             self.logger.info("TAKE PROFIT 3")
-            get_amount = float(position_info["positionAmt"][len(position_info.index) - 1])
+            get_amount = float(position_info["positionAmt"][len(position_info.index) - 1])/3
             takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(position_info["entryPrice"][len(position_info.index) - 1])
             self.takeProfitLong3(exchange,symbol, get_amount, takep3)
             takeprofit3 = True
@@ -230,7 +230,7 @@ class TradeCrypto:
         # TAKE PROFIT 2
         if takeprofit2 == False:
           self.logger.info("TAKE PROFIT 2")
-          get_amount = position_info["positionAmt"][len(position_info.index) - 1] (2*-1)
+          get_amount = position_info["positionAmt"][len(position_info.index) - 1]/(3*-1)
           takeps2 = float(position_info["entryPrice"][len(position_info.index) - 1])-(
               float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp2
           self.takeProfitShort2(exchange,symbol, get_amount, takeps2)
@@ -381,7 +381,7 @@ class TradeCrypto:
 
           # TAKE PROFIT 2
           self.logger.info("TAKE PROFIT 2")
-          get_amount = float(position_info["positionAmt"][len(position_info.index) - 1]/2)
+          get_amount = float(position_info["positionAmt"][len(position_info.index) - 1]/3)
           takep2 = (((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * float(tp2)) + float(position_info["entryPrice"][len(position_info.index) - 1]))
           self.takeProfitLong2(exchange,tick2, get_amount, takep2)
           takeprofit2 = True
@@ -473,7 +473,7 @@ class TradeCrypto:
         if takeprofit2 == False:
           self.logger.info("TAKE PROFIT 2")
 
-          get_amount = float(position_info["positionAmt"][len(position_info.index) - 1]/2) * -1
+          get_amount = float(position_info["positionAmt"][len(position_info.index) - 1]/3) * -1
           takeps2 = float(position_info["entryPrice"][len(position_info.index) - 1])-(
               float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp2
           self.takeProfitShort2(exchange,tick2, get_amount, takeps2)
@@ -487,7 +487,7 @@ class TradeCrypto:
         # TAKE PROFIT 3
         if takeprofit3 == False:
           self.logger.info("TAKE PROFIT 3")
-          get_amount = float(position_info["positionAmt"][len(position_info.index) - 1]) * -1
+          get_amount = float(position_info["positionAmt"][len(position_info.index) - 1]/3) * -1
           takeps3 = float(position_info["entryPrice"][len(position_info.index) - 1])-(
               float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp3
           self.takeProfitShort3(exchange,tick2, get_amount, takeps3)
