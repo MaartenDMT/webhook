@@ -60,7 +60,7 @@ class TradeCrypto:
     if inPosition == False:
       exchange.fapiPrivate_post_leverage({"symbol": symbol, "leverage": leverage, })
 
-    while inPosition == False:
+    while False or ((longPosition == False and side ==1) or (shortPosition == False and side == -1)):
       # LOAD BARS
       bars = exchange.fetch_ohlcv(symbol, timeframe=t, since=None, limit=30)
       df = pd.DataFrame(bars, columns=["timestamp", "open", "high", "low", "close", "volume"])
@@ -307,7 +307,7 @@ class TradeCrypto:
     count = 1
     
 
-    while inPosition == False:
+    while inPosition == False or ((longPosition == False and side ==1) or (shortPosition == False and side == -1)):
       # LOAD BARS
       bars = exchange.fetch_ohlcv(tick2, timeframe=t, since=None, limit=30)
       df = pd.DataFrame(bars, columns=["timestamp", "open", "high", "low", "close", "volume"])
