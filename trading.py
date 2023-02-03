@@ -59,6 +59,8 @@ class TradeCrypto:
 
     if inPosition == False:
       exchange.fapiPrivate_post_leverage({"symbol": symbol, "leverage": leverage, })
+    if symbol == "WAVESUSDT":
+      exchange.fapiPrivate_post_leverage({"symbol": symbol, "leverage": 8, })
 
     while False or ((longPosition == False and side ==1) or (shortPosition == False and side == -1)):
       # LOAD BARS
