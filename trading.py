@@ -3,7 +3,7 @@ from concurrent.futures import ThreadPoolExecutor
 import ccxt
 import pandas as pd
 
-# import tickets as ticks
+import tickets as ticks
 import csv
 
 
