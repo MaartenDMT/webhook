@@ -39,7 +39,8 @@ tickers = {
     "CRVUSDT": "CRVUSD_PERP",
     "AXSUSDT": "AXSUSD_PERP",
     "ROSEUSDT": "ROSE/USD",
-    "XTZUSDT": "XTZ/USD"
+    "XTZUSDT": "XTZ/USD",
+    "OPUSDT": "OP/USD",
     }
 
 
@@ -271,6 +272,7 @@ tickerscoin = {
     "ENS/USD":"ENS",
     "CHZ/USD":"CHZ",
     "APT/USD":"APT",
+    "OP/USD": "OP",
 
   }
 
@@ -323,4 +325,5 @@ tickers2coin = {
   "ENS/USD":"ENSUSD_PERP",
   "CHZ/USD":"CHZUSD_PERP",
   "APT/USD":"APTUSD_PERP",
+  "OP/USD":"OPUSD_PERP",
   }

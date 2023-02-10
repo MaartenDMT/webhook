@@ -3,8 +3,8 @@ from concurrent.futures import ThreadPoolExecutor
 import ccxt
 import pandas as pd
 
-import tickets as ticks
-
+# import tickets as ticks
+import csv
 
 
 class TradeCrypto:
@@ -38,8 +38,26 @@ class TradeCrypto:
     self.usdtm(exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
 
   def execute_coinm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney):
-    tickers2 = ticks.tickers2coin
-    ticker = ticks.tickers
+    
+    #  ticker = ticks.tickers
+    # ttick = ticker[symbol]
+    # for d in tickers2:
+    #     if d == ttick:
+    #         self.logger.info(d)
+    #         self.coinm(exchange, d, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
+    
+    # read the symbols from the CSV file
+    with open("coinm.csv") as file:
+        reader = csv.reader(file)
+        next(reader)  # skip the header row
+        tickers2 = [row[0] for row in reader]
+    
+    # read the symbols from the CSV file
+    with open("usdm.csv") as file:
+        reader = csv.reader(file)
+        next(reader)  # skip the header row
+        ticker = [row[0] for row in reader]
+        
     ttick = ticker[symbol]
     for d in tickers2:
         if d == ttick:
