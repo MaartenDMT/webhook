@@ -4,7 +4,7 @@ import os
 import ccxt
 from dotenv import load_dotenv
 from flask import Flask, request
-
+from datetime import datetime
 from trading import TradeCrypto
 
 path='.env'
@@ -46,7 +46,9 @@ def hook():
 
 def add_log_info(logger) -> None:
     file = r'data/logs/'
-    file_handler = logging.FileHandler(f'{file}logg-info.log')
+    time_stamp = datetime.now()  # - dt.timedelta(hours=6)
+    time_stamp = time_stamp.strftime('%Y-%m-%d')
+    file_handler = logging.FileHandler(f'{file}{time_stamp}.log')
     # create a stream handler to log to the console
     stream_handler = logging.StreamHandler()
     # create a formatter for the log messages
