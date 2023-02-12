@@ -30,8 +30,8 @@ class TradeCrypto:
       self.leverage = 20
     if self.bot == True:
       self.fast_bot()
-      
-    self.trade()
+    else:
+      self.trade()
     
     self.return_code = "Succeeded"    
 
