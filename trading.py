@@ -747,8 +747,10 @@ class TradeCrypto:
     rate = '0.2'
     price = None
     params = {
-        'stopPrice': stop,
-        'callbackRate': rate
+        'activationPrice': stop,
+        'callbackRate': rate,
+        "reduceOnly": True,
+        "closePosition": True, 
     }
     try:
       order = exchange.create_order(symbol, order_type, side, amount, price, params)
