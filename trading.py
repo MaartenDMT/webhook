@@ -24,9 +24,9 @@ class TradeCrypto:
     self.ex = ex
     self.logger = logger
     
-    if self.symbolsymbol in ["BTCUSDT", "ETHUSDT"]:
+    if self.symbol in ["BTCUSDT", "ETHUSDT"]:
       self.leverage = 50
-    if self.symbolsymbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
+    if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
       self.leverage = 20
     if self.bot == True:
       self.fast_bot()
