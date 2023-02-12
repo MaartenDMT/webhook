@@ -733,7 +733,7 @@ class TradeCrypto:
       self.logger.info(order)
       return True
     except Exception as e:
-      self.logger.error("an exception occured - {}".format(e))
+      self.logger.error("an exception occured stoplossShort - {}".format(e))
       return False
     
   # stoploss_market
@@ -754,7 +754,7 @@ class TradeCrypto:
       self.logger.info(order)
       return True
     except Exception as e:
-      self.logger.error("an exception occured - {}".format(e))
+      self.logger.error("an exception occured in trailing_market - {}".format(e))
       return False
     
   def get_max_position_available(self, exchange, tick, symbol, leverage, ProcessMoney):
@@ -802,7 +802,7 @@ class TradeCrypto:
       try:
         balance = str(balance['total'][tick])
       except Exception as e:
-        self.logger.error("an exception occured - {}".format(e))
+        self.logger.error("an exception occured in_position_check - {}".format(e))
 
     return inPosition,longPosition, shortPosition, balance, free_balance, current_positions, position_info 
 
