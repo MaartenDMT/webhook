@@ -193,7 +193,7 @@ class TradeCrypto:
             # TAKE PROFIT 3
             self.logger.info("usdtm - TAKE PROFIT 3")
             takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(position_info["entryPrice"][len(position_info.index) - 1])
-            self.takeProfitLong3(exchange,symbol, get_amount, takep3)
+            self.trailing_market(exchange,symbol, get_amount, takep3, 'sell')
             takeprofit3 = True
             ticker = symbol
             message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
@@ -284,7 +284,7 @@ class TradeCrypto:
         if takeprofit3 == False:
           self.logger.info("usdtm - TAKE PROFIT 3")
           takeps3 = float(position_info["entryPrice"][len(position_info.index) - 1]) - float(position_info["entryPrice"][len(position_info.index) - 1])/100 * tp3
-          takeprofit3 = self.trailing_market(exchange,symbol, get_amount, takeps3)
+          takeprofit3 = self.trailing_market(exchange,symbol, get_amount, takeps3, 'buy')
 
           ticker = symbol
           message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
@@ -432,7 +432,7 @@ class TradeCrypto:
           # TAKE PROFIT 3
           self.logger.info("TAKE PROFIT 3")
           takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(position_info["entryPrice"][len(position_info.index) - 1])
-          self.takeProftrailing_marketitLong3(exchange,tick2, get_amount, takep3)
+          self.trailing_market(exchange,tick2, get_amount, takep3, 'sell')
           takeprofit3 = True
           message = f"LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
                 "Total Money: " + balance
@@ -518,7 +518,7 @@ class TradeCrypto:
           self.logger.info("TAKE PROFIT 3")
           takeps3 = float(position_info["entryPrice"][len(position_info.index) - 1])-(
               float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp3
-          takeprofit3 = self.trailing_market(exchange,tick2, get_amount, takeps3)
+          takeprofit3 = self.trailing_market(exchange,tick2, get_amount, takeps3, 'buy')
           message = f"LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
               "Total Money: " + balance
           content = f"Subject: {tick}\n{message}"
@@ -740,9 +740,9 @@ class TradeCrypto:
       return False
     
   # stoploss_market
-  def trailing_market(self, exchange, symbol, stop, get_amount):
+  def trailing_market(self, exchange, symbol, stop, get_amount, side):
     symbol = 'BTC/USDT'
-    side = 'sell'
+    side = side
     amount = get_amount
     order_type = 'TRAILING_STOP_MARKET'
     rate = '0.2'
