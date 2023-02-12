@@ -24,8 +24,10 @@ class TradeCrypto:
     
     self.trade()
     self.return_code = "Succeeded"    
-    if self.symbolsymbol == "BTCUSDT":
+    if self.symbolsymbol in ["BTCUSDT", "ETHUSDT"]:
       self.leverage = 50
+    if self.symbolsymbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
+      self.leverage = 20
   
   def __str__(self) -> str:
     return self.return_code
