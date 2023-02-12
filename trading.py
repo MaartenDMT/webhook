@@ -741,7 +741,6 @@ class TradeCrypto:
     
   # stoploss_market
   def trailing_market(self, exchange, symbol, stop, get_amount, side):
-    symbol = 'BTC/USDT'
     side = side
     amount = get_amount
     order_type = 'TRAILING_STOP_MARKET'
