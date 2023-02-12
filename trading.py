@@ -28,6 +28,7 @@ class TradeCrypto:
       self.leverage = 50
     if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
       self.leverage = 20
+      
     if self.bot == True:
       self.fast_bot()
     else:
