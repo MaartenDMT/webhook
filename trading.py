@@ -41,10 +41,10 @@ class TradeCrypto:
     
   def fast_bot(self) -> None:
     leverage = 20
-    tp1 = 3 / (leverage / 1.5)
-    tp2 = 4 / (leverage / 1.5)
-    tp3 = 5 / (leverage / 1.5 )
-    stopLoss = 3 / leverage
+    tp1 = 5 / leverage
+    tp2 = 7 / leverage 
+    tp3 = 9 / leverage 
+    stopLoss = 5 / leverage
     ProcessingMoney = 5
     self.usdtm(self.ex[0], self.symbol, self.side, self.t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
     
