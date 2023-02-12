@@ -23,7 +23,9 @@ class TradeCrypto:
     self.logger = logger
     
     self.trade()
-    self.return_code = "Succeeded"
+    self.return_code = "Succeeded"    
+    if self.symbolsymbol == "BTCUSDT":
+      self.leverage = 50
   
   def __str__(self) -> str:
     return self.return_code
@@ -72,7 +74,7 @@ class TradeCrypto:
     takeprofit2 = False
     takeprofit3 = False
     get_amount = 0
-  
+      
     inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = self.in_position_check(exchange, symbol,None)
     count=1
 
@@ -312,6 +314,7 @@ class TradeCrypto:
     takeprofit2 = False
     takeprofit3 = False
     get_amount = 0
+
 
     tickers = tickerscoin
     tickers2 = tickers2coin
