@@ -756,7 +756,7 @@ class TradeCrypto:
       return True
     except Exception as e:
       self.logger.error("an exception occured in trailing_market - {}".format(e))
-      if side =="buy":
+      if side =="sell":
         self.takeProfitLong3(self, exchange, symbol, stop, get_amount)
       else:
         self.takeProfitShort3(self, exchange, symbol, stop, get_amount)
