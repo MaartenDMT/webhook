@@ -684,7 +684,7 @@ class TradeCrypto:
       return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
-      return False
+      return True
 
   # TAKEPROFIT SHORT #2
 
@@ -756,7 +756,11 @@ class TradeCrypto:
       return True
     except Exception as e:
       self.logger.error("an exception occured in trailing_market - {}".format(e))
-      return False
+      if side =="buy":
+        self.takeProfitLong3(self, exchange, symbol, stop, get_amount)
+      else:
+        self.takeProfitShort3(self, exchange, symbol, stop, get_amount)
+      return True
     
   def get_max_position_available(self, exchange, tick, symbol, leverage, ProcessMoney):
     to_use = float(exchange.fetch_balance().get(tick).get('free')/0.000026)
