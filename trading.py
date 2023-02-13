@@ -40,9 +40,9 @@ class TradeCrypto:
     
   def fast_bot(self) -> None:
     leverage = 20
-    tp1 = 5 / leverage
+    tp1 = 6 / leverage
     tp2 = 7 / leverage 
-    tp3 = 9 / leverage 
+    tp3 = 8 / leverage 
     stopLoss = 5 / leverage
     ProcessingMoney = 5
     self.usdtm(self.ex[0], self.symbol, self.side, self.t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
@@ -745,9 +745,8 @@ class TradeCrypto:
     params = {
         'activationPrice': stop,
         'callbackRate': rate,
-        "reduceOnly": True,
-        "closePosition": True, 
     }
+    
     try:
       order = exchange.create_order(symbol, order_type, side, amount, price, params)
       self.logger.info(order)
