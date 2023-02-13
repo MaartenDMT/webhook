@@ -29,7 +29,7 @@ class TradeCrypto:
       
     if self.data['shortbot'] != None:
       self.fast_bot()
-    else:
+    elif self.data['shortbot'] == None:
       self.trade()
     
     self.return_code = "Succeeded"    
