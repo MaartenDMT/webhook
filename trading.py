@@ -638,7 +638,7 @@ class TradeCrypto:
   def takeProfitLong3(self, exchange,symbol, get_amount, takep3):
     side = 'sell'
     type_o = 'TAKE_PROFIT'
-    params = {'triggerPrice': takep3, 'reduceOnly': True, 'stopPrice':takep3}
+    params = {'triggerPrice': takep3, 'reduceOnly': True, 'stopPrice':takep3,"closePosition": True}
     self.logger.info(f"quantity:{get_amount}")
     self.logger.info(f"takeprofit :{takep3}")
 
@@ -707,7 +707,7 @@ class TradeCrypto:
   def takeProfitShort3(self, exchange,symbol, get_amount, takeps3):
     side = 'buy'
     type_o = 'TAKE_PROFIT'
-    params = {'triggerPrice':takeps3, 'reduceOnly': True, 'stopPrice': takeps3}
+    params = {'triggerPrice':takeps3, 'reduceOnly': True, 'stopPrice': takeps3,"closePosition": True }
     self.logger.info(f"quantity:{get_amount}")
     self.logger.info(f"takeprofit :{takeps3}")
 
