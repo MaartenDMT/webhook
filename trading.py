@@ -13,8 +13,6 @@ class TradeCrypto:
     self.symbol = self.data['ticker']
     self.side = self.data['side']
     self.t = self.data['time']
-    if self.data['shortbot'] != None:
-      self.bot = True
     self.leverage = 12
     self.tp1 = 4 / (self.leverage / 2)
     self.tp2 = 6 / (self.leverage / 2)
@@ -29,7 +27,7 @@ class TradeCrypto:
     if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
       self.leverage = 20
       
-    if self.bot == True:
+    if self.data['shortbot'] != None:
       self.fast_bot()
     else:
       self.trade()
