@@ -739,7 +739,7 @@ class TradeCrypto:
       return False
     
   # stoploss_market
-  def trailing_market(self, exchange, symbol, stop, get_amount, side):
+  def trailing_market(self, exchange, symbol, stop, get_amount, takeps3, side):
     side = side
     amount = get_amount
     order_type = 'TRAILING_STOP_MARKET'
@@ -758,9 +758,9 @@ class TradeCrypto:
       self.logger.error("an exception occured in trailing_market - {}".format(e))
 
       if side =="sell":
-        self.takeProfitLong3(self, exchange, symbol, stop, get_amount)
+        self.takeProfitLong3(self, exchange, symbol, stop, get_amount, takeps3)
       else:
-        self.takeProfitShort3(self, exchange, symbol, stop, get_amount)
+        self.takeProfitShort3(self, exchange, symbol, stop, get_amount, takeps3)
       return True
     
   def get_max_position_available(self, exchange, tick, symbol, leverage, ProcessMoney):
