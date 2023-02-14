@@ -24,13 +24,14 @@ class TradeCrypto:
     
     if self.symbol in ["BTCUSDT", "ETHUSDT"]:
       self.leverage = 50
+      self.trade()
     if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
       self.leverage = 20
-      
-    if self.data['shortbot'] != None:
-      self.fast_bot()
-    elif self.data['shortbot'] == None:
       self.trade()
+    if self.symbol in ["XTZUSDT","REEFUSDT"]:
+      self.fast_bot()
+
+
     
     self.return_code = "Succeeded"    
 
