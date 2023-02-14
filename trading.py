@@ -4,7 +4,7 @@ import ccxt
 import pandas as pd
 
 from tickets import tickers, tickers2coin, tickerscoin
-
+from time import sleep
 
 
 class TradeCrypto:
@@ -294,7 +294,9 @@ class TradeCrypto:
       if inPosition == False:
         self.logger.info("NO POSITION YET...")
         self.logger.info("============================")
+        
       count +=1
+      sleep(0.3)
       
       if count == 3:
         break 
@@ -527,7 +529,7 @@ class TradeCrypto:
         self.logger.info("============================")
       
       count +=1
-      
+      sleep(0.3)
       if count == 3:
         break
       
@@ -754,6 +756,7 @@ class TradeCrypto:
       return True
     except Exception as e:
       self.logger.error("an exception occured in trailing_market - {}".format(e))
+
       if side =="sell":
         self.takeProfitLong3(self, exchange, symbol, stop, get_amount)
       else:
