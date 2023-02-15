@@ -193,7 +193,7 @@ class TradeCrypto:
             # TAKE PROFIT 3
             self.logger.info("usdtm - TAKE PROFIT 3")
             takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(position_info["entryPrice"][len(position_info.index) - 1])
-            takeprofit3= self.trailing_market(exchange,symbol, get_amount, takep3, 'sell')
+            takeprofit3= self.trailing_market(exchange,symbol, get_amount, takep3, 'buy')
             ticker = symbol
             message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
                 "Total Money: " + str(balance['total']["USDT"])
@@ -231,6 +231,7 @@ class TradeCrypto:
 
       inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = self.in_position_check(exchange, symbol, None)
       
+      sleep(0.3)
       if shortPosition:
         # STOP LOSS FOR SHORT POSITION
         self.logger.info("usdtm - SETTING STOPLOSS FOR SHORT POSITION")
@@ -283,7 +284,7 @@ class TradeCrypto:
         if takeprofit3 == False:
           self.logger.info("usdtm - TAKE PROFIT 3")
           takeps3 = float(position_info["entryPrice"][len(position_info.index) - 1]) - float(position_info["entryPrice"][len(position_info.index) - 1])/100 * tp3
-          takeprofit3 = self.trailing_market(exchange,symbol, get_amount, takeps3, 'buy')
+          takeprofit3 = self.trailing_market(exchange,symbol, get_amount, takeps3, 'sell')
           ticker = symbol
           message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
               "Total Money: " + str(balance['total']["USDT"])
@@ -296,7 +297,7 @@ class TradeCrypto:
         self.logger.info("============================")
         
       count +=1
-      sleep(0.3)
+
       
       if count == 3:
         break 
@@ -432,7 +433,7 @@ class TradeCrypto:
           # TAKE PROFIT 3
           self.logger.info("TAKE PROFIT 3")
           takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(position_info["entryPrice"][len(position_info.index) - 1])
-          takeprofit3= self.trailing_market(exchange,tick2, get_amount, takep3, 'sell')
+          takeprofit3= self.trailing_market(exchange,tick2, get_amount, takep3, 'buy')
           message = f"LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
                 "Total Money: " + balance
           content = f"Subject: {tick}\n{message}"
@@ -469,6 +470,7 @@ class TradeCrypto:
           
       inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = self.in_position_check(exchange, tick2,tick)
       
+      sleep(0.3)
       if shortPosition:
         # STOP LOSS FOR SHORT POSITION
         self.logger.info("SETTING STOPLOSS FOR SHORT POSITION")
@@ -517,7 +519,7 @@ class TradeCrypto:
           self.logger.info("TAKE PROFIT 3")
           takeps3 = float(position_info["entryPrice"][len(position_info.index) - 1])-(
               float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp3
-          takeprofit3 = self.trailing_market(exchange,tick2, get_amount, takeps3, 'buy')
+          takeprofit3 = self.trailing_market(exchange,tick2, get_amount, takeps3, 'sell')
           message = f"LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
               "Total Money: " + balance
           content = f"Subject: {tick}\n{message}"
@@ -529,7 +531,7 @@ class TradeCrypto:
         self.logger.info("============================")
       
       count +=1
-      sleep(0.3)
+
       if count == 3:
         break
       
