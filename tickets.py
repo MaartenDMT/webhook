@@ -34,7 +34,6 @@ tickers = {
     "DOGEUSDT": "DOGE/USD",
     "UNIUSDT": "UNI/USD",
     "THETAUSDT": "THETA/USD",
-
     "SOLUSDT": "SOL/USD",
     "LUNAUSDT": "LUNA/USD",
     "FTMUSDT": "FTM/USD",

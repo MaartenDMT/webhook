@@ -54,11 +54,13 @@ def add_log_info(logger) -> None:
     # create a formatter for the log messages
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     # add the formatter to the handlers
-    file_handler.setFormatter(formatter)
-    stream_handler.setFormatter(formatter)
-    # add the handlers to the logger
-    logger.addHandler(file_handler)
-    logger.addHandler(stream_handler)
+    if not logger.handlers:
+        file_handler.setFormatter(formatter)
+        stream_handler.setFormatter(formatter)
+        # add the handlers to the logger
+        logger.addHandler(file_handler)
+        logger.addHandler(stream_handler)
+    logger.propagate = False 
     
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000)
