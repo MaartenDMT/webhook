@@ -60,7 +60,6 @@ def add_log_info(logger) -> None:
         # add the handlers to the logger
         logger.addHandler(file_handler)
         logger.addHandler(stream_handler)
-    logger.propagate = False 
     
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000)
