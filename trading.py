@@ -562,11 +562,11 @@ class TradeCrypto:
     try:
       order = exchange.create_market_buy_order(symbol, get_amount)
       self.logger.info(order)
-      return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
-
+    
+    return True
 
   # LONG EXIT
   def longExit(self, exchange,symbol, amount):
@@ -574,10 +574,12 @@ class TradeCrypto:
       order = exchange.create_market_sell_order(
           symbol, amount, {"reduceOnly": True})
       self.logger.info(order)
-      return True
+
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
+    
+    return True
 
 
   # SHORT ENTER
@@ -585,22 +587,22 @@ class TradeCrypto:
     try:
       order = exchange.create_market_sell_order(symbol, get_amount)
       self.logger.info(order)
-      return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
-
+    
+    return True
 
   # SHORT EXIT
   def shortExit(self, exchange,symbol, amount):
     try:
       order = exchange.create_market_buy_order(symbol, amount, {"reduceOnly": True})
       self.logger.info(order)
-      return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
-
+    
+    return True
   # TAKEPROFIT LONG #1
 
 
@@ -615,10 +617,11 @@ class TradeCrypto:
       order = exchange.createOrder(
           symbol, order_type_tk, side, get_amount, takep1 ,params=params)
       self.logger.info(order)
-      return True 
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
+    
+    return True 
 
   # TAKEPROFIT LONG #2
 
@@ -633,11 +636,11 @@ class TradeCrypto:
     try:
       order = exchange.create_order(symbol, type_o, side, get_amount, takep2,params)
       self.logger.info(order)
-      return True 
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
-
+    
+    return True 
 
   # TAKEPROFIT LONG #3
 
@@ -651,11 +654,12 @@ class TradeCrypto:
     try:
       order = exchange.create_order(symbol, type_o, side, get_amount, takep3,params)
       self.logger.info(order)
-      return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
-
+    
+    return True
+  
   # STOPLOSS LONG
 
   def stoplossLong(self, exchange,symbol, stop,  get_amount):
@@ -667,12 +671,13 @@ class TradeCrypto:
     try:
       order = exchange.createOrder(symbol, order_type_sl, side, get_amount,None, params=params)
       self.logger.info(order)
-      return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       self.logger.error("error: stoploss")
       return False
-
+    
+    return True
+  
   # TAKEPROFIT SHORT #1
 
   def takeProfitShort1(self, exchange,symbol, get_amount, takeps1):
@@ -685,11 +690,12 @@ class TradeCrypto:
     try:
       order = exchange.create_order(symbol, type_o, side, get_amount, takeps1, params=params)
       self.logger.info(order)
-      return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
-      return True
-
+      return False
+    
+    return True
+  
   # TAKEPROFIT SHORT #2
 
   def takeProfitShort2(self, exchange,symbol, get_amount, takeps2):
@@ -702,10 +708,11 @@ class TradeCrypto:
     try:
       order = exchange.create_order(symbol, type_o, side, get_amount, takeps2, params)
       self.logger.info(order)
-      return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
+    
+    return True
 
 
   # TAKEPROFIT SHORT #3
@@ -720,10 +727,11 @@ class TradeCrypto:
     try:
       order = exchange.create_order(symbol, type_o, side, get_amount, takeps3, params)
       self.logger.info(order)
-      return True
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
+    
+    return True
 
   # STOPLOSS SHORT
 
@@ -736,10 +744,12 @@ class TradeCrypto:
     try:
       order = exchange.createOrder(symbol, order_type_sl, side, None, params=params)
       self.logger.info(order)
-      return True
+
     except Exception as e:
       self.logger.error("an exception occured stoplossShort - {}".format(e))
       return False
+    
+    return True
     
   # stoploss_market
   def trailing_market(self, exchange, symbol, get_amount, takeps3, side):
@@ -762,6 +772,7 @@ class TradeCrypto:
       else:
         self.takeProfitShort3(exchange, symbol, get_amount, takeps3)
       return True
+    
     return True
     
   def get_max_position_available(self, exchange, tick, symbol, leverage, ProcessMoney):
