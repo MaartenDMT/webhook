@@ -25,10 +25,10 @@ class TradeCrypto:
     if self.symbol in ["BTCUSDT", "ETHUSDT"]:
       self.leverage = 50
       self.trade()
-    if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
+    elif self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
       self.leverage = 20
       self.trade()
-    if self.symbol in ["XTZUSDT","REEFUSDT", "ROSEUSDT"]:
+    elif self.symbol in ["XTZUSDT","REEFUSDT", "ROSEUSDT"]:
       self.fast_bot()
     else:
       self.trade()
