@@ -30,7 +30,8 @@ class TradeCrypto:
       self.trade()
     if self.symbol in ["XTZUSDT","REEFUSDT", "ROSEUSDT"]:
       self.fast_bot()
-
+    else:
+      self.trade()
 
     
     self.return_code = "Succeeded"    
