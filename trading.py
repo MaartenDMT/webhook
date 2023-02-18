@@ -24,6 +24,10 @@ class TradeCrypto:
     self.ProcessingMoney = 25
     self.ex = ex
     self.logger = logger
+    self.multi = 2
+    self.trade_info = []
+    self.profit_loss = {}
+    self.thread = None
     
     if self.symbol in ["BTCUSDT", "ETHUSDT"]:
       self.leverage = 50
@@ -36,9 +40,7 @@ class TradeCrypto:
     else:
       self.trade()
       
-    self.trade_info = []
-    self.profit_loss = {}
-    self.thread = None
+
     self.start_thread(self.symbol)
 
   def start_thread(self, symbol) -> None:
@@ -65,7 +67,7 @@ class TradeCrypto:
   def trade(self):
     with ThreadPoolExecutor() as executor:
       executor.submit(self.execute_usdtm_trade, self.ex[0], self.symbol, self.side, self.t, self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
-      executor.submit(self.execute_coinm_trade, self.ex[1], self.symbol, self.side, self.t, self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
+      executor.submit(self.execute_coinm_trade, self.ex[1], self.symbol, self.side, self.t, self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney*self.multi)
 
   def execute_usdtm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney):
     self.usdtm(exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
