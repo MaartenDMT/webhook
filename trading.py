@@ -50,6 +50,7 @@ class TradeCrypto:
         return
       
     # start a new thread if no thread is currently running
+    self.logger.info("starting thread !")
     self.thread = threading.Thread(target=self.update_profit_thread, daemon=True).start()
 
   def __str__(self) -> str:
@@ -866,6 +867,7 @@ class TradeCrypto:
     while True:
         for symbol in self.profit_loss:
             self.update_profit(symbol)
+            self.logger.info(f"writing the profit/loss of symbol:{symbol}")
           
         sleep(180)
 
@@ -873,7 +875,8 @@ class TradeCrypto:
     for ex in self.ex:
       # Get the list of closed orders for the given symbol
       closed_orders = ex.fetch_closed_orders(symbol=symbol)
-
+      self.logger.info(f"logging the profit loss for exchange: {ex} | {symbol}")
+      
       # Loop through the closed orders and update the profit and loss
       for order in closed_orders:
         
@@ -907,6 +910,7 @@ class TradeCrypto:
                   fieldnames = ['id', 'symbol', 'side', 'entry_price', 'exit_price', 'profit_loss']
                   writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
                   writer.writerow(trade)
+                  self.logger.info(f"writing the trade: {trade} to the csv!")
                   
               # Update the total profit/loss for the given symbol
               if symbol in self.profit_loss:
