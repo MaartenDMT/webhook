@@ -4,6 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 from time import sleep
 
 import ccxt
+from ccxt.base.errors import InsufficientFunds 
 import pandas as pd
 
 from tickets import tickers, tickers2coin, tickerscoin
@@ -138,7 +139,8 @@ class TradeCrypto:
         takeprofit1 = False
         takeprofit2 = False
         takeprofit3 = False
-        
+        if l == False:
+          break
         if l:
           longPosition = True
         ticker = symbol
@@ -232,6 +234,8 @@ class TradeCrypto:
           takeprofit1 = False
           takeprofit2 = False
           takeprofit3 = False
+          if s == False:
+            break
           if s:
             shortPosition = True
           ticker = symbol
@@ -377,10 +381,12 @@ class TradeCrypto:
 
         get_amount = self.get_max_position_available(exchange, tick, tick2, leverage, ProcessingMoney)
         self.logger.info(f"ENTERING LONG POSITION WITH: {get_amount}")
-        l =self.longEnter(exchange,tick2, get_amount)
+        l = self.longEnter(exchange,tick2, get_amount)
         takeprofit1 = False
         takeprofit2 = False
         takeprofit3 = False
+        if l == False:
+          break
         if l:
           longPosition = True
         message = "LONG ENTER\n" + "Total Money: " + balance
@@ -471,6 +477,8 @@ class TradeCrypto:
           takeprofit1 = False
           takeprofit2 = False
           takeprofit3 = False
+          if s == False:
+            break
           if s:
             shortPosition = True
           message = "LONG ENTER\n" + "Total Money: " + balance
@@ -581,6 +589,9 @@ class TradeCrypto:
       order = exchange.create_market_buy_order(symbol, get_amount)
       self.logger.info(order)
       self.trade_info.append({'id': order['id'], 'symbol': symbol, 'side': 'buy', 'entry_price': order['price']})
+    except InsufficientFunds as e :
+      self.logger.error("there is not enought funding to make the trade ! - {}".format(e))
+      return False
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
@@ -606,6 +617,9 @@ class TradeCrypto:
       order = exchange.create_market_sell_order(symbol, get_amount)
       self.logger.info(order)
       self.trade_info.append({'id': order['id'], 'symbol': symbol, 'side': 'sell', 'entry_price': order['price']})
+    except InsufficientFunds as e :
+      self.logger.error("there is not enought funding to make the trade ! - {}".format(e))
+      return False
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
@@ -620,7 +634,8 @@ class TradeCrypto:
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
-    
+
+      
     return True
   # TAKEPROFIT LONG #1
 
