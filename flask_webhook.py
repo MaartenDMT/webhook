@@ -15,6 +15,7 @@ exchange = ccxt.binance({
     "apiKey": os.environ.get('API_KEY'),
     "secret": os.environ.get('API_SECRET'),
     'enableRateLimit': True,
+    'rateLimit': 2000,
     'options': {
         'defaultType': 'future',
     },
@@ -24,7 +25,8 @@ exchange = ccxt.binance({
 exchange2 = ccxt.binancecoinm({
     "apiKey": os.environ.get('API_KEY'),
     "secret": os.environ.get('API_SECRET'),
-    'enableRateLimit': True,  
+    'enableRateLimit': True,
+    'rateLimit': 2000,  
 })
 #exchange2.set_sandbox_mode(True)    
 

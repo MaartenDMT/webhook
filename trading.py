@@ -1,12 +1,10 @@
 import csv
 import threading
-import time
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
 
 import ccxt
 import pandas as pd
-from sqlalchemy import true
 
 from tickets import tickers, tickers2coin, tickerscoin
 
@@ -851,6 +849,8 @@ class TradeCrypto:
     while True:
         for symbol in self.profit_loss:
             self.update_profit(symbol)
+          
+        sleep(180)
 
   def update_profit(self, symbol):
     for ex in self.ex:
