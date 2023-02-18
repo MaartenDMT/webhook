@@ -1,10 +1,11 @@
 import logging
 import os
+from datetime import datetime
 
 import ccxt
 from dotenv import load_dotenv
 from flask import Flask, request
-from datetime import datetime
+
 from trading import TradeCrypto
 
 path='.env'

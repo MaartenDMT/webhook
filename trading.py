@@ -1,14 +1,18 @@
+import csv
+import threading
+import time
 from concurrent.futures import ThreadPoolExecutor
+from time import sleep
 
 import ccxt
 import pandas as pd
+from sqlalchemy import true
 
 from tickets import tickers, tickers2coin, tickerscoin
-from time import sleep
 
 
 class TradeCrypto:
-  def __init__(self, request, ex, logger) -> str:
+  def __init__(self, request, ex, logger):
     self.data = request.get_json()
     self.symbol = self.data['ticker']
     self.side = self.data['side']
@@ -32,14 +36,24 @@ class TradeCrypto:
       self.fast_bot()
     else:
       self.trade()
+      
+    self.trade_info = []
+    self.profit_loss = {}
+    self.thread = None
+    self.start_thread(self.symbol)
 
-    
-    self.return_code = "Succeeded"    
+  def start_thread(self, symbol) -> None:
+    # check if the thread is already running
+    if self.thread and self.thread.is_alive():
+        self.logger.info("Thread is already running")
+        return
+      
+    # start a new thread if no thread is currently running
+    self.thread = threading.Thread(target=self.update_profit_thread, args=(symbol,), daemon=True).start()
 
-  
   def __str__(self) -> str:
-    return self.return_code
-    
+    return "Succeeded"  
+
   def fast_bot(self) -> None:
     leverage = 20
     tp1 = 6 / leverage
@@ -568,6 +582,7 @@ class TradeCrypto:
     try:
       order = exchange.create_market_buy_order(symbol, get_amount)
       self.logger.info(order)
+      self.trade_info.append({'id': order['id'], 'symbol': symbol, 'side': 'buy', 'entry_price': order['price']})
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
@@ -577,8 +592,7 @@ class TradeCrypto:
   # LONG EXIT
   def longExit(self, exchange,symbol, amount):
     try:
-      order = exchange.create_market_sell_order(
-          symbol, amount, {"reduceOnly": True})
+      order = exchange.create_market_sell_order(symbol, amount, {"reduceOnly": True})
       self.logger.info(order)
 
     except Exception as e:
@@ -593,6 +607,7 @@ class TradeCrypto:
     try:
       order = exchange.create_market_sell_order(symbol, get_amount)
       self.logger.info(order)
+      self.trade_info.append({'id': order['id'], 'symbol': symbol, 'side': 'sell', 'entry_price': order['price']})
     except Exception as e:
       self.logger.error("an exception occured - {}".format(e))
       return False
@@ -832,4 +847,56 @@ class TradeCrypto:
 
     return inPosition,longPosition, shortPosition, balance, free_balance, current_positions, position_info 
 
+  def update_profit_thread(self):
+    while True:
+        for symbol in self.profit_loss:
+            self.update_profit(symbol)
 
+  def update_profit(self, symbol):
+    for ex in self.ex:
+      # Get the list of closed orders for the given symbol
+      closed_orders = ex.fetch_closed_orders(symbol=symbol)
+
+      # Loop through the closed orders and update the profit and loss
+      for order in closed_orders:
+        
+        # Check if the order has been closed
+        if order['status'] == 'closed':
+          
+          # Get the order information
+          symbol = order['symbol']
+          side = order['side']
+          entry_price = order['price']
+          exit_price = order['average']
+          quantity = order['amount']
+          filled_quantity = order['filled']
+          fees = order['fees']['cost']
+          order_id = order['id']
+          
+          # Calculate the profit/loss
+          if side == 'buy':
+            pnl = (exit_price - entry_price) * filled_quantity - fees
+          else:
+            pnl = (entry_price - exit_price) * filled_quantity - fees
+            
+          # Update the trade information in the trade_info list
+          for trade in self.trade_info:
+            if trade['id'] == order_id:
+              trade['exit_price'] = exit_price
+              trade['profit_loss'] = pnl
+              
+              # Write the trade information to the CSV file
+              with open("data/pnl/all_trades.csv", mode='a', newline='') as csv_file:
+                  fieldnames = ['id', 'symbol', 'side', 'entry_price', 'exit_price', 'profit_loss']
+                  writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+                  writer.writerow(trade)
+                  
+              # Update the total profit/loss for the given symbol
+              if symbol in self.profit_loss:
+                self.profit_loss[symbol] += pnl
+              else:
+                self.profit_loss[symbol] = pnl
+                
+              # Remove the trade from the trade_info list if it is closed
+              if filled_quantity == quantity:
+                  self.trade_info.remove(trade)
