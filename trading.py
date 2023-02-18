@@ -43,9 +43,9 @@ class TradeCrypto:
       self.trade()
       
 
-    self.start_thread(self.symbol)
+    self.start_thread()
 
-  def start_thread(self, symbol) -> None:
+  def start_thread(self) -> None:
     # check if the thread is already running
     if self.thread and self.thread.is_alive():
         self.logger.info("Thread is already running")
