@@ -48,7 +48,7 @@ class TradeCrypto:
         return
       
     # start a new thread if no thread is currently running
-    self.thread = threading.Thread(target=self.update_profit_thread, args=(symbol,), daemon=True).start()
+    self.thread = threading.Thread(target=self.update_profit_thread, daemon=True).start()
 
   def __str__(self) -> str:
     return "Succeeded"  
