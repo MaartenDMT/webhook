@@ -32,6 +32,7 @@ class TradeCrypto:
     
     if self.symbol in ["BTCUSDT", "ETHUSDT"]:
       self.leverage = 50
+      self.ProcessingMoney = 7
       self.trade()
     elif self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
       self.leverage = 20
