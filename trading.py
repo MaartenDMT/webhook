@@ -1,6 +1,6 @@
 import csv
 from concurrent.futures import ThreadPoolExecutor
-import datetime
+from  datetime import datetime
 from time import sleep
 
 import ccxt
