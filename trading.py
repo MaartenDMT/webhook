@@ -863,60 +863,68 @@ class TradeCrypto:
     return inPosition,longPosition, shortPosition, balance, free_balance, current_positions, position_info 
 
   def update_profit_thread(self):
+    # Read the symbols from the CSV file
+    symbols = []
+    with open("coinm.csv", "r") as symbols_file:
+      reader = csv.reader(symbols_file)
+      for row in reader:
+          symbols.append(row)
+          
     while True:
-        for symbol in self.profit_loss:
+        for symbol in symbols:
             self.update_profit(symbol)
             self.logger.info(f"writing the profit/loss of symbol:{symbol}")
           
         sleep(180)
 
   def update_profit(self, symbol):
-    for ex in self.ex:
-      # Get the list of closed orders for the given symbol
-      closed_orders = ex.fetch_closed_orders(symbol=symbol)
-      self.logger.info(f"logging the profit loss for exchange: {ex} | {symbol}")
+
+    # Get the list of closed orders for the given symbol
+    ex = self.ex[0]
+    closed_orders = ex.fetch_closed_orders(symbol=symbol)
+    self.logger.info(f"logging the profit loss for exchange: {ex} | {symbol}")
+    
+    # Loop through the closed orders and update the profit and loss
+    for order in closed_orders:
       
-      # Loop through the closed orders and update the profit and loss
-      for order in closed_orders:
+      # Check if the order has been closed
+      if order['status'] == 'closed':
         
-        # Check if the order has been closed
-        if order['status'] == 'closed':
+        # Get the order information
+        symbol = order['symbol']
+        side = order['side']
+        entry_price = order['price']
+        exit_price = order['average']
+        quantity = order['amount']
+        filled_quantity = order['filled']
+        fees = order['fees']['cost']
+        order_id = order['id']
+        
+        # Calculate the profit/loss
+        if side == 'buy':
+          pnl = (exit_price - entry_price) * filled_quantity - fees
+        else:
+          pnl = (entry_price - exit_price) * filled_quantity - fees
           
-          # Get the order information
-          symbol = order['symbol']
-          side = order['side']
-          entry_price = order['price']
-          exit_price = order['average']
-          quantity = order['amount']
-          filled_quantity = order['filled']
-          fees = order['fees']['cost']
-          order_id = order['id']
-          
-          # Calculate the profit/loss
-          if side == 'buy':
-            pnl = (exit_price - entry_price) * filled_quantity - fees
-          else:
-            pnl = (entry_price - exit_price) * filled_quantity - fees
+        # Update the trade information in the trade_info list
+        for trade in self.trade_info:
+          if trade['id'] == order_id:
+            trade['exit_price'] = exit_price
+            trade['profit_loss'] = pnl
             
-          # Update the trade information in the trade_info list
-          for trade in self.trade_info:
-            if trade['id'] == order_id:
-              trade['exit_price'] = exit_price
-              trade['profit_loss'] = pnl
-              
-              # Write the trade information to the CSV file
-              with open("data/pnl/all_trades.csv", mode='a', newline='') as csv_file:
-                  fieldnames = ['id', 'symbol', 'side', 'entry_price', 'exit_price', 'profit_loss']
-                  writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-                  writer.writerow(trade)
-                  self.logger.info(f"writing the trade: {trade} to the csv!")
-                  
-              # Update the total profit/loss for the given symbol
-              if symbol in self.profit_loss:
-                self.profit_loss[symbol] += pnl
-              else:
-                self.profit_loss[symbol] = pnl
+            # Write the trade information to the CSV file
+            with open("data/pnl/all_trades.csv", mode='a', newline='') as csv_file:
+                fieldnames = ['id', 'symbol', 'side', 'entry_price', 'exit_price', 'profit_loss']
+                writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+                writer.writerow(trade)
+                self.logger.info(f"writing the trade: {trade} to the csv!")
                 
-              # Remove the trade from the trade_info list if it is closed
-              if filled_quantity == quantity:
-                  self.trade_info.remove(trade)
+            # Update the total profit/loss for the given symbol
+            if symbol in self.profit_loss:
+              self.profit_loss[symbol] += pnl
+            else:
+              self.profit_loss[symbol] = pnl
+              
+            # Remove the trade from the trade_info list if it is closed
+            if filled_quantity == quantity:
+                self.trade_info.remove(trade)
