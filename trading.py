@@ -866,6 +866,10 @@ class TradeCrypto:
     closed_orders = self.fetch_closed_orders(symbol, ex)
     self.logger.info(f"logging the profit loss for exchange: {ex} | {symbol}")
     
+    if closed_orders == None:
+      self.logger.info("there is no order closed history return to the main loop")
+      return
+    
     # Loop through the closed orders and update the profit and loss
     for order in closed_orders:
       
@@ -916,7 +920,8 @@ class TradeCrypto:
   def fetch_closed_orders(self, symbol, ex):
     
     try:
-       order = ex.fetch_closed_orders(symbol=symbol)
+       closed_order = ex.fetch_closed_orders(symbol=symbol)
+       self.logger.error(closed_order)
     except BadSymbol as e:
       self.logger.error(f"this symbol is not right {symbol} - {e}" )
     except Exception as e:
