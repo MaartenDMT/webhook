@@ -847,8 +847,8 @@ class TradeCrypto:
     symbols = []
     with open("usdm.csv", "r") as symbols_file:
       reader = csv.reader(symbols_file)
-      for row in reader:
-          symbols.append(row)
+      symbols.extend(row for row in reader)
+
           
     while True:
         for symbol in symbols:
