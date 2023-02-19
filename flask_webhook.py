@@ -29,13 +29,14 @@ exchange2 = ccxt.binancecoinm({
 })
 #exchange2.set_sandbox_mode(True)    
 
+thread = None
 app = Flask(__name__)
 
 @app.route('/webhook/', methods=['POST'])
 def hook():
     print(request.json)
     ex = [exchange, exchange2]
-    thread = None
+
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     add_log_info(logger)
