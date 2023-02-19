@@ -4,7 +4,7 @@ from time import sleep
 
 import ccxt
 import pandas as pd
-from ccxt.base.errors import InsufficientFunds
+from ccxt.base.errors import InsufficientFunds, BadSymbol
 
 from tickets import tickers, tickers2coin, tickerscoin
 
@@ -70,26 +70,6 @@ class TradeCrypto:
             self.logger.info(d)
             self.coinm(exchange, d, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
     
-    # # read the symbols from the CSV file
-    # with open("coinm.csv") as file:
-    #     reader = csv.reader(file)
-    #     next(reader)  # skip the header row
-    #     tickers2 = [row[0] for row in reader]
-    
-    # # read the symbols from the CSV file
-    # with open("usdm.csv") as file:
-    #     reader = csv.reader(file)
-    #     next(reader)  # skip the header row
-    #     ticker = [row[0] for row in reader]
-    
-    # ticker = ticks.tickers   
-    # ttick = ticker[symbol]
-    # for d in tickers2:
-    #     if d == ttick:
-    #         self.logger.info(d)
-    #         self.coinm(exchange, d, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
-
-
   def usdtm(self, exchange, symbol, side, t, leverage,tp1,tp2, tp3,stopLoss,ProcessingMoney):
     self.logger.info(f"exchange: {exchange.name} ")
     takeprofit1 = False
@@ -872,8 +852,9 @@ class TradeCrypto:
           
     while True:
         for symbol in symbols:
-            self.update_profit(symbol)
             self.logger.info(f"writing the profit/loss of symbol:{symbol}")
+            self.update_profit(symbol)
+            self.logger.info("================================================")
           
         sleep(180)
 
@@ -881,7 +862,7 @@ class TradeCrypto:
 
     # Get the list of closed orders for the given symbol
     ex = self.ex[0]
-    closed_orders = ex.fetch_closed_orders(symbol=symbol)
+    closed_orders = 
     self.logger.info(f"logging the profit loss for exchange: {ex} | {symbol}")
     
     # Loop through the closed orders and update the profit and loss
@@ -922,9 +903,20 @@ class TradeCrypto:
             # Update the total profit/loss for the given symbol
             if symbol in self.profit_loss:
               self.profit_loss[symbol] += pnl
+              self.logger.info(f"{pnl}")
             else:
               self.profit_loss[symbol] = pnl
+              self.logger.info(f"{pnl}")
               
             # Remove the trade from the trade_info list if it is closed
             if filled_quantity == quantity:
                 self.trade_info.remove(trade)
+          
+  def fetch_closed_orders(self, symbol, ex):
+    
+    try:
+       order = ex.fetch_closed_orders(symbol=symbol)
+    except BadSymbol as e:
+      self.logger.error(f"this symbol is not right {symbol} - {e}" )
+    except Exception as e:
+       self.logger.error(e)
