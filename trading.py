@@ -122,9 +122,9 @@ class TradeCrypto:
           shortPosition = False
 
         self.get_amount_l = float(free_balance["USDT"]) / 100 * ProcessingMoney * leverage / float(df["close"][len(df.index) - 1])
-        self.logger.info(f"usdtm - ENTERING LONG POSITION WITH: {get_amount}")
+        self.logger.info(f"usdtm - ENTERING LONG POSITION WITH: {self.get_amount_l}")
 
-        l = self.longEnter(exchange,symbol, get_amount)
+        l = self.longEnter(exchange,symbol,self.get_amount_l)
         takeprofit1 = False
         takeprofit2 = False
         takeprofit3 = False
@@ -393,8 +393,7 @@ class TradeCrypto:
       if longPosition:
         # STOP LOSS FOR LONG POSITION
         self.logger.info("SETTING STOPLOSS FOR LONG POSITION")
-        get_amount = float(
-            position_info["positionAmt"][len(position_info.index) - 1])
+        get_amount = float(position_info["positionAmt"][len(position_info.index) - 1])
         # longExit(get_amount)
         entryprice = float(
             position_info["entryPrice"][len(position_info.index) - 1])
