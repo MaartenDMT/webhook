@@ -1,5 +1,6 @@
 import logging
 import os
+import threading
 from datetime import datetime
 
 import ccxt
@@ -15,7 +16,6 @@ exchange = ccxt.binance({
     "apiKey": os.environ.get('API_KEY'),
     "secret": os.environ.get('API_SECRET'),
     'enableRateLimit': True,
-    'rateLimit': 2000,
     'options': {
         'defaultType': 'future',
     },
@@ -26,7 +26,6 @@ exchange2 = ccxt.binancecoinm({
     "apiKey": os.environ.get('API_KEY'),
     "secret": os.environ.get('API_SECRET'),
     'enableRateLimit': True,
-    'rateLimit': 2000,  
 })
 #exchange2.set_sandbox_mode(True)    
 
@@ -36,16 +35,31 @@ app = Flask(__name__)
 def hook():
     print(request.json)
     ex = [exchange, exchange2]
-    
+    thread = None
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     add_log_info(logger)
     
     t = TradeCrypto(request, ex, logger)
+    start_thread(t, thread, logger)
     
-    logger.info(t.__str__())
+    content = t.__str__()
+    logger.info(content)
     
-    return t.__str__()
+    return content
+
+
+def start_thread(tc: TradeCrypto, thread, logger) -> None:
+    # check if the thread is already running
+    if thread and thread.is_alive():
+        logger.info("Thread is already running")
+        return
+      
+    try:      
+      logger.info("starting thread !")
+      thread = threading.Thread(target=tc.update_profit_thread).start()    # start a new thread if no thread is currently running
+    except Exception as e:
+      logger.error(e)
 
 def add_log_info(logger) -> None:
     file = r'data/logs/'

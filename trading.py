@@ -1,12 +1,10 @@
 import csv
-import logging
-import threading
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
 
 import ccxt
-from ccxt.base.errors import InsufficientFunds 
 import pandas as pd
+from ccxt.base.errors import InsufficientFunds
 
 from tickets import tickers, tickers2coin, tickerscoin
 
@@ -28,7 +26,7 @@ class TradeCrypto:
     self.multi = 2
     self.trade_info = []
     self.profit_loss = {}
-    self.thread = None
+
     
     if self.symbol in ["BTCUSDT", "ETHUSDT"]:
       self.leverage = 50
@@ -41,21 +39,7 @@ class TradeCrypto:
       self.fast_bot()
     else:
       self.trade()
-      
-
-    self.start_thread()
-
-  def start_thread(self) -> None:
-    # check if the thread is already running
-    if self.thread and self.thread.is_alive():
-        self.logger.info("Thread is already running")
-        return
-      
-    try:      
-      self.logger.info("starting thread !")
-      self.thread = threading.Thread(target=self.update_profit_thread).start()    # start a new thread if no thread is currently running
-    except Exception as e:
-      self.logger.error(e)
+    
       
   def __str__(self) -> str:
     return "Succeeded"  
@@ -150,9 +134,8 @@ class TradeCrypto:
           break
         if l:
           longPosition = True
-        ticker = symbol
         message = "usdtm - LONG ENTER\n" + "Total Money: " + str(balance['total']["USDT"])
-        content = f"Subject: {ticker}\n{message}"
+        content = f"Subject: {symbol}\n{message}"
         self.logger.info(content)
         self.logger.info("============================")
 
@@ -170,10 +153,9 @@ class TradeCrypto:
           stop = entryprice / (1+stopLoss/100) #float(entryprice - (entrylow * stopLoss))
           self.logger.info(f"usdtm - stoploss: {stop}")
           self.stoplossLong(exchange,symbol, stop, get_amount)
-          ticker = symbol
           message = f"usdtm - LONG EXIT (STOP LOSS): {get_amount}\n" + "Total Money: " + \
               str(balance['total']["USDT"])
-          content = f"Subject: {ticker}\n{message}"
+          content = f"Subject: {symbol}\n{message}"
           self.logger.info(content)
           self.logger.info(position_info)
           self.logger.info("============================")
@@ -188,10 +170,9 @@ class TradeCrypto:
             takep1 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100* tp1 + float(position_info["entryPrice"][len(position_info.index) - 1])
             self.takeProfitLong1(exchange,symbol, get_amount, takep1)
             takeprofit1 = True
-            ticker = symbol
             message = f"usdtm - LONG EXIT (TAKE PROFIT 1): {get_amount}\n" + \
                 "Total Money: " + str(balance['total']["USDT"])
-            content = f"Subject: {ticker}\n{message}"
+            content = f"Subject: {symbol}\n{message}"
             self.logger.info(content)
             self.logger.info("============================")
 
@@ -203,10 +184,9 @@ class TradeCrypto:
             takep2 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2 + float(position_info["entryPrice"][len(position_info.index) - 1])
             self.takeProfitLong2(exchange,symbol, get_amount, takep2)
             takeprofit2 = True
-            ticker = symbol
             message = f"usdtm -LONG EXIT (TAKE PROFIT 2): {get_amount}\n" + \
                 "Total Money: " + str(balance['total']["USDT"])
-            content = f"Subject: {ticker}\n{message}"
+            content = f"Subject: {symbol}\n{message}"
             self.logger.info(content)
             self.logger.info("============================")
 
@@ -216,10 +196,9 @@ class TradeCrypto:
             self.logger.info("usdtm - TAKE PROFIT 3")
             takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(position_info["entryPrice"][len(position_info.index) - 1])
             takeprofit3= self.trailing_market(exchange,symbol, get_amount, takep3, 'sell')
-            ticker = symbol
             message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
                 "Total Money: " + str(balance['total']["USDT"])
-            content = f"Subject: {ticker}\n{message}"
+            content = f"Subject: {symbol}\n{message}"
             self.logger.info(content)
             self.logger.info("============================")
 
@@ -245,9 +224,8 @@ class TradeCrypto:
             break
           if s:
             shortPosition = True
-          ticker = symbol
           message = "usdtm - LONG ENTER\n" + "Total Money: " + str(balance['total']["USDT"])
-          content = f"Subject: {ticker}\n{message}"
+          content = f"Subject: {symbol}\n{message}"
           self.logger.info(content)
           position_info = pd.DataFrame(current_positions, columns=["symbol", "entryPrice", "unrealizedProfit", "isolatedWallet", "positionAmt", "positionSide"])
           self.logger.info(position_info)
@@ -264,10 +242,9 @@ class TradeCrypto:
         stop = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1])
         self.logger.info(f"usdtm - STOPLOSS Short: {stop}")
         self.stoplossShort(exchange,symbol, stop, get_amount)
-        ticker = symbol
         message = "usdtm - LONG EXIT (STOP LOSS)\n" + "Total Money: " + \
             str(balance['total']["USDT"])
-        content = f"Subject: {ticker}\n{message}"
+        content = f"Subject: {symbol}\n{message}"
         self.logger.info(content)
         self.logger.info(position_info)
         self.logger.info("============================")
@@ -281,10 +258,9 @@ class TradeCrypto:
           takeps1 = float(position_info["entryPrice"][len(position_info.index) - 1]) - float(position_info["entryPrice"][len(position_info.index) - 1])/100 * tp1
           takeprofit3 =self.takeProfitShort1(exchange,symbol, get_amount, takeps1)
           takeprofit1 = True
-          ticker = symbol
           message = f"usdtm - LONG EXIT (TAKE PROFIT 1): {get_amount}\n" + \
               "Total Money: " + str(balance['total']["USDT"])
-          content = f"Subject: {ticker}\n{message}"
+          content = f"Subject: {symbol}\n{message}"
           self.logger.info(content)
           self.logger.info("============================")
 
@@ -296,11 +272,9 @@ class TradeCrypto:
           takeps2 = float(position_info["entryPrice"][len(position_info.index) - 1])-(
               float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp2
           takeprofit3 =self.takeProfitShort2(exchange,symbol, get_amount, takeps2)
-          takeprofit2 = True
-          ticker = symbol
           message = f"usdtm - LONG EXIT (TAKE PROFIT 2): {get_amount}\n" + \
               "Total Money: " + str(balance['total']["USDT"])
-          content = f"Subject: {ticker}\n{message}"
+          content = f"Subject: {symbol}\n{message}"
           self.logger.info(content)
           self.logger.info("============================")
 
@@ -309,10 +283,9 @@ class TradeCrypto:
           self.logger.info("usdtm - TAKE PROFIT 3")
           takeps3 = float(position_info["entryPrice"][len(position_info.index) - 1]) - float(position_info["entryPrice"][len(position_info.index) - 1])/100 * tp3
           takeprofit3 = self.trailing_market(exchange,symbol, get_amount, takeps3, 'buy')
-          ticker = symbol
           message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
               "Total Money: " + str(balance['total']["USDT"])
-          content = f"Subject: {ticker}\n{message}"
+          content = f"Subject: {symbol}\n{message}"
           self.logger.info(content)
           self.logger.info("============================")
 
