@@ -862,7 +862,7 @@ class TradeCrypto:
 
     # Get the list of closed orders for the given symbol
     ex = self.ex[0]
-    closed_orders = 
+    closed_orders = self.fetch_closed_orders(symbol, ex)
     self.logger.info(f"logging the profit loss for exchange: {ex} | {symbol}")
     
     # Loop through the closed orders and update the profit and loss
