@@ -903,6 +903,7 @@ class TradeCrypto:
         quantity = order['amount']
         filled_quantity = order['filled']
         fees = order['fees']
+        self.logger.info(fees)
         order_id = order['id']
         
         # Calculate the profit/loss
