@@ -934,6 +934,8 @@ class TradeCrypto:
             # Remove the trade from the trade_info list if it is closed
             if filled_quantity == quantity:
                 self.trade_info.remove(trade)
+                
+    self.logger.info("Finished Logging the profit/loss")
           
   def fetch_closed_orders(self, symbol, ex):
     
