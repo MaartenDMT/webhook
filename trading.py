@@ -297,24 +297,43 @@ class TradeCrypto:
 
 
       if shortPosition:
+        stop_price = round(float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1]),2)
+        tk1 = round(float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp1,2)
+        tk2 = round(float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp2,2)
+        tk3 = round(float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp3,2)
+        tkp1 = round(float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1,2)
+        tkp2 = round(float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2,2)
+        tkp3 = round(float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3,2)
+        
         self.logger.info("usdtm - IN A SHORT POSITION WITH:")
-        self.logger.info("usdtm - STOP LOSS PRICE: {}", round(float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1]),2))
-        self.logger.info("usdtm - TAKE PROFIT 1 PRICE: {}", round(float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp1,2))
-        self.logger.info("usdtm - TAKE PROFIT 2 PRICE: {}", round(float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp2,2))
-        self.logger.info("usdtm - TAKEPROFIT 1 is - {}",round(float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1,2))
-        self.logger.info("usdtm - TAKEPROFIT 2 is - {}",round(float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2,2))
-        self.logger.info("usdtm - TAKEPROFIT 3 is - {}",round(float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3,2))
+        self.logger.info(f"usdtm - STOP LOSS PRICE: {stop_price}")
+        self.logger.info(f"usdtm - TAKE PROFIT 1 PRICE: {tk1}" )
+        self.logger.info(f"usdtm - TAKE PROFIT 2 PRICE: {tk2}" )
+        self.logger.info(f"usdtm - TAKE PROFIT 3 PRICE: {tk3}" )
+        self.logger.info(f"usdtm - TAKEPROFIT 1 is - {tkp1}")
+        self.logger.info(f"usdtm - TAKEPROFIT 2 is - {tkp2}")
+        self.logger.info(f"usdtm - TAKEPROFIT 3 is - {tkp3}")
 
 
       elif longPosition:
+        price = round(float(df["close"][len(df.index)-1]),2)
+        stop_price =round(float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * stopLoss,2)
+        tk1 =round(((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp1) + float(position_info["entryPrice"][len(position_info.index) - 1]),2)
+        tk2 =round(((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp2) + float(position_info["entryPrice"][len(position_info.index) - 1]),2)
+        tk3 =round(((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp3) + float(position_info["entryPrice"][len(position_info.index) - 1]),2)
+        tkp1 = round((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp1,2)
+        tkp2 =round((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp2,2)
+        tkp3 =round((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp3,2)
+        
         self.logger.info("usdtm - IN A LONG POSITION WITH: ")
-        self.logger.info("usdtm - PRICE: {}", round(float(df["close"][len(df.index)-1]),2))
-        self.logger.info("usdtm - STOP LOSS PRICE: {}", round(float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * stopLoss,2))
-        self.logger.info("usdtm - TAKE PROFIT 1 PRICE: {}", round(((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp1) + float(position_info["entryPrice"][len(position_info.index) - 1]),2))
-        self.logger.info("usdtm - TAKE PROFIT 2 PRICE: {}", round(((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp2) + float(position_info["entryPrice"][len(position_info.index) - 1]),2))
-        self.logger.info("usdtm - TAKEPROFIT 1 is + {}", round((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp1,2))
-        self.logger.info("usdtm - TAKEPROFIT 2 is + {}", round((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp2,2))
-        self.logger.info("usdtm - TAKEPROFIT 3 is + {}", round((float(position_info["entryPrice"][len(position_info.index) - 1]) / 100) * tp3,2))
+        self.logger.info(f"usdtm - PRICE: {price}")
+        self.logger.info(f"usdtm - STOP LOSS PRICE: {stop_price}" )
+        self.logger.info(f"usdtm - TAKE PROFIT 1 PRICE: {tk1}" )
+        self.logger.info(f"usdtm - TAKE PROFIT 2 PRICE: {tk2}" )
+        self.logger.info(f"usdtm - TAKE PROFIT 3 PRICE: {tk3}" )
+        self.logger.info(f"usdtm - TAKEPROFIT 1 is + {tkp1}" )
+        self.logger.info(f"usdtm - TAKEPROFIT 2 is + {tkp2}" )
+        self.logger.info(f"usdtm - TAKEPROFIT 3 is + {tkp3}" )
 
   #COIN- M
   def coinm(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney):
@@ -531,34 +550,40 @@ class TradeCrypto:
 
       if shortPosition:
         stop_price = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1])
-        tkp1 =float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp1
+        tkp1 = float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp1
         tkp2 = float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp2
+        tkp3 = float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp3
         tk1 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1
-        tk2=float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2
-        tk3 =float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3
+        tk2 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2
+        tk3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3
+        
         self.logger.info(f"IN A SHORT POSITION WITH:")
         self.logger.info(f"STOP LOSS PRICE: {stop_price}")
         self.logger.info(f"TAKE PROFIT 1 PRICE: {tkp1}")
         self.logger.info(f"TAKE PROFIT 2 PRICE: {tkp2}")
+        self.logger.info(f"TAKE PROFIT 3 PRICE: {tkp3}")
         self.logger.info(f"TAKEPROFIT 1 is - {tk1}")
         self.logger.info(f"TAKEPROFIT 2 is - {tk2}")
         self.logger.info(f"TAKEPROFIT 3 is - {tk3}")
 
       elif longPosition:
-        stop_price_l = round(float(position_info["entryPrice"][len(position_info.index) - 1])- (float(position_info["entryPrice"][len(position_info.index) - 1])/100) * stopLoss)
-        tkp1_l = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1 + float(position_info["entryPrice"][len(position_info.index) - 1])
-        tkp2_l= float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2 + float(position_info["entryPrice"][len(position_info.index) - 1])
-        tk1_l= float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1
-        tk2_l= float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2
-        tk3_l= float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3
+        stop_price = round(float(position_info["entryPrice"][len(position_info.index) - 1])- (float(position_info["entryPrice"][len(position_info.index) - 1])/100) * stopLoss)
+        tkp1 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1 + float(position_info["entryPrice"][len(position_info.index) - 1])
+        tkp2 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2 + float(position_info["entryPrice"][len(position_info.index) - 1])
+        tkp3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(position_info["entryPrice"][len(position_info.index) - 1])
+        tk1 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1
+        tk2 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2
+        tk3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3
+        
         self.logger.info("IN A LONG POSITION WITH: ")
         self.logger.info("PRICE: {} ", df["close"][len(df.index)-1])
-        self.logger.info(f"STOP LOSS PRICE: {stop_price_l} ")
-        self.logger.info(f"TAKE PROFIT 1 PRICE: {tkp1_l}")
-        self.logger.info(f"TAKE PROFIT 2 PRICE:{tkp2_l}"  )
-        self.logger.info(f"TAKEPROFIT 1 is + {tk1_l}" )
-        self.logger.info(f"TAKEPROFIT 2 is + {tk2_l}")
-        self.logger.info(f"TAKEPROFIT 3 is + {tk3_l}")
+        self.logger.info(f"STOP LOSS PRICE: {stop_price} ")
+        self.logger.info(f"TAKE PROFIT 1 PRICE: {tkp1}")
+        self.logger.info(f"TAKE PROFIT 2 PRICE:{tkp2}")
+        self.logger.info(f"TAKE PROFIT 3 PRICE:{tkp3}")
+        self.logger.info(f"TAKEPROFIT 1 is + {tk1}" )
+        self.logger.info(f"TAKEPROFIT 2 is + {tk2}")
+        self.logger.info(f"TAKEPROFIT 3 is + {tk3}")
   
   
   # LONG ENTER
