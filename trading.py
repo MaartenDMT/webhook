@@ -854,27 +854,6 @@ class TradeCrypto:
     return inPosition,longPosition, shortPosition, balance, free_balance, current_positions, position_info 
 
   def update_profit_thread(self):
-    # Read the symbols from the CSV file
-    symbols = []
-    with open("usdm.csv", "r") as symbols_file:
-      reader = csv.reader(symbols_file)
-      for row in reader:
-          symbols.append(row[0])
-
-    firstime= True
-    while firstime:
-      count= 0
-      for symbol in symbols:
-        self.logger.info(f"writing the profit/loss of symbol:{symbol}")
-        self.update_profit(symbol)
-        self.logger.info("================================================")
-        count +=1
-        if count == 20:
-          sleep(60)
-          count= 0
-          
-      firstime= False
-    else:
       self.update_profit(self.symbol)
 
 
@@ -918,7 +897,7 @@ class TradeCrypto:
         try:
           trade_df = pd.read_csv(f'{file}/{time_stamp}.csv')
         except Exception as e:
-          self.logger.error("there is no date -", e)
+          self.logger.error("there is no data -", e)
           break
         
           
@@ -941,8 +920,16 @@ class TradeCrypto:
               self.profit_loss[symbol] += pnl
               self.logger.info(f"{pnl}")
             else:
-              self.profit_loss[symbol] = pnl
+              self.profit_loss[symbol] -= pnl
               self.logger.info(f"{pnl}")
+              
+            # Convert self.profit_loss to a DataFrame
+            df = pd.DataFrame(self.profit_loss.items(), columns=['symbol', 'profit_loss'])
+            file = r'data/profit_loss'
+            # Write the DataFrame to a CSV file
+            df.to_csv(f'{file}/profit_loss.csv', index=False)
+            df.to_csv(f'{file}/date/{time_stamp}.csv', index=False)
+            self.logger.info(f"writing the profit/loss: {df.to_dict()} to the csv!")
               
             # Remove the trade from the trade_info list if it is closed
             if filled_quantity == quantity:

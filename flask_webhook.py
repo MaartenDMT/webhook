@@ -57,8 +57,9 @@ def start_thread(tc: TradeCrypto, thread, logger) -> None:
         return
       
     try:      
-      logger.info("starting thread !")
-      thread = threading.Thread(target=tc.update_profit_thread).start()    # start a new thread if no thread is currently running
+        logger.info("starting thread !")
+        thread = threading.Thread(target=tc.update_profit_thread, daemon=True).start() # start a new thread if no thread is currently running
+        thread.join()
     except Exception as e:
       logger.error(e)
 
