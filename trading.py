@@ -845,7 +845,7 @@ class TradeCrypto:
   def update_profit_thread(self):
     # Read the symbols from the CSV file
     symbols = []
-    with open("coinm.csv", "r") as symbols_file:
+    with open("usdm.csv", "r") as symbols_file:
       reader = csv.reader(symbols_file)
       for row in reader:
           symbols.append(row)
