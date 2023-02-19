@@ -902,15 +902,13 @@ class TradeCrypto:
         exit_price = order['average']
         quantity = order['amount']
         filled_quantity = order['filled']
-        fees = order['fees']
-        self.logger.info(fees)
         order_id = order['id']
         
         # Calculate the profit/loss
         if side == 'buy':
-          pnl = float(exit_price - entry_price) * filled_quantity - float(fees)
+          pnl = (exit_price - entry_price) * filled_quantity - ((filled_quantity/100)*0.02 + (filled_quantity/100)*0.04)
         else:
-          pnl = (entry_price - exit_price) * filled_quantity - float(fees)
+          pnl = (entry_price - exit_price) * filled_quantity - ((filled_quantity/100)*0.02 + (filled_quantity/100)*0.04)
           
         # Read the trade information from the CSV file into a DataFrame
         file = r'data/trades/'
