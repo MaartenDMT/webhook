@@ -2,4 +2,5 @@ hub
 __pycache__
 test.ipynb
 data\logs
-all_trades.csv
+data\pnl
+data\trades
