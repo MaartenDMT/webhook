@@ -914,7 +914,13 @@ class TradeCrypto:
         file = r'data/trades/'
         time_stamp = datetime.now()  # - dt.timedelta(hours=6)
         time_stamp = time_stamp.strftime('%Y-%m-%d')
-        trade_df = pd.read_csv(f'{file}/{time_stamp}.csv')
+        trade_df = None
+        try:
+          trade_df = pd.read_csv(f'{file}/{time_stamp}.csv')
+        except Exception as e:
+          self.logger.error("there is no date -", e)
+          break
+        
           
         # Loop through the trades in the DataFrame
         for index, trade in trade_df.iterrows():
