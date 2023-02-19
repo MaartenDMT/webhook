@@ -1,5 +1,6 @@
 import csv
 from concurrent.futures import ThreadPoolExecutor
+import datetime
 from time import sleep
 
 import ccxt
@@ -526,7 +527,17 @@ class TradeCrypto:
         break
       
       inPosition, longPosition, shortPosition,balance, free_balance, current_positions,position_info = self.in_position_check(exchange, tick2, tick)
+      
+      # Write the trade information to the CSV file
+      # Convert trade_info to a DataFrame
+      df = pd.DataFrame(self.trade_info)
 
+      # Write the DataFrame to a CSV file
+      file = r'data/trades/'
+      time_stamp = datetime.now()  # - dt.timedelta(hours=6)
+      time_stamp = time_stamp.strftime('%Y-%m-%d')
+      df.to_csv(f'{file}{time_stamp}.csv', index=False)
+                
       if shortPosition:
         stop_price = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1])
         tkp1 = float(position_info["entryPrice"][len(position_info.index) - 1])-(float(position_info["entryPrice"][len(position_info.index) - 1])/100) * tp1
@@ -850,14 +861,22 @@ class TradeCrypto:
       for row in reader:
           symbols.append(row[0])
 
+    firstime= True
+    while firstime:
+      count= 0
+      for symbol in symbols:
+        self.logger.info(f"writing the profit/loss of symbol:{symbol}")
+        self.update_profit(symbol)
+        self.logger.info("================================================")
+        count +=1
+        if count == 20:
+          sleep(60)
+          count= 0
           
-    while True:
-        for symbol in symbols:
-            self.logger.info(f"writing the profit/loss of symbol:{symbol}")
-            self.update_profit(symbol)
-            self.logger.info("================================================")
-          
-        sleep(180)
+      firstime= False
+    else:
+      self.update_profit(self.symbol)
+
 
   def update_profit(self, symbol):
 
@@ -892,18 +911,25 @@ class TradeCrypto:
         else:
           pnl = (entry_price - exit_price) * filled_quantity - fees
           
-        # Update the trade information in the trade_info list
-        for trade in self.trade_info:
+        # Read the trade information from the CSV file into a DataFrame
+        file = r'data/trades/'
+        time_stamp = datetime.now()  # - dt.timedelta(hours=6)
+        time_stamp = time_stamp.strftime('%Y-%m-%d')
+        trade_df = pd.read_csv(f'{file}/{time_stamp}.csv')
+          
+        # Loop through the trades in the DataFrame
+        for index, trade in trade_df.iterrows():
           if trade['id'] == order_id:
             trade['exit_price'] = exit_price
             trade['profit_loss'] = pnl
             
             # Write the trade information to the CSV file
-            with open("data/pnl/all_trades.csv", mode='a', newline='') as csv_file:
-                fieldnames = ['id', 'symbol', 'side', 'entry_price', 'exit_price', 'profit_loss']
-                writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-                writer.writerow(trade)
-                self.logger.info(f"writing the trade: {trade} to the csv!")
+            fieldnames = ['id', 'symbol', 'side', 'entry_price', 'exit_price', 'profit_loss']
+            file = r'data/pnl/'
+            trade_df = pd.DataFrame([trade], columns=fieldnames)
+            trade_df.to_csv(f"{file}/{time_stamp}.csv", header=False, index=False)
+            self.logger.info(f"writing the trade: {trade} to the csv!")
+
                 
             # Update the total profit/loss for the given symbol
             if symbol in self.profit_loss:
@@ -921,8 +947,10 @@ class TradeCrypto:
     
     try:
        closed_order = ex.fetch_closed_orders(symbol=symbol)
-       self.logger.error(closed_order)
+       self.logger.info(closed_order)
     except BadSymbol as e:
       self.logger.error(f"this symbol is not right {symbol} - {e}" )
     except Exception as e:
        self.logger.error(e)
+       
+    return closed_order
