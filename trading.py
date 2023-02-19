@@ -907,9 +907,9 @@ class TradeCrypto:
         
         # Calculate the profit/loss
         if side == 'buy':
-          pnl = (exit_price - entry_price) * filled_quantity - fees
+          pnl = float(exit_price - entry_price) * filled_quantity - float(fees)
         else:
-          pnl = (entry_price - exit_price) * filled_quantity - fees
+          pnl = (entry_price - exit_price) * filled_quantity - float(fees)
           
         # Read the trade information from the CSV file into a DataFrame
         file = r'data/trades/'
