@@ -42,7 +42,7 @@ class TradeCrypto:
     else:
       self.trade()
     
-    self.start_thread()
+    self.start_thread(self.thread)
       
   def __str__(self) -> str:
     return "Succeeded"  
@@ -794,7 +794,7 @@ class TradeCrypto:
         'callbackRate': rate,
         'reduceOnly': True,
     }
-    self.logger.info(f"the activantion price is : {takeps3}")
+    self.logger.info(f"the activantion price is : {takeps3} !")
     self.logger.info("#########################################")
     try:
       order = exchange.create_order(symbol, order_type, side, get_amount, price, params)
