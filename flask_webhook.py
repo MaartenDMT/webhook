@@ -1,6 +1,5 @@
 import logging
 import os
-import threading
 from datetime import datetime
 
 import ccxt
@@ -42,26 +41,12 @@ def hook():
     add_log_info(logger)
     
     t = TradeCrypto(request, ex, logger)
-    start_thread(t, thread, logger)
     
     content = t.__str__()
     logger.info(content)
     
     return content
 
-
-def start_thread(tc: TradeCrypto, thread, logger) -> None:
-    # check if the thread is already running
-    if thread and thread.is_alive():
-        logger.info("Thread is already running")
-        return
-      
-    try:      
-        logger.info("starting thread !")
-        thread = threading.Thread(target=tc.update_profit_thread, daemon=True).start() # start a new thread if no thread is currently running
-        thread.join()
-    except Exception as e:
-      logger.error(e)
 
 def add_log_info(logger) -> None:
     file = r'data/logs/'

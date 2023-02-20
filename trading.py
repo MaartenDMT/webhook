@@ -1,4 +1,3 @@
-import csv
 from concurrent.futures import ThreadPoolExecutor
 from  datetime import datetime
 from time import sleep
@@ -6,6 +5,7 @@ from time import sleep
 import ccxt
 import pandas as pd
 from ccxt.base.errors import InsufficientFunds, BadSymbol
+import threading
 
 from tickets import tickers, tickers2coin, tickerscoin
 
@@ -25,6 +25,7 @@ class TradeCrypto:
     self.ex = ex
     self.logger = logger
     self.multi = 2
+    self.thread = None
     self.trade_info = []
     self.profit_loss = {}
 
@@ -41,6 +42,7 @@ class TradeCrypto:
     else:
       self.trade()
     
+    self.start_thread()
       
   def __str__(self) -> str:
     return "Succeeded"  
@@ -853,6 +855,19 @@ class TradeCrypto:
 
     return inPosition,longPosition, shortPosition, balance, free_balance, current_positions, position_info 
 
+
+  def start_thread(self, thread) -> None:
+    # check if the thread is already running
+    if thread and thread.is_alive():
+        self.logger.info("Thread is already running")
+        return
+      
+    try:      
+        self.logger.info("starting thread !")
+        self.thread = threading.Thread(target=self.update_profit_thread, daemon=True).start() # start a new thread if no thread is currently running
+    except Exception as e:
+      self.logger.error(e)
+
   def update_profit_thread(self):
       self.update_profit(self.symbol)
 
@@ -896,6 +911,7 @@ class TradeCrypto:
         trade_df = None
         try:
           trade_df = pd.read_csv(f'{file}/{time_stamp}.csv')
+          self.logger.info("reading the csv trades files")
         except Exception as e:
           self.logger.error("there is no data -", e)
           break
