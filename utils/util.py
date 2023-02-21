@@ -155,7 +155,7 @@ def update_profit(exchange, symbol: str, profit_loss: dict, trade_info: list, lo
                         profit_loss[symbol] += pnl
                         logger.info(f"{pnl}")
                     else:
-                        profit_loss[symbol] -= pnl
+                        profit_loss[symbol] = pnl
                         logger.info(f"{pnl}")
 
                     # Convert self.profit_loss to a DataFrame
