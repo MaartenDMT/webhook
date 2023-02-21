@@ -29,7 +29,7 @@ class BinanceFuturesUsdtm:
     def trading(self, exchange:binance, symbol:str, side:int, t:str, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
         self.logger.info(f"exchange: {exchange.name} ")
         
-        inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, symbol,None)
+        inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, symbol,None, self.logger)
         count:int=1
 
         if inPosition == False:
@@ -71,7 +71,7 @@ class BinanceFuturesUsdtm:
                     self.logger.info(content)
                     self.logger.info("============================")
 
-                inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, symbol, None)
+                inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, symbol, None, self.logger)
                 
                 if longPosition:
                     # STOP LOSS FOR LONG POSITION
@@ -160,7 +160,7 @@ class BinanceFuturesUsdtm:
                 self.logger.info(position_info)
                 self.logger.info("============================")
 
-            inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, symbol, None)
+            inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, symbol, None, self.logger)
             
             if shortPosition:
                 # STOP LOSS FOR SHORT POSITION
@@ -225,7 +225,7 @@ class BinanceFuturesUsdtm:
             if count == 3:
                 break 
             
-            inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, symbol, None)
+            inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, symbol, None, self.logger)
 
             # Write the trade information to the CSV file
             # Convert trade_info to a DataFrame

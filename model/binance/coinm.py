@@ -37,7 +37,7 @@ class BinanceFuturesCoinm:
         tick2:str = tickers2[symbol]
 
         exchange.dapiPrivate_post_leverage({"symbol": tick2, "leverage": leverage})    
-        inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2,tick)
+        inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2,tick, self.logger)
         count:int = 1
         
 
@@ -72,7 +72,7 @@ class BinanceFuturesCoinm:
                 self.logger.info(content)
                 self.logger.info("============================")
 
-            inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2,tick)
+            inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2,tick, self.logger)
             
             
             if longPosition:
@@ -164,7 +164,7 @@ class BinanceFuturesCoinm:
                 self.logger.info(position_info)
                 self.logger.info("============================")
                 
-            inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2,tick)
+            inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2,tick, self.logger)
             
             if shortPosition:
                 # STOP LOSS FOR SHORT POSITION
@@ -228,7 +228,7 @@ class BinanceFuturesCoinm:
             if count == 3:
                 break
             
-            inPosition, longPosition, shortPosition,balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2, tick)
+            inPosition, longPosition, shortPosition,balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2, tick, self.logger)
             
             # Write the trade information to the CSV file
             # Convert trade_info to a DataFrame
