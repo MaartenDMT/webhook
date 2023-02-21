@@ -24,7 +24,7 @@ class BinanceFuturesUsdtm:
         
         self.logger.info("USDTM LOGGER ACTIVE")
         self.trading(exchange, symbol, side, t, leverage,tp1,tp2, tp3,stopLoss,ProcessingMoney)
-        start_thread(exchange, self.thread, self.profit_loss, self.trade_info, self.thread, self.logger)
+        start_thread(exchange, symbol, self.profit_loss, self.trade_info, self.thread, self.logger)
         
     def trading(self, exchange:binance, symbol:str, side:int, t:str, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
         self.logger.info(f"exchange: {exchange.name} ")
@@ -37,7 +37,7 @@ class BinanceFuturesUsdtm:
         if symbol in ["WAVESUSDT"]:
             exchange.fapiPrivate_post_leverage({"symbol": symbol, "leverage": 8, })
 
-        while False or ((longPosition == False and side ==1) or (shortPosition == False and side == -1)):
+        while inPosition == False or ((longPosition == False and side ==1) or (shortPosition == False and side == -1)):
             
             # LOAD BARS
             bars = exchange.fetch_ohlcv(symbol, timeframe=t, since=None, limit=30)

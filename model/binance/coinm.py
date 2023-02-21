@@ -26,10 +26,10 @@ class BinanceFuturesCoinm:
         
         self.logger.info("COINM LOGGER ACTIVE")
         self.trading(exchange, symbol, side, t, leverage,tp1,tp2, tp3,stopLoss,ProcessingMoney)
-        start_thread(exchange, self.thread, self.profit_loss, self.trade_info, self.thread, self.logger)
+        start_thread(exchange, symbol, self.profit_loss, self.trade_info, self.thread, self.logger)
 
     def trading(self, exchange:binancecoinm, symbol:str, side:int, t:str, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
-        tickers:dict[str,str] = tickerscoin
+        tickers: dict[str,str] = tickerscoin
         tickers2: dict[str,str] = tickers2coin
         
 
