@@ -1,3 +1,4 @@
+import logging
 import pathlib
 from datetime import datetime
 from os import path
@@ -7,18 +8,25 @@ import pandas as pd
 from ccxt import binance
 
 from model.trades.trades import Trades
+from utils.trade_logger import add_log_info
 from utils.util import in_position_check, start_thread
 
 trade_info = []
 profit_loss = {}
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+
 class BinanceFuturesUsdtm:
-    def __init__(self, exchange, symbol, side, t, leverage, 
-                 tp1, tp2, tp3, stopLoss, ProcessingMoney, logger):
+    def __init__(self, exchange, symbol, side, t, leverage,
+                 tp1, tp2, tp3, stopLoss, ProcessingMoney):
+
         self.takeprofit1: bool = False
         self.takeprofit2: bool = False
         self.takeprofit3: bool = False
         self.get_amount: float = 0
+        add_log_info(logger, exchange)
         self.logger = logger
         self.thread = None
         self.trade_info = trade_info
@@ -31,8 +39,8 @@ class BinanceFuturesUsdtm:
         start_thread(exchange, symbol, self.profit_loss,
                      self.trade_info, self.thread, self.logger)
 
-    def trading(self, exchange: binance, symbol: str, side: int, t: str, 
-                leverage: int, tp1: float, tp2: float, tp3: float, stopLoss: float, 
+    def trading(self, exchange: binance, symbol: str, side: int, t: str,
+                leverage: int, tp1: float, tp2: float, tp3: float, stopLoss: float,
                 ProcessingMoney: float):
         self.logger.info(f"exchange: {exchange.name} ")
 

@@ -28,6 +28,24 @@ exchange2 = ccxt.binancecoinm({
 })
 # exchange2.set_sandbox_mode(True)
 
+exchange_d = ccxt.binance({
+    "apiKey": os.environ.get('D_BIN_KEY'),
+    "secret": os.environ.get('D_BIN_SECRET'),
+    'enableRateLimit': True,
+    'options': {
+        'defaultType': 'future',
+    },
+})
+# exchange.set_sandbox_mode(True)
+
+exchange2_d = ccxt.binancecoinm({
+    "apiKey": os.environ.get('D_BIN_KEY'),
+    "secret": os.environ.get('D_BIN_SECRET'),
+    'enableRateLimit': True,
+})
+# exchange2.set_sandbox_mode(True)
+
+
 thread = None
 app = Flask(__name__)
 
@@ -37,35 +55,13 @@ def hook():
     print(request.json)
     ex = [exchange, exchange2]
 
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
-    add_log_info(logger)
-
-    t = TradeCrypto(request, ex, logger)
-
+    t = TradeCrypto(request, ex)
     content = t.__str__()
-    logger.info(content)
 
     return content
 
 
-def add_log_info(logger) -> None:
-    file = r'data/logs/'
-    time_stamp = datetime.now()  # - dt.timedelta(hours=6)
-    time_stamp = time_stamp.strftime('%Y-%m-%d')
-    file_handler = logging.FileHandler(f'{file}{time_stamp}.log')
-    # create a stream handler to log to the console
-    stream_handler = logging.StreamHandler()
-    # create a formatter for the log messages
-    formatter = logging.Formatter(
-        '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    # add the formatter to the handlers
-    if not logger.handlers:
-        file_handler.setFormatter(formatter)
-        stream_handler.setFormatter(formatter)
-        # add the handlers to the logger
-        logger.addHandler(file_handler)
-        logger.addHandler(stream_handler)
+
 
 
 if __name__ == '__main__':

@@ -1,11 +1,19 @@
+import logging
+
 from ccxt import binance
+
+from utils.trade_logger import add_log_info
 
 trade_info = []
 profit_loss = {}
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
 class BinanceMargin:
-    def __init__(self):
-        ...
+    def __init__(self, exchange):
+        add_log_info(logger, exchange)
+        self.logger = logger
         
     def trading(self):
         ...

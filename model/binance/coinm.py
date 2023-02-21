@@ -1,3 +1,4 @@
+import logging
 import pathlib
 from datetime import datetime
 from os import path
@@ -8,11 +9,15 @@ from ccxt import binancecoinm
 
 from model.trades.trades import Trades
 from tickets import tickers2coin, tickerscoin
+from utils.trade_logger import add_log_info
 from utils.util import (get_max_position_available, in_position_check,
                         start_thread)
 
 trade_info = []
 profit_loss = {}
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 class BinanceFuturesCoinm:
     def __init__(self, exchange:binancecoinm, symbol:str, side:int, t:int, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float, logger):
@@ -21,6 +26,7 @@ class BinanceFuturesCoinm:
         self.takeprofit3:bool = False
         self.get_amount:float = 0
         self.thread = None
+        add_log_info(logger, exchange)
         self.logger = logger
         self.trades = Trades(self.logger)
         self.trade_info = trade_info
