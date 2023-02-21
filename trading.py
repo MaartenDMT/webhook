@@ -541,7 +541,7 @@ class TradeCrypto:
       file = r'data/trades/'
       time_stamp = datetime.now()  # - dt.timedelta(hours=6)
       time_stamp = time_stamp.strftime('%Y-%m-%d')
-      df.to_csv(f'{file}{time_stamp}.csv', index=False)
+      df.to_csv(f'{file}/{time_stamp}.csv', index=False)
                 
       if shortPosition:
         stop_price = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * stopLoss + float(position_info["entryPrice"][len(position_info.index) - 1])
@@ -908,7 +908,7 @@ class TradeCrypto:
           pnl = (entry_price - exit_price) * filled_quantity - ((filled_quantity/100)*0.02 + (filled_quantity/100)*0.04)
           
         # Read the trade information from the CSV file into a DataFrame
-        file = r'data/trades/'
+        file = r'data/trades'
         time_stamp = datetime.now()  # - dt.timedelta(hours=6)
         time_stamp = time_stamp.strftime('%Y-%m-%d')
         trade_df = None
@@ -928,7 +928,7 @@ class TradeCrypto:
             
             # Write the trade information to the CSV file
             fieldnames = ['id', 'symbol', 'side', 'entry_price', 'exit_price', 'profit_loss']
-            file = r'data/pnl/'
+            file = r'data/pnl'
             trade_df = pd.DataFrame([trade], columns=fieldnames)
             trade_df.to_csv(f"{file}/{time_stamp}.csv", header=False, index=False)
             self.logger.info(f"writing the trade: {trade} to the csv!")
