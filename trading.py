@@ -23,8 +23,8 @@ class TradeCrypto:
     self.multi = 2
     self.spot = spot.BinanceSpot
     self.margin = margin.BinanceMargin
-    self.coinm = coinm.BinanceFuturesCoinm
-    self.usdtm = usdtm.BinanceFuturesUsdtm
+    
+    
 
     
     if self.symbol in ["BTCUSDT", "ETHUSDT"]:
@@ -57,14 +57,14 @@ class TradeCrypto:
       executor.submit(self.execute_coinm_trade, self.ex[1], self.symbol, self.side, self.t, self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney*self.multi)
 
   def execute_usdtm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney):
-    self.usdtm(exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
+    self.usdtm = usdtm.BinanceFuturesUsdtm(exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
 
   def execute_coinm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney):
     ttick = tickers[symbol]
     for d in tickers2coin:
         if d == ttick:
             self.logger.info(d)
-            self.coinm(exchange, d, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
+            self.coinm = coinm.BinanceFuturesCoinm(exchange, d, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
   
 
 
