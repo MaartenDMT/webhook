@@ -3,7 +3,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from model.binance import coinm, margin, spot, usdtm
 from tickets import tickers, tickers2coin
-
+from utils.trade_logger import add_log_info
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
@@ -20,6 +20,7 @@ class TradeCrypto:
         self.stopLoss = 4 / (self.leverage / 2)
         self.ProcessingMoney = 25
         self.ex = ex
+        add_log_info(logger, "main")
         self.logger = logger
         self.multi = 2
 
