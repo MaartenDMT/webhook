@@ -39,8 +39,8 @@ class TradeCrypto:
     def __str__(self) -> str:
         return "Succeeded"
 
+    #executing the params for the fast bot
     def fast_bot(self) -> None:
-        self.logger.info(f"starting the fastbot with symbol {self.symbol}")
         leverage = 20
         tp1 = 6 / leverage
         tp2 = 7 / leverage
@@ -48,22 +48,26 @@ class TradeCrypto:
         stopLoss = 5 / leverage
         ProcessingMoney = 5
         self.execute_usdtm_trade(self.ex[0], self.symbol, self.side, self.t,
-                                 leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney, self.logger)
+                                 leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney)
+        self.logger.info(f"starting the fastbot with symbol {self.symbol}")
 
+    #executing all the trading in a threadpool so it is happening in parralell
     def trade(self) -> None:
         with ThreadPoolExecutor() as executor:
             executor.submit(self.execute_usdtm_trade, self.ex[0], self.symbol, self.side, self.t,
-                            self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney, self.logger)
+                            self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
             executor.submit(self.execute_coinm_trade, self.ex[1], self.symbol, self.side, self.t, self.leverage,
-                            self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney*self.multi, self.logger)
+                            self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney*self.multi)
 
+    
+    #executing the usdtm futures
     def execute_usdtm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3, 
                             stopLoss, ProcessingMoney, logger) -> None:
         self.usdtm = usdtm.BinanceFuturesUsdtm(exchange, symbol, side, t, leverage,
-                                               tp1, tp2, tp3, stopLoss, ProcessingMoney,
-                                               logger)
+                                               tp1, tp2, tp3, stopLoss, ProcessingMoney)
         self.logger.info(f"starting the {self.usdtm}")
 
+    #executing the coinm futures
     def execute_coinm_trade(self, exchange, symbol, side, t, leverage,
                             tp1, tp2, tp3, stopLoss, ProcessingMoney) -> None:
         ttick = tickers[symbol]
@@ -75,13 +79,14 @@ class TradeCrypto:
                     stopLoss, ProcessingMoney)
                 self.logger.info(f"starting the {self.coinm}")
 
-
+    #executing spot trading
     def execute_spot_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
-                           stopLoss, ProcessingMoney, logger) -> None:
+                           stopLoss, ProcessingMoney) -> None:
         # self.spot = spot.BinanceSpot
         pass
-
+      
+    #execute the margin trading
     def execute_margin_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
-                             stopLoss, ProcessingMoney, logger)-> None:
+                             stopLoss, ProcessingMoney)-> None:
         # self.margin = margin.BinanceMargin
         pass
