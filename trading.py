@@ -538,7 +538,7 @@ class TradeCrypto:
       df = pd.DataFrame(self.trade_info)
 
       # Write the DataFrame to a CSV file
-      file = r'data/trades/'
+      file = r'data/trades'
       time_stamp = datetime.now()  # - dt.timedelta(hours=6)
       time_stamp = time_stamp.strftime('%Y-%m-%d')
       df.to_csv(f'{file}/{time_stamp}.csv', index=False)
