@@ -24,6 +24,7 @@ class BinanceFuturesCoinm:
         self.logger = logger
         self.trades = Trades(self.logger)
         
+        self.logger.info("COINM LOGGER ACTIVE")
         self.trading(exchange, symbol, side, t, leverage,tp1,tp2, tp3,stopLoss,ProcessingMoney)
         start_thread(exchange, self.thread, self.profit_loss, self.trade_info, self.thread, self.logger)
 
