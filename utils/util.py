@@ -172,6 +172,7 @@ def update_profit(exchange, symbol:str, profit_loss:dict,trade_info:list, logger
     logger.info("Finished Logging the profit/loss")
           
 def fetch_closed_orders(symbol, ex, logger):
+    closed_order = None
     
     try:
        closed_order = ex.fetch_closed_orders(symbol=symbol)
