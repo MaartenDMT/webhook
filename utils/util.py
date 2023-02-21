@@ -80,7 +80,7 @@ def update_profit(exchange, symbol:str, profit_loss:dict,trade_info:list, logger
 
     # Get the list of closed orders for the given symbol
     ex = exchange
-    closed_orders = fetch_closed_orders(symbol, ex)
+    closed_orders = fetch_closed_orders(symbol, ex, logger)
     logger.info(f"logging the profit loss for exchange: {ex} | {symbol}")
     
     if closed_orders == None:
@@ -171,7 +171,7 @@ def update_profit(exchange, symbol:str, profit_loss:dict,trade_info:list, logger
                 
     logger.info("Finished Logging the profit/loss")
           
-def fetch_closed_orders(self, symbol, ex, logger):
+def fetch_closed_orders(symbol, ex, logger):
     
     try:
        closed_order = ex.fetch_closed_orders(symbol=symbol)
