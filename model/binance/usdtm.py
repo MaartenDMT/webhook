@@ -76,26 +76,27 @@ class BinanceFuturesUsdtm:
                     inPosition = False
                     shortPosition = False
 
-                    self.get_amount_l = float(
-                        free_balance["USDT"]) / 100 * ProcessingMoney * leverage / float(df["close"][len(df.index) - 1])
-                    self.logger.info(
-                        f"usdtm - ENTERING LONG POSITION WITH: {self.get_amount_l}")
+                self.get_amount_l = float(
+                    free_balance["USDT"]) / 100 * ProcessingMoney * leverage / float(df["close"][len(df.index) - 1])
+                self.logger.info(
+                    f"usdtm - ENTERING LONG POSITION WITH: {self.get_amount_l}")
 
-                    l = self.trades.longEnter(
-                        exchange, symbol, self.get_amount_l, self.trade_info)
-                    takeprofit1 = False
-                    takeprofit2 = False
-                    takeprofit3 = False
+                l = self.trades.longEnter(
+                    exchange, symbol, self.get_amount_l, self.trade_info)
+                takeprofit1 = False
+                takeprofit2 = False
+                takeprofit3 = False
 
                 if l == False:
                     break
                 if l:
                     longPosition = True
-                    message = "usdtm - LONG ENTER\n" + \
-                        "Total Money: " + str(balance['total']["USDT"])
-                    content = f"Subject: {symbol}\n{message}"
-                    self.logger.info(content)
-                    self.logger.info("============================")
+
+                message = "usdtm - LONG ENTER\n" + \
+                    "Total Money: " + str(balance['total']["USDT"])
+                content = f"Subject: {symbol}\n{message}"
+                self.logger.info(content)
+                self.logger.info("============================")
 
                 inPosition, longPosition, shortPosition, balance, free_balance, current_positions, position_info = in_position_check(
                     exchange, symbol, None, self.logger)
@@ -126,47 +127,47 @@ class BinanceFuturesUsdtm:
                     get_amount = float(
                         position_info["positionAmt"][len(position_info.index) - 1]) / 3
 
-                if takeprofit1 == False:
-                    # TAKE PROFIT FOR LONG POSITION
-                    # TAKE PROFIT 1
-                    self.logger.info("usdtm - TAKE PROFIT 1")
-                    takep1 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1 + float(
-                        position_info["entryPrice"][len(position_info.index) - 1])
-                    takeprofit1 = self.trades.takeProfitLong1(
-                        exchange, symbol, get_amount, takep1)
-                    message = f"usdtm - LONG EXIT (TAKE PROFIT 1): {get_amount}\n" + \
-                        "Total Money: " + str(balance['total']["USDT"])
-                    content = f"Subject: {symbol}\n{message}"
-                    self.logger.info(content)
-                    self.logger.info("============================")
+                    if takeprofit1 == False:
+                        # TAKE PROFIT FOR LONG POSITION
+                        # TAKE PROFIT 1
+                        self.logger.info("usdtm - TAKE PROFIT 1")
+                        takep1 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp1 + float(
+                            position_info["entryPrice"][len(position_info.index) - 1])
+                        takeprofit1 = self.trades.takeProfitLong1(
+                            exchange, symbol, get_amount, takep1)
+                        message = f"usdtm - LONG EXIT (TAKE PROFIT 1): {get_amount}\n" + \
+                            "Total Money: " + str(balance['total']["USDT"])
+                        content = f"Subject: {symbol}\n{message}"
+                        self.logger.info(content)
+                        self.logger.info("============================")
 
-                if takeprofit2 == False:
+                    if takeprofit2 == False:
 
-                    # TAKE PROFIT 2
-                    self.logger.info("usdtm - TAKE PROFIT 2")
-                    takep2 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2 + float(
-                        position_info["entryPrice"][len(position_info.index) - 1])
-                    takeprofit2 = self.trades.takeProfitLong2(
-                        exchange, symbol, get_amount, takep2)
-                    message = f"usdtm -LONG EXIT (TAKE PROFIT 2): {get_amount}\n" + \
-                        "Total Money: " + str(balance['total']["USDT"])
-                    content = f"Subject: {symbol}\n{message}"
-                    self.logger.info(content)
-                    self.logger.info("============================")
+                        # TAKE PROFIT 2
+                        self.logger.info("usdtm - TAKE PROFIT 2")
+                        takep2 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp2 + float(
+                            position_info["entryPrice"][len(position_info.index) - 1])
+                        takeprofit2 = self.trades.takeProfitLong2(
+                            exchange, symbol, get_amount, takep2)
+                        message = f"usdtm -LONG EXIT (TAKE PROFIT 2): {get_amount}\n" + \
+                            "Total Money: " + str(balance['total']["USDT"])
+                        content = f"Subject: {symbol}\n{message}"
+                        self.logger.info(content)
+                        self.logger.info("============================")
 
-                if takeprofit3 == False:
+                    if takeprofit3 == False:
 
-                    # TAKE PROFIT 3
-                    self.logger.info("usdtm - TAKE PROFIT 3")
-                    takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(
-                        position_info["entryPrice"][len(position_info.index) - 1])
-                    takeprofit3 = self.trades.trailing_market(
-                        exchange, symbol, get_amount, takep3, 'sell')
-                    message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
-                        "Total Money: " + str(balance['total']["USDT"])
-                    content = f"Subject: {symbol}\n{message}"
-                    self.logger.info(content)
-                    self.logger.info("============================")
+                        # TAKE PROFIT 3
+                        self.logger.info("usdtm - TAKE PROFIT 3")
+                        takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(
+                            position_info["entryPrice"][len(position_info.index) - 1])
+                        takeprofit3 = self.trades.trailing_market(
+                            exchange, symbol, get_amount, takep3, 'sell')
+                        message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
+                            "Total Money: " + str(balance['total']["USDT"])
+                        content = f"Subject: {symbol}\n{message}"
+                        self.logger.info(content)
+                        self.logger.info("============================")
 
             # BEAR EVENT
             elif shortPosition == False and side == -1:
@@ -193,6 +194,7 @@ class BinanceFuturesUsdtm:
                     break
                 if s:
                     shortPosition = True
+
                 message = "usdtm - LONG ENTER\n" + \
                     "Total Money: " + str(balance['total']["USDT"])
                 content = f"Subject: {symbol}\n{message}"
@@ -285,6 +287,7 @@ class BinanceFuturesUsdtm:
             file = f'data/trades/{exchange}'
             time_stamp = datetime.now()  # - dt.timedelta(hours=6)
             time_stamp = time_stamp.strftime('%Y-%m-%d')
+
             if path.exists(file):
                 df.to_csv(f'{file}/{time_stamp}.csv', index=False)
             else:

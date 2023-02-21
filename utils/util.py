@@ -17,7 +17,7 @@ def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, 
     #float(((free_balance["USDT"] / 100) * ProcessingMoney) * leverage) / (df["close"][len(df.index) - 1])
 
 
-def in_position_check(exchange: binance, symbol: str, tick: None, logger):
+def in_position_check(exchange, symbol: str, tick: None, logger):
 
     longPosition = False
     shortPosition = False

@@ -20,22 +20,32 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 class BinanceFuturesCoinm:
-    def __init__(self, exchange:binancecoinm, symbol:str, side:int, t:int, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
+    def __init__(self, exchange:binancecoinm, symbol:str, side:int, t:int, leverage:int,
+                 tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
+        
         self.takeprofit1:bool = False
         self.takeprofit2:bool = False
         self.takeprofit3:bool = False
         self.get_amount:float = 0
-        self.thread = None
+
         add_log_info(logger, exchange)
         self.logger = logger
-        self.trades = Trades(self.logger)
+        self.thread = None
         self.trade_info = trade_info
         self.profit_loss = profit_loss
+        self.trades = Trades(self.logger)
+        
         self.logger.info("COINM LOGGER ACTIVE")
-        self.trading(exchange, symbol, side, t, leverage,tp1,tp2, tp3,stopLoss,ProcessingMoney)
-        start_thread(exchange, symbol, self.profit_loss, self.trade_info, self.thread, self.logger)
+        self.trading(exchange, symbol, side, t, leverage,tp1,tp2, 
+                     tp3,stopLoss,ProcessingMoney)
+        start_thread(exchange, symbol, self.profit_loss, self.trade_info, 
+                     self.thread, self.logger)
 
-    def trading(self, exchange:binancecoinm, symbol:str, side:int, t:str, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
+    def trading(self, exchange:binancecoinm, symbol:str, side:int, t:str, leverage:int,
+                tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
+        
+        self.logger.info(f"exchange: {exchange.name} ")
+        
         tickers: dict[str,str] = tickerscoin
         tickers2: dict[str,str] = tickers2coin
         
@@ -43,12 +53,15 @@ class BinanceFuturesCoinm:
         tick:str = tickers[symbol]
         tick2:str = tickers2[symbol]
 
-        exchange.dapiPrivate_post_leverage({"symbol": tick2, "leverage": leverage})    
-        inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2,tick, self.logger)
+
+        inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2, tick, self.logger)
         count:int = 1
         
-
+        if inPosition == False:
+            exchange.dapiPrivate_post_leverage({"symbol": tick2, "leverage": leverage})  
+              
         while inPosition == False or ((longPosition == False and side ==1) or (shortPosition == False and side == -1)):
+            
             # LOAD BARS
             bars = exchange.fetch_ohlcv(tick2, timeframe=t, since=None, limit=30)
             df = pd.DataFrame(bars, columns=["timestamp", "open", "high", "low", "close", "volume"])
@@ -57,8 +70,8 @@ class BinanceFuturesCoinm:
             if longPosition == False and side == 1:
                 exchange.cancel_all_orders(tick2)
                 if shortPosition:
-                    self.logger.info("EXIT SHORT POSITION...")
-                    amount = position_info["positionAmt"][len(position_info.index) - 1]
+                    self.logger.info("coinm - EXIT SHORT POSITION...")
+                    amount = float(position_info["positionAmt"][len(position_info.index) - 1])
                     self.logger.info(f"Amount Short Exit Position: {amount}")
                     self.trades.shortExit(exchange,tick2, amount)
                     inPosition = False
@@ -70,14 +83,15 @@ class BinanceFuturesCoinm:
                 takeprofit1 = False
                 takeprofit2 = False
                 takeprofit3 = False
+                    
                 if l == False:
                     break
                 if l:
                     longPosition = True
-                message = "LONG ENTER\n" + "Total Money: " + balance
-                content = f"Subject: {tick}\n{message}"
-                self.logger.info(content)
-                self.logger.info("============================")
+                    message = "LONG ENTER\n" + "Total Money: " + balance
+                    content = f"Subject: {tick}\n{message}"
+                    self.logger.info(content)
+                    self.logger.info("============================")
 
             inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2,tick, self.logger)
             
@@ -153,12 +167,12 @@ class BinanceFuturesCoinm:
                     inPosition = False
                     longPosition = False
 
-                    get_amount = get_max_position_available(exchange, tick,tick2,leverage,ProcessingMoney)
-                    self.logger.info(f"ENTERING SHORT POSITION...: {get_amount}")
-                    s = self.trades.shortEnter(exchange,tick2, get_amount, self.trade_info)
-                    takeprofit1 = False
-                    takeprofit2 = False
-                    takeprofit3 = False
+                get_amount = get_max_position_available(exchange, tick,tick2,leverage,ProcessingMoney)
+                self.logger.info(f"ENTERING SHORT POSITION...: {get_amount}")
+                s = self.trades.shortEnter(exchange,tick2, get_amount, self.trade_info)
+                takeprofit1 = False
+                takeprofit2 = False
+                takeprofit3 = False
                 if s == False:
                     break
                 if s:
