@@ -123,8 +123,7 @@ def update_profit(exchange, symbol: str, profit_loss: dict, trade_info: list, lo
             time_stamp = time_stamp.strftime('%Y-%m-%d')
             trade_df = None
             try:
-                trade_df = pd.DataFrame(trade_info)
-                logger.info("reading the csv trades files")
+                trade_df = pd.DataFrame(trade_info)  
             except Exception as e:
                 logger.error("there is no data -", e)
                 break
@@ -132,6 +131,7 @@ def update_profit(exchange, symbol: str, profit_loss: dict, trade_info: list, lo
             # Loop through the trades in the DataFrame
             for index, trade in trade_df.iterrows():
                 if trade['id'] == order_id:
+                    logger.info("reading the csv trades files")
                     trade['exit_price'] = exit_price
                     trade['profit_loss'] = pnl
 
