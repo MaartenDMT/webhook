@@ -146,5 +146,5 @@ tickers2coin = {
   "ENS/USD":"ENSUSD_PERP",
   "CHZ/USD":"CHZUSD_PERP",
   "APT/USD":"APTUSD_PERP",
-  "OP/USD":"OPUSD_PERP",
+  "OP/USD": "OPUSD_PERP",
   }

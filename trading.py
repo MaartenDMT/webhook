@@ -40,6 +40,7 @@ class TradeCrypto:
         return "Succeeded"
 
     def fast_bot(self) -> None:
+        self.logger.info(f"starting the fastbot with symbol {self.symbol}")
         leverage = 20
         tp1 = 6 / leverage
         tp2 = 7 / leverage
@@ -64,17 +65,16 @@ class TradeCrypto:
         self.logger.info(f"starting the {self.usdtm}")
 
     def execute_coinm_trade(self, exchange, symbol, side, t, leverage,
-                            tp1, tp2, tp3, stopLoss, ProcessingMoney, logger) -> None:
+                            tp1, tp2, tp3, stopLoss, ProcessingMoney) -> None:
         ttick = tickers[symbol]
         for d in tickers2coin:
             if d == ttick:
                 self.logger.info(d)
                 self.coinm = coinm.BinanceFuturesCoinm(
                     exchange, d, side, t, leverage, tp1, tp2, tp3,
-                    stopLoss, ProcessingMoney, logger)
+                    stopLoss, ProcessingMoney)
                 self.logger.info(f"starting the {self.coinm}")
-            else:
-                self.logger.info("No Symbol for COIN-M")
+
 
     def execute_spot_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
                            stopLoss, ProcessingMoney, logger) -> None:

@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 class BinanceSpot:
-    def __init__(self):
+    def __init__(self, exchange):
         add_log_info(logger, exchange)
         self.logger = logger
         
