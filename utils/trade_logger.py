@@ -1,8 +1,9 @@
 import logging
+import pathlib
 from datetime import datetime
 from os import path
-import pathlib
 from time import sleep
+
 
 def add_log_info(logger, exchange) -> None:
     file = f'data/logs/{exchange}'

@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 class BinanceFuturesCoinm:
-    def __init__(self, exchange:binancecoinm, symbol:str, side:int, t:int, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float, logger):
+    def __init__(self, exchange:binancecoinm, symbol:str, side:int, t:int, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
         self.takeprofit1:bool = False
         self.takeprofit2:bool = False
         self.takeprofit3:bool = False

@@ -4,6 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 from model.binance import coinm, margin, spot, usdtm
 from tickets import tickers, tickers2coin
 from utils.trade_logger import add_log_info
+
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
@@ -62,7 +63,7 @@ class TradeCrypto:
     
     #executing the usdtm futures
     def execute_usdtm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3, 
-                            stopLoss, ProcessingMoney, logger) -> None:
+                            stopLoss, ProcessingMoney) -> None:
         self.usdtm = usdtm.BinanceFuturesUsdtm(exchange, symbol, side, t, leverage,
                                                tp1, tp2, tp3, stopLoss, ProcessingMoney)
         self.logger.info(f"starting the {self.usdtm}")
