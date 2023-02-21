@@ -42,7 +42,7 @@ class TradeCrypto:
     tp3 = 8 / leverage 
     stopLoss = 5 / leverage
     ProcessingMoney = 5
-    self.usdtm(self.ex[0], self.symbol, self.side, self.t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney, self.logger)
+    self.execute_usdtm_trade(self.ex[0], self.symbol, self.side, self.t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney, self.logger)
     
   def trade(self) -> None:
     with ThreadPoolExecutor() as executor:
