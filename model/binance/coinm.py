@@ -11,6 +11,8 @@ from tickets import tickers2coin, tickerscoin
 from utils.util import (get_max_position_available, in_position_check,
                         start_thread)
 
+trade_info = []
+profit_loss = {}
 
 class BinanceFuturesCoinm:
     def __init__(self, exchange:binancecoinm, symbol:str, side:int, t:int, leverage:int,tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float, logger):
@@ -19,11 +21,10 @@ class BinanceFuturesCoinm:
         self.takeprofit3:bool = False
         self.get_amount:float = 0
         self.thread = None
-        self.trade_info = []
-        self.profit_loss = {}
         self.logger = logger
         self.trades = Trades(self.logger)
-        
+        self.trade_info = trade_info
+        self.profit_loss = profit_loss
         self.logger.info("COINM LOGGER ACTIVE")
         self.trading(exchange, symbol, side, t, leverage,tp1,tp2, tp3,stopLoss,ProcessingMoney)
         start_thread(exchange, symbol, self.profit_loss, self.trade_info, self.thread, self.logger)

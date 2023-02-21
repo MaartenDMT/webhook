@@ -8,7 +8,7 @@ from flask import Flask, request
 
 from trading import TradeCrypto
 
-path='.env'
+path = '.env'
 load_dotenv(path)
 
 exchange = ccxt.binance({
@@ -19,17 +19,18 @@ exchange = ccxt.binance({
         'defaultType': 'future',
     },
 })
-#exchange.set_sandbox_mode(True)
+# exchange.set_sandbox_mode(True)
 
 exchange2 = ccxt.binancecoinm({
     "apiKey": os.environ.get('API_KEY'),
     "secret": os.environ.get('API_SECRET'),
     'enableRateLimit': True,
 })
-#exchange2.set_sandbox_mode(True)    
+# exchange2.set_sandbox_mode(True)
 
 thread = None
 app = Flask(__name__)
+
 
 @app.route('/webhook/', methods=['POST'])
 def hook():
@@ -39,12 +40,12 @@ def hook():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     add_log_info(logger)
-    
+
     t = TradeCrypto(request, ex, logger)
-    
+
     content = t.__str__()
     logger.info(content)
-    
+
     return content
 
 
@@ -56,7 +57,8 @@ def add_log_info(logger) -> None:
     # create a stream handler to log to the console
     stream_handler = logging.StreamHandler()
     # create a formatter for the log messages
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     # add the formatter to the handlers
     if not logger.handlers:
         file_handler.setFormatter(formatter)
@@ -64,6 +66,7 @@ def add_log_info(logger) -> None:
         # add the handlers to the logger
         logger.addHandler(file_handler)
         logger.addHandler(stream_handler)
-    
+
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000)

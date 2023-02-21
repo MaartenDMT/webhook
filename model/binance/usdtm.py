@@ -9,6 +9,8 @@ from ccxt import binance
 from model.trades.trades import Trades
 from utils.util import in_position_check, start_thread
 
+trade_info = []
+profit_loss = {}
 
 class BinanceFuturesUsdtm:
     def __init__(self, exchange, symbol, side, t, leverage, 
@@ -19,8 +21,8 @@ class BinanceFuturesUsdtm:
         self.get_amount: float = 0
         self.logger = logger
         self.thread = None
-        self.trade_info = []
-        self.profit_loss = {}
+        self.trade_info = trade_info
+        self.profit_loss = profit_loss
         self.trades = Trades(self.logger)
 
         self.logger.info("USDTM LOGGER ACTIVE")
