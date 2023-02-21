@@ -1,6 +1,6 @@
+import pathlib
 from datetime import datetime
 from os import path
-import pathlib
 from time import sleep
 
 import pandas as pd

@@ -1,7 +1,7 @@
-from os import path
 import pathlib
 import threading
 from datetime import datetime
+from os import path
 from time import sleep
 
 import pandas as pd
