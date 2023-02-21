@@ -60,6 +60,8 @@ class TradeCrypto:
             self.logger.info(d)
             self.coinm = coinm.BinanceFuturesCoinm(exchange, d, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney, logger)
             self.logger.info(f"starting the {self.coinm}")
+        else:
+          self.logger.info("No Symbol for COIN-M")
 
   def execute_spot_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3, stopLoss, ProcessingMoney, logger):
     # self.spot = spot.BinanceSpot
