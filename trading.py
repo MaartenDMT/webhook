@@ -59,6 +59,10 @@ class TradeCrypto:
                             self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
             executor.submit(self.execute_coinm_trade, self.ex[1], self.symbol, self.side, self.t, self.leverage,
                             self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney*self.multi)
+            executor.submit(self.execute_usdtm_trade, self.ex[2], self.symbol, self.side, self.t,
+                            self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
+            executor.submit(self.execute_coinm_trade, self.ex[3], self.symbol, self.side, self.t, self.leverage,
+                            self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney*self.multi)
 
     
     #executing the usdtm futures
