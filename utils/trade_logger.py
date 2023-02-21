@@ -1,6 +1,6 @@
 import logging
 from datetime import datetime
-from os import pathsep
+from os import path
 import pathlib
 from time import sleep
 
@@ -8,7 +8,7 @@ def add_log_info(logger, exchange) -> None:
     file = f'data/logs/{exchange}'
     time_stamp = datetime.now()  # - dt.timedelta(hours=6)
     time_stamp = time_stamp.strftime('%Y-%m-%d')
-    if pathsep.exists(file):
+    if path.exists(file):
         file_handler = logging.FileHandler(f'{file}/{time_stamp}.log')
     else:
         pathlib.Path(file).mkdir(parents=True, exist_ok=True)
