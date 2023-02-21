@@ -101,7 +101,7 @@ def update_profit(exchange, symbol: str, profit_loss: dict, trade_info: list, lo
         if order['status'] == 'closed':
 
             # Get the order information
-            symbol = order['symbol']
+            symbol = symbol
             side = order['side']
             entry_price = order['price']
             exit_price = order['average']
