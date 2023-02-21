@@ -109,7 +109,7 @@ def update_profit(exchange, symbol:str, profit_loss:dict,trade_info:list, logger
           pnl = (entry_price - exit_price) * filled_quantity - ((filled_quantity/100)*0.02 + (filled_quantity/100)*0.04)
           
         # Read the trade information from the CSV file into a DataFrame
-        file = f'data/trades/x88q,p'
+        file = f'data/trades/{exchange}'
         time_stamp = datetime.now()  # - dt.timedelta(hours=6)
         time_stamp = time_stamp.strftime('%Y-%m-%d')
         trade_df = None
