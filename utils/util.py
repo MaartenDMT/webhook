@@ -10,7 +10,7 @@ from ccxt.base.errors import BadSymbol
 
 
 def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, ProcessMoney: float):
-    to_use = float(exchange.fetch_balance().get(tick).get('free')/0.000026)
+    to_use = float(exchange.fetch_balance().get(tick).get('free'))
     price = float(exchange.fetchTicker(symbol).get('last'))
     decide_position_to_use = (((to_use/100)*ProcessMoney)*leverage) / price
     return decide_position_to_use
