@@ -53,7 +53,7 @@ app = Flask(__name__)
 @app.route('/webhook/', methods=['POST'])
 def hook():
     print(request.json)
-    ex = [exchange, exchange2]
+    ex = [exchange, exchange2, exchange_d, exchange2_d]
 
     t = TradeCrypto(request, ex)
     content = t.__str__()
