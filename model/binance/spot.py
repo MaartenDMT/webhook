@@ -67,8 +67,8 @@ class BinanceSpot:
                 get_amount = get_max_position_available_s(
                     exchange, tick, symbol, leverage, ProcessingMoney)
                 self.logger.info(f"ENTERING LONG POSITION WITH: {get_amount}")
-                l = self.trades.longEnter(
-                    exchange, symbol, get_amount, self.trade_info)
+                l = self.trades.spot_buy(
+                    exchange, symbol, get_amount, price , self.trade_info)
                 takeprofit1 = False
                 takeprofit2 = False
                 takeprofit3 = False

@@ -93,11 +93,13 @@ def start_thread(exchange, symbol, profit_loss, trade_info, thread, logger) -> N
     try:
         logger.info("starting thread !")
         thread = threading.Thread(target=update_profit_thread, args=(exchange, symbol, profit_loss,
-                                  trade_info, logger), daemon=True).start()  # start a new thread if no thread is currently running
+                                  trade_info, logger), daemon=True)  # start a new thread if no thread is currently running
+        thread.start()
+        thread.join()
     except Exception as e:
         logger.error(e)
+        
 
-    thread.join()
 
 def update_profit_thread(exchange, symbol, profit_loss, trade_info, logger):
     update_profit(exchange, symbol, profit_loss, trade_info, logger)

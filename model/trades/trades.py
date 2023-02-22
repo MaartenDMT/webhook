@@ -248,3 +248,37 @@ class Trades:
                 self.takeProfitShort3(exchange, symbol, get_amount, takeps3)
                 return True
         return True
+
+    
+    def spot_sell(self, exchange, symbol, get_amount, price, trade_info):
+        try:
+            order = exchange.create_limit_sell_order(symbol, get_amount, price)
+            self.logger.info(order)
+            trade_info.append(
+                {'exchange': exchange, 'id': order['id'], 'symbol': symbol, 'side': 'sell', 'entry_price': order['price']})
+        except InsufficientFunds as e:
+            self.logger.error(
+                "there is not enought funding to make the trade ! - {}".format(e))
+            return False
+        except Exception as e:
+            self.logger.error("an exception occured - {}".format(e))
+            return False
+
+        return True
+
+    
+    def spot_buy(self, exchange, symbol, get_amount, price, trade_info):
+        try:
+            order = exchange.create_limit_buy_order(symbol, get_amount, price)
+            self.logger.info(order)
+            trade_info.append(
+                {'exchange': exchange, 'id': order['id'], 'symbol': symbol, 'side': 'buy', 'entry_price': order['price']})
+        except InsufficientFunds as e:
+            self.logger.error(
+                "there is not enought funding to make the trade ! - {}".format(e))
+            return False
+        except Exception as e:
+            self.logger.error("an exception occured - {}".format(e))
+            return False
+
+        return True

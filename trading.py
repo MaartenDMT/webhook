@@ -20,7 +20,7 @@ load_dotenv(path)
 
 class TradeCrypto:
     def __init__(self, request, ex) -> None:
-        self.data = request.get_json()
+        self.data = request #.get_json()
         self.symbol = self.data['ticker']
         self.side = self.data['side']
         self.t = self.data['time']
@@ -121,7 +121,8 @@ if __name__ == '__main__':
         },
     })
     exchange.set_sandbox_mode(True)
-    exchange.load_markets()
+    # exchange.load_markets()
+
     s = {
         "ticker": "TRXUSDT",
         "side": 1,
