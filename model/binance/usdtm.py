@@ -161,6 +161,7 @@ class BinanceFuturesUsdtm:
                         self.logger.info("usdtm - TAKE PROFIT 3")
                         takep3 = float(position_info["entryPrice"][len(position_info.index) - 1]) / 100 * tp3 + float(
                             position_info["entryPrice"][len(position_info.index) - 1])
+                        get_amount = float(position_info["positionAmt"][len(position_info.index) - 1])
                         takeprofit3 = self.trades.trailing_market(
                             exchange, symbol, get_amount, takep3, 'sell')
                         message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
@@ -259,6 +260,7 @@ class BinanceFuturesUsdtm:
                     self.logger.info("usdtm - TAKE PROFIT 3")
                     takeps3 = float(position_info["entryPrice"][len(position_info.index) - 1]) - float(
                         position_info["entryPrice"][len(position_info.index) - 1])/100 * tp3
+                    get_amount = float(position_info["positionAmt"][len(position_info.index) - 1])
                     takeprofit3 = self.trades.trailing_market(
                         exchange, symbol, get_amount, takeps3, 'buy')
                     message = f"usdtm - LONG EXIT (TAKE PROFIT 3): {get_amount}\n" + \
