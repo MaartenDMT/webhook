@@ -5,7 +5,6 @@ from os import path
 from time import sleep
 
 import pandas as pd
-from ccxt import binance
 from ccxt.base.errors import BadSymbol
 
 
@@ -13,10 +12,30 @@ def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, 
     to_use = float(exchange.fetch_balance().get(tick).get('free'))
     price = float(exchange.fetchTicker(symbol).get('last'))
     decide_position_to_use = (((to_use/100)*ProcessMoney)*leverage) / price
+    print(f"the amount to be used: {decide_position_to_use}")
+    
     return decide_position_to_use
-    #float(((free_balance["USDT"] / 100) * ProcessingMoney) * leverage) / (df["close"][len(df.index) - 1])
+
+def get_max_position_available_s(exchange, tick: str, symbol: str, leverage: int, ProcessMoney: float):
+    to_use = float(exchange.fetch_balance().get(tick).get('free'))
+    price = float(exchange.fetchTicker(symbol).get('last'))
+    decide_position_to_use = ((((to_use/100)*ProcessMoney)*leverage) / price) * 0.9995
+    decide_position_to_use = round(decide_position_to_use, 5)
+    print(f"the amount to be used: {decide_position_to_use}")
+    
+    return decide_position_to_use
 
 
+def in_position_check_s(exchange, symbol: str, tick: None, logger):
+    longPosition = False
+    shortPosition = False
+    inPosition = False
+    ticker_balance = float(exchange.fetch_balance().get(tick).get('free'))
+    usdt_balance = float(exchange.fetch_balance().get("USDT").get('free'))
+    price = float(exchange.fetchTicker(symbol).get('last'))
+    
+    return usdt_balance, ticker_balance, price
+    
 def in_position_check(exchange, symbol: str, tick: None, logger):
 
     longPosition = False
@@ -65,6 +84,7 @@ def in_position_check(exchange, symbol: str, tick: None, logger):
 
 
 def start_thread(exchange, symbol, profit_loss, trade_info, thread, logger) -> None:
+    
     # check if the thread is already running
     if thread and thread.is_alive():
         logger.info("Thread is already running")
@@ -77,6 +97,7 @@ def start_thread(exchange, symbol, profit_loss, trade_info, thread, logger) -> N
     except Exception as e:
         logger.error(e)
 
+    thread.join()
 
 def update_profit_thread(exchange, symbol, profit_loss, trade_info, logger):
     update_profit(exchange, symbol, profit_loss, trade_info, logger)
