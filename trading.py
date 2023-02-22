@@ -20,7 +20,7 @@ load_dotenv(path)
 
 class TradeCrypto:
     def __init__(self, request, ex) -> None:
-        self.data = request #.get_json()
+        self.data = request.get_json()
         self.symbol = self.data['ticker']
         self.side = self.data['side']
         self.t = self.data['time']
