@@ -75,7 +75,7 @@ def process_data(json_data_list:list):
     print(exchanges)
     for incoming_data in json_data_list:
         # Do something with the data here
-        thread = Thread(target =TradeCrypto, args=incoming_data, kwargs=exchanges)
+        thread = Thread(target =TradeCrypto, args=(incoming_data, exchanges))
         thread.start()
         threads.append(thread)
         json_data_list.remove(incoming_data)
