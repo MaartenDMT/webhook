@@ -7,7 +7,7 @@ import pandas as pd
 from ccxt import binance
 
 from model.trades.trades import Trades
-from tickets import tickers, tickerscoin
+from tickets import spot_base, spot_ticks
 from utils.trade_logger import add_log_info
 from utils.util import (get_max_position_available_s, in_position_check_s,
                         start_thread)
@@ -46,8 +46,8 @@ class BinanceSpot:
                 tp1: float, tp2: float, tp3: float, stopLoss: float, ProcessingMoney: float):
 
         self.logger.info(f"exchange: {exchange.name} ")
-        ticker = tickers[symbol]
-        tick = tickerscoin[ticker]
+        ticker = spot_ticks[symbol]
+        tick = spot_base[ticker]
         usdt_balance, ticker_balance, price = in_position_check_s(
             exchange, symbol, tick, self.logger)
         count: int = 1
