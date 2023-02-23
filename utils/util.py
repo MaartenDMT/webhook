@@ -1,8 +1,12 @@
+from decimal import Decimal
 import pathlib
 import threading
 from datetime import datetime
 from os import path
 from time import sleep
+import ccxt
+
+from tickets import tickers
 
 import pandas as pd
 from ccxt.base.errors import BadSymbol
@@ -17,15 +21,29 @@ def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, 
     return decide_position_to_use
 
 def get_max_position_available_s(exchange, tick: str, symbol: str, leverage: int, ProcessMoney: float):
+    
     to_use = float(exchange.fetch_balance().get(tick).get('free'))
     price = float(exchange.fetchTicker(symbol).get('last'))
-    decide_position_to_use = ((((to_use/100)*ProcessMoney)*leverage) / price) * 0.9995
-    decide_position_to_use = round(decide_position_to_use, 5)
-    print(f"the amount to be used: {decide_position_to_use}")
+    decide_position_to_use = ((((to_use/100)*ProcessMoney)*leverage) / price)
+    adjust_amount_size = adjust_amount(exchange, symbol, decide_position_to_use)
+    print(f"the amount to be used: {adjust_amount_size}")
     
     return decide_position_to_use
 
+def adjust_amount(exchange: ccxt.binance, symbol:str, amount:float):
+    symbol_data = exchange.load_markets()[transform_symbol(symbol)]
+    lot_size_filter = next(filter(lambda x: x['filterType'] == 'LOT_SIZE', symbol_data['info']['filters']))
+    step_size = Decimal(lot_size_filter['stepSize'])
+    adjusted_amount = (Decimal(str(amount)) // step_size) * step_size
+    print(adjusted_amount)
+    return float(adjusted_amount)
 
+def transform_symbol(symbol:str)->str:
+    base_currency = symbol[:len(symbol) // 2]
+    quote_currency = symbol[len(symbol) // 2:]
+    transformed_symbol = f"{base_currency}/{quote_currency}"
+    return transformed_symbol
+    
 def in_position_check_s(exchange, symbol: str, tick: None, logger):
     longPosition = False
     shortPosition = False
@@ -170,7 +188,8 @@ def update_profit(exchange, symbol: str, profit_loss: dict, trade_info: list, lo
                     else:
                         pathlib.Path(file).mkdir(parents=True, exist_ok=True)
                         sleep(0.5)
-                        df.to_csv(f'{file}/{time_stamp}.csv', index=False)
+                        trade_df.to_csv(
+                            f"{file}/{time_stamp}.csv", header=False, index=False)
                         logger.info(f"writing the trade: {trade} to the csv!")
 
                     # Update the total profit/loss for the given symbol

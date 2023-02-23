@@ -19,7 +19,7 @@ load_dotenv(path)
 
 
 class TradeCrypto:
-    def __init__(self, request, ex) -> None:
+    def __init__(self, request, exchanges) -> None:
         self.data = request
         self.symbol = self.data['ticker']
         self.side = self.data['side']
@@ -30,26 +30,24 @@ class TradeCrypto:
         self.tp3 = 8 / (self.leverage / 2)
         self.stopLoss = 4 / (self.leverage / 2)
         self.ProcessingMoney = 25
-        self.ex = ex
+        self.exchanges = exchanges
         add_log_info(logger, "main")
         self.logger = logger
         self.multi = 2
 
+        if self.data['spot'] is not None:
+            self.trade_spot()
         if self.symbol in ["BTCUSDT", "ETHUSDT"]:
             self.leverage = 50
             self.ProcessingMoney = 7
-            self.trade()
-        elif self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
+            self.trade_futures()
+        if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
             self.leverage = 20
-            self.trade()
-        elif self.symbol in ["XTZUSDT", "REEFUSDT", "ROSEUSDT"]:
+            self.trade_futures()
+        if self.data['shortbot'] is not None:
             self.fast_bot()
-        elif self.symbol in ["TRXUSDT"]:
-            leverage = 1
-            self.execute_spot_trade(self.ex, self.symbol, self.side, self.t, leverage,
-                                    self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
         else:
-            self.trade()
+            self.trade_futures()
 
     def __str__(self) -> str:
         return "Succeeded"
@@ -67,7 +65,7 @@ class TradeCrypto:
         self.logger.info(f"starting the fastbot with symbol {self.symbol}")
 
     # executing all the trading in a threadpool so it is happening in parralell
-    def trade(self) -> None:
+    def trade_futures(self) -> None:
         with ThreadPoolExecutor() as executor:
             executor.submit(self.execute_usdtm_trade, self.ex[0], self.symbol, self.side, self.t,
                             self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
@@ -77,6 +75,20 @@ class TradeCrypto:
                             self.leverage, self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
             executor.submit(self.execute_coinm_trade, self.ex[3], self.symbol, self.side, self.t, self.leverage,
                             self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
+
+    def trade_spot(self) -> None:
+        leverage = 1
+        spot_ma = self.exchanges['ma_binance_usdtm']
+        spot_ma.options['defaultType'] = 'spot'
+        
+        spot_ma = self.exchanges['de_binance_usdtm']
+        spot_ma.options['defaultType'] = 'spot'
+        
+        with ThreadPoolExecutor() as executor:
+            executor.submit(self.execute_spot_trade, spot_ma, self.symbol, self.side, self.t, leverage,
+                                    self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
+            executor.submit(self.execute_spot_trade, spot_ma, self.symbol, self.side, self.t, leverage,
+                                    self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
 
     # executing the usdtm futures
     def execute_usdtm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
@@ -116,18 +128,16 @@ if __name__ == '__main__':
         "apiKey": os.environ.get('API_KEY_TEST_S'),
         "secret": os.environ.get('API_SECRET_TEST_S'),
         'enableRateLimit': True,
-        'options': {
-            'defaultType': 'spot',
-        },
     })
+    exchange.options['defaultType'] = 'spot'
     exchange.set_sandbox_mode(True)
     # exchange.load_markets()
 
     s = {
-        "ticker": "TRXUSDT",
+        "ticker": "LTCUSDT",
         "side": 1,
         "time": "30m"
     }
-    
+
     tester = TradeCrypto(s, exchange)
     print(tester.__str__())

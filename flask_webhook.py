@@ -63,12 +63,19 @@ def hook():
     return 'Data received'
 
 def process_data(json_data_list:list):
-    ex = [exchange, exchange2, exchange_d, exchange2_d]
+    exchanges = {
+                'ma_binance_usdtm':exchange, 
+                'ma_binance_coinm':exchange2, 
+                
+                'de_binance_usdtm':exchange_d, 
+                'de_binance_coinm':exchange2_d
+            }
+    
     threads = []
     
     for incoming_data in json_data_list:
         # Do something with the data here
-        thread = Thread(target=TradeCrypto, args=(incoming_data, ex))
+        thread = Thread(target=TradeCrypto, args=(incoming_data, exchanges))
         thread.start()
         threads.append(thread)
         json_data_list.remove(incoming_data)
