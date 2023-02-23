@@ -54,7 +54,7 @@ json_data_list = []
 @app.route('/webhook/', methods=['POST'])
 def hook():
     
-    incoming_data = request.json
+    incoming_data = request
     print(incoming_data)
     json_data_list.append(incoming_data)
     
