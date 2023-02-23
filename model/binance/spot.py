@@ -65,10 +65,12 @@ class BinanceSpot:
             # BULL EVENT
             if side == 1:
                 get_amount = get_max_position_available_s(
-                    exchange, tick, symbol, leverage, ProcessingMoney)
+                    exchange, 'USDT', symbol, leverage, ProcessingMoney)
                 self.logger.info(f"ENTERING LONG POSITION WITH: {get_amount}")
                 l = self.trades.spot_buy(
                     exchange, symbol, get_amount, price , self.trade_info)
-                takeprofit1 = False
-                takeprofit2 = False
-                takeprofit3 = False
+                
+            elif side == -1:
+                get_amount = get_max_position_available_s(exchange, tick, symbol, leverage, ProcessingMoney)
+                self.logger.info(f"ENTERING SHORT POSITION WITH: {get_amount}")
+                l = self.trades.spot_sell(exchange, symbol, get_amount, price , self.trade_info)
