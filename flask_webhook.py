@@ -64,18 +64,18 @@ def hook():
 
 def process_data(json_data_list:list):
     exchanges = {
-                'ma_binance_usdtm':exchange, 
-                'ma_binance_coinm':exchange2, 
-                
-                'de_binance_usdtm':exchange_d, 
-                'de_binance_coinm':exchange2_d
-            }
+        'ma_binance_usdtm': exchange, 
+        'ma_binance_coinm': exchange2, 
+        'de_binance_usdtm': exchange_d, 
+        'de_binance_coinm': exchange2_d
+    }
+
     
     threads = []
-    
+    print(exchanges)
     for incoming_data in json_data_list:
         # Do something with the data here
-        thread = Thread(target=TradeCrypto, args=(incoming_data, exchanges))
+        thread = Thread(target =TradeCrypto, args=incoming_data, kwargs=exchanges)
         thread.start()
         threads.append(thread)
         json_data_list.remove(incoming_data)
