@@ -231,7 +231,6 @@ def fetch_closed_orders(symbol: str, ex, logger):
 
     try:
         closed_order = ex.fetch_closed_orders(symbol=symbol)
-        logger.info(closed_order)
     except BadSymbol as e:
         logger.error(f"this symbol is not right {symbol} - {e}")
     except Exception as e:
