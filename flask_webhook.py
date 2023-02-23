@@ -55,6 +55,7 @@ json_data_list = []
 def hook():
     
     incoming_data = request.json
+    print(incoming_data)
     json_data_list.append(incoming_data)
     
     return 'Data received'
