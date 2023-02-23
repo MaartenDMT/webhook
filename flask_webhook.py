@@ -60,7 +60,7 @@ def hook():
     
     return 'Data received'
 
-def process_data(data):
+def process_data(json_data_list):
     ex = [exchange, exchange2, exchange_d, exchange2_d]
     threads = []
     
