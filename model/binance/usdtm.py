@@ -75,6 +75,7 @@ class BinanceFuturesUsdtm:
                     self.trades.shortExit(exchange, symbol, amount)
                     inPosition = False
                     shortPosition = False
+                    sleep(1)
 
                 self.get_amount_l = float(
                     free_balance["USDT"]) / 100 * ProcessingMoney * leverage / float(df["close"][len(df.index) - 1])
@@ -181,6 +182,7 @@ class BinanceFuturesUsdtm:
                     self.trades.longExit(exchange, symbol, amount)
                     inPosition = False
                     longPosition = False
+                    sleep(1)
 
                 self.get_amount_s = float(
                     free_balance["USDT"]) / 100 * ProcessingMoney * leverage / float(df["close"][len(df.index) - 1])

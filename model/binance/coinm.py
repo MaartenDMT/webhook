@@ -76,6 +76,7 @@ class BinanceFuturesCoinm:
                     self.trades.shortExit(exchange,tick2, amount)
                     inPosition = False
                     shortPosition = False
+                    sleep(1)
 
                 get_amount = get_max_position_available(exchange, tick, tick2, leverage, ProcessingMoney)
                 self.logger.info(f"ENTERING LONG POSITION WITH: {get_amount}")
@@ -166,6 +167,7 @@ class BinanceFuturesCoinm:
                     self.trades.longExit(exchange,tick2, amount)
                     inPosition = False
                     longPosition = False
+                    sleep(1)
 
                 get_amount = get_max_position_available(exchange, tick,tick2,leverage,ProcessingMoney)
                 self.logger.info(f"ENTERING SHORT POSITION...: {get_amount}")
