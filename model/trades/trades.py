@@ -229,7 +229,7 @@ class Trades:
         rate = '0.2'
         price = None
         params = {
-            'activationPrice': takeps3,
+            'activationPrice': round(takeps3,6),
             'callbackRate': rate,
             'reduceOnly': True,
         }
