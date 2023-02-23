@@ -58,6 +58,8 @@ def hook():
     print(incoming_data)
     json_data_list.append(incoming_data)
     
+    process_data(json_data_list)
+    
     return 'Data received'
 
 def process_data(json_data_list):
@@ -66,8 +68,7 @@ def process_data(json_data_list):
     
     for incoming_data in json_data_list:
         # Do something with the data here
-        t = TradeCrypto(incoming_data, ex)
-        thread = Thread(target=t.run)
+        thread = Thread(target=TradeCrypto, args=(incoming_data, ex))
         thread.start()
         threads.append(thread)
     
