@@ -243,9 +243,10 @@ class Trades:
             self.logger.error(
                 "an exception occured in trailing_market - {}".format(e))
             if side == "sell":
-                self.takeProfitLong3(exchange, symbol, round(get_amount,6), takeps3)
+                self.takeProfitLong3(exchange, symbol, get_amount, takeps3)
+                return True
             else:
-                self.takeProfitShort3(exchange, symbol, round(get_amount,6), takeps3)
+                self.takeProfitShort3(exchange, symbol, get_amount, takeps3)
                 return True
         return True
 
