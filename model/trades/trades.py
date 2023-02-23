@@ -8,7 +8,7 @@ class Trades:
     # LONG ENTER
     def longEnter(self, exchange, symbol, get_amount, trade_info):
         try:
-            order = exchange.create_market_buy_order(symbol, get_amount)
+            order = exchange.create_market_buy_order(symbol, round(get_amount,6))
             self.logger.info(order)
             trade_info.append(
                 {'exchange': exchange, 'id': order['id'], 'symbol': symbol, 'side': 'buy', 'entry_price': order['price']})
@@ -26,7 +26,7 @@ class Trades:
     def longExit(self, exchange, symbol, amount):
         try:
             order = exchange.create_market_sell_order(
-                symbol, amount, {"reduceOnly": True})
+                symbol, round(amount,6), {"reduceOnly": True})
             self.logger.info(order)
 
         except Exception as e:
@@ -38,7 +38,7 @@ class Trades:
     # SHORT ENTER
     def shortEnter(self, exchange, symbol, get_amount, trade_info):
         try:
-            order = exchange.create_market_sell_order(symbol, get_amount)
+            order = exchange.create_market_sell_order(symbol, round(get_amount,6))
             self.logger.info(order)
             trade_info.append(
                 {'exchange': exchange, 'id': order['id'], 'symbol': symbol, 'side': 'sell', 'entry_price': order['price']})
@@ -56,7 +56,7 @@ class Trades:
     def shortExit(self, exchange, symbol, amount):
         try:
             order = exchange.create_market_buy_order(
-                symbol, amount, {"reduceOnly": True})
+                symbol, round(amount,6), {"reduceOnly": True})
             self.logger.info(order)
         except Exception as e:
             self.logger.error("an exception occured - {}".format(e))
@@ -75,7 +75,7 @@ class Trades:
 
         try:
             order = exchange.createOrder(
-                symbol, order_type_tk, side, get_amount, takep1, params=params)
+                symbol, order_type_tk, side, round(get_amount,6), takep1, params=params)
             self.logger.info(order)
         except Exception as e:
             self.logger.error("an exception occured - {}".format(e))
@@ -95,7 +95,7 @@ class Trades:
 
         try:
             order = exchange.create_order(
-                symbol, type_o, side, get_amount, takep2, params)
+                symbol, type_o, side, round(get_amount,6), takep2, params)
             self.logger.info(order)
         except Exception as e:
             self.logger.error("an exception occured - {}".format(e))
@@ -115,7 +115,7 @@ class Trades:
 
         try:
             order = exchange.create_order(
-                symbol, type_o, side, get_amount, takep3, params)
+                symbol, type_o, side, round(get_amount,6), takep3, params)
             self.logger.info(order)
         except Exception as e:
             self.logger.error("an exception occured - {}".format(e))
@@ -133,7 +133,7 @@ class Trades:
 
         try:
             order = exchange.createOrder(
-                symbol, order_type_sl, side, get_amount, None, params=params)
+                symbol, order_type_sl, side, round(get_amount,6), None, params=params)
             self.logger.info(order)
         except Exception as e:
             self.logger.error("an exception occured - {}".format(e))
@@ -154,7 +154,7 @@ class Trades:
 
         try:
             order = exchange.create_order(
-                symbol, type_o, side, get_amount, takeps1, params=params)
+                symbol, type_o, side, round(get_amount,6), takeps1, params=params)
             self.logger.info(order)
         except Exception as e:
             self.logger.error("an exception occured - {}".format(e))
@@ -174,7 +174,7 @@ class Trades:
 
         try:
             order = exchange.create_order(
-                symbol, type_o, side, get_amount, takeps2, params)
+                symbol, type_o, side, round(get_amount,6), takeps2, params)
             self.logger.info(order)
         except Exception as e:
             self.logger.error("an exception occured - {}".format(e))
@@ -194,7 +194,7 @@ class Trades:
 
         try:
             order = exchange.create_order(
-                symbol, type_o, side, get_amount, takeps3, params)
+                symbol, type_o, side, round(get_amount,6), takeps3, params)
             self.logger.info(order)
         except Exception as e:
             self.logger.error("an exception occured - {}".format(e))
@@ -237,22 +237,22 @@ class Trades:
         self.logger.info("#########################################")
         try:
             order = exchange.create_order(
-                symbol, order_type, side, get_amount, price, params)
+                symbol, order_type, side, round(get_amount,6), price, params)
             self.logger.info(order)
         except Exception as e:
             self.logger.error(
                 "an exception occured in trailing_market - {}".format(e))
             if side == "sell":
-                self.takeProfitLong3(exchange, symbol, get_amount, takeps3)
+                self.takeProfitLong3(exchange, symbol, round(get_amount,6), takeps3)
             else:
-                self.takeProfitShort3(exchange, symbol, get_amount, takeps3)
+                self.takeProfitShort3(exchange, symbol, round(get_amount,6), takeps3)
                 return True
         return True
 
     
     def spot_sell(self, exchange, symbol, get_amount, price, trade_info):
         try:
-            order = exchange.create_limit_sell_order(symbol, get_amount, price)
+            order = exchange.create_limit_sell_order(symbol, round(get_amount,6), price)
             self.logger.info(order)
             trade_info.append(
                 {'exchange': exchange, 'id': order['id'], 'symbol': symbol, 'side': 'sell', 'entry_price': order['price']})
@@ -269,7 +269,7 @@ class Trades:
     
     def spot_buy(self, exchange, symbol, get_amount, price, trade_info):
         try:
-            order = exchange.create_limit_buy_order(symbol, get_amount, price)
+            order = exchange.create_limit_buy_order(symbol, round(get_amount,6), price)
             self.logger.info(order)
             trade_info.append(
                 {'exchange': exchange, 'id': order['id'], 'symbol': symbol, 'side': 'buy', 'entry_price': order['price']})
