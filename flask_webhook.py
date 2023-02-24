@@ -55,7 +55,6 @@ json_data_list = []
 def hook():
     
     incoming_data = request.get_json()
-    print(incoming_data)
     json_data_list.append(incoming_data)
     
     process_data(json_data_list)
@@ -79,6 +78,7 @@ def process_data(json_data_list:list):
         thread.start()
         threads.append(thread)
         json_data_list.remove(incoming_data)
+        print(json_data_list)
     
     # Wait for all threads to finish before returning
     for thread in threads:
