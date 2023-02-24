@@ -204,18 +204,20 @@ def update_profit(exchange, symbol: str, profit_loss: dict, trade_info: list, lo
                     df = pd.DataFrame(profit_loss.items(), columns=[
                                       'symbol', 'profit_loss'])
                     file = f'data/profit_loss/{exchange}'
-
+                    file2 = f'data/profit_loss/date/{exchange}'
                     # Write the DataFrame to a CSV file
                     if path.exists(file):
-                        df.to_csv(f'{file}/profit_loss.csv', index=False)
-                        df.to_csv(f'{file}/date/{time_stamp}.csv', index=False)
-                        logger.info(
-                            f"writing the profit/loss: {df.to_dict()} to the csv!")
+                        if path.exists(file2):
+                            df.to_csv(f'{file}/profit_loss.csv', index=False)
+                            df.to_csv(f'{file2}/{time_stamp}.csv', index=False)
+                            logger.info(
+                                f"writing the profit/loss: {df.to_dict()} to the csv!")
                     else:
                         pathlib.Path(file).mkdir(parents=True, exist_ok=True)
+                        pathlib.Path(file2).mkdir(parents=True, exist_ok=True)
                         sleep(0.5)
                         df.to_csv(f'{file}/profit_loss.csv', index=False)
-                        df.to_csv(f'{file}/date/{time_stamp}.csv', index=False)
+                        df.to_csv(f'{file2}/{time_stamp}.csv', index=False)
                         logger.info(
                             f"writing the profit/loss: {df.to_dict()} to the csv!")
 
