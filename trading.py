@@ -24,10 +24,10 @@ class TradeCrypto:
         self.side = self.data['side']
         self.t = self.data['time']
         self.leverage = 12
-        self.tp1 = 4 / (self.leverage / 2)
-        self.tp2 = 6 / (self.leverage / 2)
-        self.tp3 = 8 / (self.leverage / 2)
-        self.stopLoss = 4 / (self.leverage / 2)
+        self.tp1 = 4 / (12 / 2)
+        self.tp2 = 6 / (12 / 2)
+        self.tp3 = 8 / (12 / 2)
+        self.stopLoss = 4 / (12 / 2)
         self.ProcessingMoney = 25
         self.exchanges = exchanges
         print(f"the exchanges are : {self.exchanges}")
