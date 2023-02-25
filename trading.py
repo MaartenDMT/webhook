@@ -1,4 +1,3 @@
-import json
 import logging
 import os
 from concurrent.futures import ThreadPoolExecutor
@@ -36,17 +35,20 @@ class TradeCrypto:
         self.logger = logger
         self.multi = 2
 
-        if self.data.get('spot') is not None:
-            self.trade_spot()
+
         if self.symbol in ["BTCUSDT", "ETHUSDT"]:
             self.leverage = 50
             self.ProcessingMoney = 7
             self.trade_futures()
         if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
+            if self.symbol == "BNBUSDT":
+                self.ProcessingMoney = 200
             self.leverage = 20
             self.trade_futures()
         if self.data.get('shortbot') is not None:
             self.fast_bot()
+        if self.data.get('spot') is not None:
+            self.trade_spot()
         else:
             self.trade_futures()
 

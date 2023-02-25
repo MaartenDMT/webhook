@@ -57,6 +57,9 @@ class BinanceFuturesCoinm:
         inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2, tick, self.logger)
         count:int = 1
         
+        if not float(balance) > 0:
+            return
+        
         if inPosition == False:
             exchange.dapiPrivate_post_leverage({"symbol": tick2, "leverage": leverage})  
               
