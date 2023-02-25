@@ -42,7 +42,7 @@ class TradeCrypto:
             self.trade_futures()
         if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
             if self.symbol == "BNBUSDT":
-                self.ProcessingMoney = 200
+                self.ProcessingMoney = 40
             self.leverage = 20
             self.trade_futures()
         if self.data.get('shortbot') is not None:

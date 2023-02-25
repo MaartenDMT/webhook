@@ -17,8 +17,8 @@ def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, 
     price = float(exchange.fetchTicker(symbol).get('last'))
     decide_position_to_use = (((to_use/100)*ProcessMoney)*leverage) / price
     print(f"the amount to be used: {decide_position_to_use}")
-    
-    return decide_position_to_use
+        
+    return round(decide_position_to_use,6)
 
 def get_max_position_available_s(exchange, tick: str, symbol: str, leverage: int, ProcessMoney: float):
     
