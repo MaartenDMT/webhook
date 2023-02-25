@@ -223,7 +223,7 @@ def update_profit(exchange, symbol: str, profit_loss: dict, trade_info: list, lo
 
                     # Remove the trade from the trade_info list if it is closed
                     if filled_quantity == quantity:
-                        trade_info.remove(trade)
+                        trade_info.remove(trade["id"])
 
     logger.info("Finished Logging the profit/loss")
 
