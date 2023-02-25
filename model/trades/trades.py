@@ -224,7 +224,7 @@ class Trades:
 
     # stoploss_market
     def trailing_market(self, exchange, symbol, get_amount, takeps3, side):
-        takeps3 = round(takeps3,3)
+        takeps3 = round(takeps3,5)
         side = side
         order_type = 'TRAILING_STOP_MARKET'
         rate = '0.2'
