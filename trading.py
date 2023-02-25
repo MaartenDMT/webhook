@@ -81,6 +81,7 @@ class TradeCrypto:
 
     def trade_spot(self) -> None:
         leverage = 1
+        processMoney = self.ProcessingMoney * 2
         spot_ma = self.exchanges['ma_binance_usdtm']
         spot_ma.options['defaultType'] = 'spot'
         
@@ -89,9 +90,9 @@ class TradeCrypto:
         
         with ThreadPoolExecutor() as executor:
             executor.submit(self.execute_spot_trade, spot_ma, self.symbol, self.side, self.t, leverage,
-                                    self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
+                                    self.tp1, self.tp2, self.tp3, self.stopLoss, processMoney)
             executor.submit(self.execute_spot_trade, spot_ma, self.symbol, self.side, self.t, leverage,
-                                    self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
+                                    self.tp1, self.tp2, self.tp3, self.stopLoss, processMoney)
 
     # executing the usdtm futures
     def execute_usdtm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
