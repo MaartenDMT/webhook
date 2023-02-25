@@ -1,15 +1,15 @@
-from decimal import Decimal
 import pathlib
 import threading
 from datetime import datetime
+from decimal import Decimal
 from os import path
 from time import sleep
+
 import ccxt
-
-from tickets import tickers
-
 import pandas as pd
 from ccxt.base.errors import BadSymbol
+
+from tickets import tickers
 
 
 def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, ProcessMoney: float):
