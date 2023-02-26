@@ -1,4 +1,4 @@
-from threading import Thread
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from flask import Flask, request
 
@@ -22,20 +22,21 @@ def hook():
 def process_data(json_data_list:list):
     exchanges: dict[str, any] = get_exchanges()
     
-    threads = []
+
     print(json_data_list)
-    for incoming_data in json_data_list:
-        # Do something with the data here
-        thread = Thread(target =TradeCrypto, args=(incoming_data, exchanges))
-        thread.start()
-        threads.append(thread)
-        json_data_list.remove(incoming_data)
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = []
+        for incoming_data in json_data_list:
+            future = executor.submit(TradeCrypto, incoming_data, exchanges)
+            futures.append(future)
+            json_data_list.remove(incoming_data)
         
-    
-    # Wait for all threads to finish before returning
-    for thread in threads:
-        thread.join()
-        threads.remove(thread)
+        # Wait for all futures to complete before returning
+        for future in as_completed(futures):
+            try:
+                result = future.result(35)
+            except Exception as e:
+                print(f'Exception: {e}')
         
     return 'Data processed'
 
