@@ -58,7 +58,7 @@ class BinanceFuturesCoinm:
         count:int = 1
         
         if not float(balance) > 0:
-            self.logger(f'no tradign, there is {tick}: {balance}')
+            self.logger(f'no trading, there is {tick}: {balance}')
             return
         
         if inPosition == False:

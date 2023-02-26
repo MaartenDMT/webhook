@@ -45,9 +45,6 @@ def transform_symbol(symbol:str)->str:
     return transformed_symbol
     
 def in_position_check_s(exchange, symbol: str, tick: None, logger):
-    longPosition = False
-    shortPosition = False
-    inPosition = False
     ticker_balance = float(exchange.fetch_balance().get(tick).get('free'))
     usdt_balance = float(exchange.fetch_balance().get("USDT").get('free'))
     price = float(exchange.fetchTicker(symbol).get('last'))
