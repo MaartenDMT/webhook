@@ -49,7 +49,7 @@ class BinanceFuturesUsdtm:
         count: int = 1
         
         if not float(free_balance["USDT"]) > 5 and not float(free_balance["BUSD"]) > 5:
-            self.logger(f'no tradign, there is USDT: {free_balance["USDT"]} and BUSD: {free_balance["BUSD"]}')
+            self.logger.info(f'no trading, there is USDT: {free_balance["USDT"]} and BUSD: {free_balance["BUSD"]}')
             return
         
         if inPosition == False:
