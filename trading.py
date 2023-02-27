@@ -49,6 +49,7 @@ class TradeCrypto:
             self.fast_bot()
         if self.data.get('spot') is not None:
             self.trade_spot()
+            # self.trade_margin()
         else:
             self.trade_futures()
 
@@ -80,7 +81,6 @@ class TradeCrypto:
                             self.tp1, self.tp2, self.tp3, self.stopLoss, self.ProcessingMoney)
 
     def trade_spot(self) -> None:
-        leverage = 1
         processMoney = self.ProcessingMoney * 2
         spot_ma = self.exchanges['ma_binance_usdtm']
         spot_ma.options['defaultType'] = 'spot'
@@ -89,11 +89,22 @@ class TradeCrypto:
         spot_ma.options['defaultType'] = 'spot'
         
         with ThreadPoolExecutor() as executor:
-            executor.submit(self.execute_spot_trade, spot_ma, self.symbol, self.side, self.t, leverage,
-                                    self.tp1, self.tp2, self.tp3, self.stopLoss, processMoney)
-            executor.submit(self.execute_spot_trade, spot_ma, self.symbol, self.side, self.t, leverage,
-                                    self.tp1, self.tp2, self.tp3, self.stopLoss, processMoney)
-
+            executor.submit(self.execute_spot_trade, spot_ma, self.symbol, self.side, processMoney)
+            executor.submit(self.execute_spot_trade, spot_ma, self.symbol, self.side, processMoney)
+            
+    def trade_margin(self)-> None:
+        processMoney = self.ProcessingMoney * 2
+        spot_ma = self.exchanges['ma_binance_usdtm']
+        spot_ma.options['defaultType'] = 'margin'
+        
+        spot_ma = self.exchanges['de_binance_usdtm']
+        spot_ma.options['defaultType'] = 'margin'
+        
+        with ThreadPoolExecutor() as executor:
+            executor.submit(self.execute_margin_trade, spot_ma, self.symbol, self.side, processMoney)
+            executor.submit(self.execute_margin_trade, spot_ma, self.symbol, self.side, processMoney)
+    
+    #----------------------------------------------------------------------------------------------------------
     # executing the usdtm futures
     def execute_usdtm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
                             stopLoss, ProcessingMoney) -> None:
@@ -114,16 +125,12 @@ class TradeCrypto:
                 self.logger.info(f"starting the {self.coinm}")
 
     # executing spot trading
-    def execute_spot_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
-                           stopLoss, ProcessingMoney) -> None:
-        self.spot = spot.BinanceSpot(exchange, symbol, side, t, leverage, tp1, tp2, tp3,
-                                     stopLoss, ProcessingMoney)
+    def execute_spot_trade(self, exchange, symbol, side,  ProcessingMoney) -> None:
+        self.spot = spot.BinanceSpot(exchange, symbol, side, ProcessingMoney)
 
     # execute the margin trading
-
-    def execute_margin_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
-                             stopLoss, ProcessingMoney) -> None:
-        # self.margin = margin.BinanceMargin
+    def execute_margin_trade(self, exchange, symbol, side,  ProcessingMoney) -> None:
+        # self.margin = margin.BinanceMargin(exchange, symbol, side,  ProcessingMoney)
         pass
 
 

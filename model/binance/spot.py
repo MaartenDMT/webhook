@@ -1,10 +1,4 @@
 import logging
-import pathlib
-from datetime import datetime
-from time import sleep
-
-import pandas as pd
-from ccxt import binance
 
 from model.trades.trades import Trades
 from tickets import spot_base, spot_ticks
@@ -20,13 +14,15 @@ logger.setLevel(logging.DEBUG)
 
 
 class BinanceSpot:
-    def __init__(self, exchange: binance, symbol: str, side: int, t: int, leverage: int,
-                 tp1: float, tp2: float, tp3: float, stopLoss: float, ProcessingMoney: float):
+    def __init__(self, exchange, symbol: str, side: int, ProcessingMoney: float):
 
         self.takeprofit1: bool = False
         self.takeprofit2: bool = False
         self.takeprofit3: bool = False
         self.get_amount: float = 0
+
+        self.stop = 7
+        self.tp1 = 10
 
         add_log_info(logger, exchange)
         self.logger = logger
@@ -36,41 +32,62 @@ class BinanceSpot:
         self.trades = Trades(self.logger)
 
         self.logger.info("SPOT LOGGER ACTIVE")
-        self.trading(exchange, symbol, side, t, leverage, tp1, tp2,
-                     tp3, stopLoss, ProcessingMoney)
+        self.trading(exchange, symbol, side, ProcessingMoney)
 
         start_thread(exchange, symbol, self.profit_loss, self.trade_info,
                      self.thread, self.logger)
 
-    def trading(self, exchange: binance, symbol: str, side: int, t: str, leverage: int,
-                tp1: float, tp2: float, tp3: float, stopLoss: float, ProcessingMoney: float):
+    def trading(self, exchange, symbol: str, side: int, ProcessingMoney: float):
 
         self.logger.info(f"exchange: {exchange.name} ")
         ticker = spot_ticks[symbol]
         tick = spot_base[ticker]
         usdt_balance, ticker_balance, price = in_position_check_s(
             exchange, symbol, tick, self.logger)
-        count: int = 1
+
         ticker_to_usdt = ticker_balance * price
 
         print(f"the ticker amount in usdt: {ticker_to_usdt}")
 
         if usdt_balance > 20 and ticker_to_usdt > 20:
-            # LOAD BARS
-            bars = exchange.fetch_ohlcv(
-                symbol, timeframe=t, since=None, limit=30)
-            df = pd.DataFrame(
-                bars, columns=["timestamp", "open", "high", "low", "close", "volume"])
+            leverage = 1
+            exchange.cancel_all_orders(symbol)
 
             # BULL EVENT
             if side == 1:
+
+                # get the amount to enter a trade
                 get_amount = get_max_position_available_s(
                     exchange, 'USDT', symbol, leverage, ProcessingMoney)
+
+                # long trade
                 self.logger.info(f"ENTERING LONG POSITION WITH: {get_amount}")
                 l = self.trades.spot_buy(
-                    exchange, symbol, get_amount, price , self.trade_info)
-                
+                    exchange, symbol, get_amount, price, self.trade_info)
+
+                # stoplos for long trade (might be implemented in the futures depending on the bots performances)
+                # stop = price - (price / 100 * self.stop)
+                # self.trades.stoplossShort(exchange, symbol, stop, get_amount)
+
+                # Take profit Long
+                amount = get_amount / 2
+                takep1 = (price / 100 * self.tp1) + price
+                self.trades.trailing_market(
+                    exchange, symbol, amount, takep1, 'sell')
+
             elif side == -1:
-                get_amount = get_max_position_available_s(exchange, tick, symbol, leverage, ProcessingMoney)
+
+                # get the emount to exit the trade
+                get_amount = get_max_position_available_s(
+                    exchange, tick, symbol, leverage, ProcessingMoney)
+
+                # short trade
                 self.logger.info(f"ENTERING SHORT POSITION WITH: {get_amount}")
-                l = self.trades.spot_sell(exchange, symbol, get_amount, price , self.trade_info)
+                l = self.trades.spot_sell(
+                    exchange, symbol, get_amount, price, self.trade_info)
+
+                # Take profit Short
+                amount = get_amount / 2
+                takep1 = price - (price / 100 * self.tp1)
+                self.trades.trailing_market(
+                    exchange, symbol, amount, takep1, 'sell')
