@@ -19,7 +19,7 @@ def hook():
     incoming_data_queue.put(incoming_data)
     
      # Redirect to the start_processing endpoint
-    return redirect(url_for('process'))
+    return redirect(url_for('start_processing'))
 
 def process_data():
     exchanges: dict[str, any] = get_exchanges()
