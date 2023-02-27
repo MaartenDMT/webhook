@@ -11,6 +11,7 @@ from ccxt.base.errors import BadSymbol
 
 from tickets import tickers
 
+
 # get max position available of the ticker in future
 def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, ProcessMoney: float):
     to_use = float(exchange.fetch_balance().get(tick).get('free'))

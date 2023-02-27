@@ -227,7 +227,7 @@ class Trades:
         takeps3 = round(takeps3,3)
         side = side
         order_type = 'TRAILING_STOP_MARKET'
-        rate = '0.2'
+        rate = '0.4'
         price = None
         params = {
             'activationPrice':takeps3,
