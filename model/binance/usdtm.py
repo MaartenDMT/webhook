@@ -26,26 +26,36 @@ class BinanceFuturesUsdtm:
         self.takeprofit2: bool = False
         self.takeprofit3: bool = False
         self.get_amount: float = 0
+        
         add_log_info(logger, exchange)
+        
         self.logger = logger
         self.thread = None
         self.trade_info = trade_info
         self.profit_loss = profit_loss
+        
         self.trades = Trades(self.logger)
 
+        #starting the trading
         self.logger.info("USDTM LOGGER ACTIVE")
         self.trading(exchange, symbol, side, t, leverage,
                      tp1, tp2, tp3, stopLoss, ProcessingMoney)
+        
+        #starting the log of profit or loss
         start_thread(exchange, symbol, self.profit_loss,
                      self.trade_info, self.thread, self.logger)
 
+    #trading function
     def trading(self, exchange: binance, symbol: str, side: int, t: str,
                 leverage: int, tp1: float, tp2: float, tp3: float, stopLoss: float,
                 ProcessingMoney: float):
         self.logger.info(f"exchange: {exchange.name} ")
 
+        #check if already in position and balance 
         inPosition, longPosition, shortPosition, balance, free_balance, current_positions, position_info = in_position_check(
             exchange, symbol, None, self.logger)
+        
+        #init the count of how much has been 
         count: int = 1
         
         if not float(free_balance["USDT"]) > 5 and not float(free_balance["BUSD"]) > 5:

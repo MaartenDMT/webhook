@@ -11,7 +11,7 @@ from ccxt.base.errors import BadSymbol
 
 from tickets import tickers
 
-
+# get max position available of the ticker in future
 def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, ProcessMoney: float):
     to_use = float(exchange.fetch_balance().get(tick).get('free'))
     price = float(exchange.fetchTicker(symbol).get('last'))
@@ -20,6 +20,7 @@ def get_max_position_available(exchange, tick: str, symbol: str, leverage: int, 
         
     return round(decide_position_to_use,6)
 
+# get the max position available of the ticker in spot
 def get_max_position_available_s(exchange, tick: str, symbol: str, leverage: int, ProcessMoney: float):
     
     to_use = float(exchange.fetch_balance().get(tick).get('free'))
@@ -30,6 +31,7 @@ def get_max_position_available_s(exchange, tick: str, symbol: str, leverage: int
     
     return decide_position_to_use
 
+#get the amount of the for spot LOT_SIZE
 def adjust_amount(exchange: ccxt.binance, symbol:str, amount:float):
     symbol_data = exchange.load_markets()[transform_symbol(symbol)]
     lot_size_filter = next(filter(lambda x: x['filterType'] == 'LOT_SIZE', symbol_data['info']['filters']))
@@ -38,19 +40,22 @@ def adjust_amount(exchange: ccxt.binance, symbol:str, amount:float):
     print(adjusted_amount)
     return float(adjusted_amount)
 
+#get the base and quote symbol
 def transform_symbol(symbol:str)->str:
     base_currency = symbol[:len(symbol) // 2]
     quote_currency = symbol[len(symbol) // 2:]
     transformed_symbol = f"{base_currency}/{quote_currency}"
     return transformed_symbol
-    
+
+#in position check for spot trading and margin trading     
 def in_position_check_s(exchange, symbol: str, tick: None, logger):
     ticker_balance = float(exchange.fetch_balance().get(tick).get('free'))
     usdt_balance = float(exchange.fetch_balance().get("USDT").get('free'))
     price = float(exchange.fetchTicker(symbol).get('last'))
     
     return usdt_balance, ticker_balance, price
-    
+
+# in position check for future trading     
 def in_position_check(exchange, symbol: str, tick: None, logger):
 
     longPosition = False
@@ -110,7 +115,7 @@ def start_thread(exchange, symbol, profit_loss, trade_info, thread, logger) -> N
         thread = threading.Thread(target=update_profit_thread, args=(exchange, symbol, profit_loss,
                                   trade_info, logger), daemon=True)  # start a new thread if no thread is currently running
         thread.start()
-        thread.join()
+        thread.join(20)
     except Exception as e:
         logger.error(e)
         
@@ -220,11 +225,14 @@ def update_profit(exchange, symbol: str, profit_loss: dict, trade_info: list, lo
 
                     # Remove the trade from the trade_info list if it is closed
                     if filled_quantity == quantity:
-                        trade_info.remove(trade["id"])
+                        try:
+                            trade_info.remove(trade)
+                        except Exception as e:
+                            logger.error(e)
 
     logger.info("Finished Logging the profit/loss")
 
-
+#getting the closed orders to see pnl
 def fetch_closed_orders(symbol: str, ex, logger):
     closed_order = None
 

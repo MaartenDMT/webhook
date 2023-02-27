@@ -30,10 +30,12 @@ class BinanceMargin:
         self.stop = 7
 
         add_log_info(logger, exchange)
+        
         self.logger = logger
         self.thread = None
         self.trade_info = trade_info
         self.profit_loss = profit_loss
+        
         self.trades = Trades(self.logger)
 
         self.logger.info("SPOT LOGGER ACTIVE")
