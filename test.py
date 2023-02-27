@@ -38,11 +38,11 @@ class ClientHelper:
 
     def get_balance_margin_USDT(self):
         try:
-            _len = len(self.client.get_margin_account()["userAssets"])
+            margin_account = self.client.get_margin_account()
+            _len = len(margin_account["userAssets"])
             for x in range(_len):
-                if self.client.get_margin_account()["userAssets"][x]["asset"] == "USDT":
-                    balance_USDT = self.client.get_margin_account()[
-                        "userAssets"][x]["free"]
+                if margin_account["userAssets"][x]["asset"] == "USDT":
+                    balance_USDT = margin_account["userAssets"][x]["free"]
                     return float(balance_USDT)
         except:
             pass
@@ -80,7 +80,8 @@ class ClientHelper:
 
     def get_futures_usdt(self, is_both=False) -> float:
         futures_usd = 0.0
-        for asset in self.client.futures_account_balance():
+        assets = self.client.futures_account_balance()
+        for asset in assets:
             name = asset["asset"]
             balance = float(asset["balance"])
             if name == "USDT":
@@ -97,45 +98,32 @@ class ClientHelper:
         """USDT in Futures, unRealizedProfit is also included"""
         futures_usd = self.get_futures_usdt(is_both=False)
         futures = self.client.futures_position_information()
+        open_position_count = 0
         for future in futures:
             if future["positionAmt"] != "0" and float(future["unRealizedProfit"]) != 0.00000000:
                 futures_usd += float(future["unRealizedProfit"])
+                if future["entryPrice"] > future["liquidationPrice"]:
+                    open_position_count += 1
+                    print(future)
+                    print(f'PNL: {future["unRealizedProfit"]}')
+                    print("#"*65)
+  
 
         return format(futures_usd, ".2f")
 
 
 def main(client_helper):
+
     while True:
         print("getting the balances")
 
-        margin_usdt = client_helper.get_balance_margin_USDT()
         futures_usd = client_helper._get_futures_usdt()
         usdt_balance = client_helper.spot_balance()
+        margin_usdt = client_helper.get_balance_margin_USDT()
 
         print(
             f" * Futures={futures_usd} USD | SPOT={client_helper._format(usdt_balance)} USD | MARGIN={margin_usdt}")
-        ccxt_futures()
         sleep(120)
-
-
-def ccxt_futures():
-    exchange = ccxt.binance({
-        "apiKey": os.environ.get('D_BIN_KEY'),
-        "secret": os.environ.get('D_BIN_SECRET'),
-        'enableRateLimit': True,
-        'options': {
-            'defaultType': 'future',
-        },
-    })
-
-    symbol = 'OPUSDT'
-
-    inPosition, longPosition, shortPosition, balance, free_balance, current_positions, position_info = in_position_check(
-        exchange, symbol, None, logger)
-
-    print(f"Futures USDT Balance: {balance['total']['USDT']}")
-    print(current_positions)
-    print(position_info)
 
 
 # exchange.set_sandbox_mode(True)

@@ -1,6 +1,7 @@
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import queue
+import threading
 
-from flask import Flask, request
+from flask import Flask, redirect, request, url_for
 
 from trading import TradeCrypto
 from utils.exchanges import get_exchanges
@@ -8,38 +9,39 @@ from utils.exchanges import get_exchanges
 thread = None
 app = Flask(__name__)
 
-json_data_list = []
+# Create a thread-safe queue to store incoming data
+incoming_data_queue = queue.Queue()
+
 @app.route('/webhook/', methods=['POST'])
 def hook():
     
     incoming_data = request.get_json()
-    json_data_list.append(incoming_data)
+    incoming_data_queue.put(incoming_data)
     
-    process_data(json_data_list)
-    
-    return 'Data received'
+     # Redirect to the start_processing endpoint
+    return redirect(url_for('process'))
 
-def process_data(json_data_list:list):
+def process_data():
     exchanges: dict[str, any] = get_exchanges()
     
-
-    print(json_data_list)
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        futures = []
-        for incoming_data in json_data_list:
-            future = executor.submit(TradeCrypto, incoming_data, exchanges)
-            futures.append(future)
-            json_data_list.remove(incoming_data)
-        
-        # Wait for all futures to complete before returning
-        for future in as_completed(futures):
-            try:
-                result = future.result(35)
-            except Exception as e:
-                print(f'Exception: {e}')
+    while True:
+        try:
+            incoming_data = incoming_data_queue.get(timeout=1)
+            TradeCrypto(incoming_data, exchanges)
+        except queue.Empty:
+            break
         
     return 'Data processed'
 
+
+@app.route('/process/')
+def start_processing():
+    # Start a separate thread to process incoming data
+    global thread
+    if thread is None or not thread.is_alive():
+        thread = threading.Thread(target=process_data)
+        thread.start()
+    return 'Data processing started'
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000)
