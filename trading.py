@@ -130,8 +130,8 @@ class TradeCrypto:
 
     # execute the margin trading
     def execute_margin_trade(self, exchange, symbol, side,  ProcessingMoney) -> None:
-        # self.margin = margin.BinanceMargin(exchange, symbol, side,  ProcessingMoney)
-        pass
+        self.margin = margin.BinanceMargin(exchange, symbol, side,  ProcessingMoney)
+
 
 
 if __name__ == '__main__':
