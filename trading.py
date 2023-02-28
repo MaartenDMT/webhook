@@ -20,6 +20,8 @@ load_dotenv(path)
 class TradeCrypto:
     def __init__(self, request: dict, exchanges:dict) -> None:
         self.data = request
+        if self.data['ticker'] is None:
+            return
         self.symbol = self.data['ticker']
         self.side = self.data['side']
         self.t = self.data['time']
