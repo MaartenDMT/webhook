@@ -41,7 +41,7 @@ def start_processing():
     if thread is None or not thread.is_alive():
         thread = threading.Thread(target=process_data)
         thread.start()
-        thread.join(timeout=10)
+        thread.join(timeout=32)
     return 'Data processing started'
 
 if __name__ == '__main__':
