@@ -25,7 +25,7 @@ class TradeCrypto:
         self.symbol = self.data['ticker']
         self.side = self.data['side']
         self.t = self.data['time']
-        self.leverage = 12
+        self.leverage = 6
         self.tp1 = 4 / (12 / 2)
         self.tp2 = 6 / (12 / 2)
         self.tp3 = 8 / (12 / 2)

@@ -102,11 +102,11 @@ class ClientHelper:
         for future in futures:
             if future["positionAmt"] != "0" and float(future["unRealizedProfit"]) != 0.00000000:
                 futures_usd += float(future["unRealizedProfit"])
-                if future["entryPrice"] > future["liquidationPrice"]:
-                    open_position_count += 1
-                    print(future)
-                    print(f'PNL: {future["unRealizedProfit"]}')
-                    print("#"*65)
+                open_position_count += 1
+                print(future)
+                print(f'PNL: {future["unRealizedProfit"]}')
+                print("-"*20)
+                    
   
 
         return format(futures_usd, ".2f")
@@ -123,6 +123,7 @@ def main(client_helper):
 
         print(
             f" * Futures={futures_usd} USD | SPOT={client_helper._format(usdt_balance)} USD | MARGIN={margin_usdt}")
+        print("#"*65)
         sleep(120)
 
 
