@@ -26,10 +26,10 @@ class TradeCrypto:
         self.side = self.data['side']
         self.t = self.data['time']
         self.leverage = 6
-        self.tp1 = 4 / (12 / 2)
-        self.tp2 = 6 / (12 / 2)
-        self.tp3 = 8 / (12 / 2)
-        self.stopLoss = 4 / (12 / 2)
+        self.tp1 = 4 / (self.leverage / 2)
+        self.tp2 = 6 / (self.leverage / 2)
+        self.tp3 = 8 / (self.leverage / 2)
+        self.stopLoss = 4 / (self.leverage / 2)
         self.ProcessingMoney = 25
         self.exchanges = exchanges
         print(f"the exchanges are : {self.exchanges}")
@@ -107,6 +107,7 @@ class TradeCrypto:
             executor.submit(self.execute_margin_trade, spot_ma, self.symbol, self.side, processMoney)
     
     #----------------------------------------------------------------------------------------------------------
+    
     # executing the usdtm futures
     def execute_usdtm_trade(self, exchange, symbol, side, t, leverage, tp1, tp2, tp3,
                             stopLoss, ProcessingMoney) -> None:

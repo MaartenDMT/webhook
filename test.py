@@ -2,11 +2,8 @@ import logging
 import os
 from time import sleep
 
-import ccxt
 from binance import Client
 from dotenv import load_dotenv
-
-from utils.util import in_position_check
 
 path = '.env'
 load_dotenv(path)
@@ -18,25 +15,25 @@ balances = {}
 
 
 class ClientHelper:
-    def __init__(self, client):
+    def __init__(self, client) -> None:
         self.client = client
 
-    def _format(self, value, decimal=2):
+    def _format(self, value, decimal=2) -> str:
         return format(float(value), f".{decimal}f")
 
-    def transfer_futures_to_spot(self, amount):
+    def transfer_futures_to_spot(self, amount) -> None:
         self.client.futures_account_transfer(
             asset="USDT", amount=float(amount), type="2")
 
-    def transfer_spot_to_futures(self, amount):
+    def transfer_spot_to_futures(self, amount) -> None:
         self.client.futures_account_transfer(
             asset="USDT", amount=float(amount), type="1")
 
-    def transfer_spot_to_margin(self, amount):
+    def transfer_spot_to_margin(self, amount) -> None:
         self.client.transfer_spot_to_margin(
             asset="USDT", amount=float(amount), type="1")
 
-    def get_balance_margin_USDT(self):
+    def get_balance_margin_USDT(self) -> float:
         try:
             margin_account = self.client.get_margin_account()
             _len = len(margin_account["userAssets"])
@@ -49,7 +46,7 @@ class ClientHelper:
 
         return 0
 
-    def spot_balance(self):
+    def spot_balance(self) -> float:
         sum_btc = 0.0
         balances = self.client.get_account()
         for _balance in balances["balances"]:
@@ -76,7 +73,7 @@ class ClientHelper:
         for balance in balances["balances"]:
             if balance["asset"] == "USDT":
                 usdt_balance = balance["free"]
-                return usdt_balance
+                return float(usdt_balance)
 
     def get_futures_usdt(self, is_both=False) -> float:
         futures_usd = 0.0
@@ -94,7 +91,7 @@ class ClientHelper:
 
         return float(futures_usd)
 
-    def _get_futures_usdt(self):
+    def _get_futures_usdt(self) -> str:
         """USDT in Futures, unRealizedProfit is also included"""
         futures_usd = self.get_futures_usdt(is_both=False)
         futures = self.client.futures_position_information()
@@ -107,12 +104,10 @@ class ClientHelper:
                 print(f'PNL: {future["unRealizedProfit"]}')
                 print("-"*20)
                     
-  
-
         return format(futures_usd, ".2f")
 
 
-def main(client_helper):
+def main(client_helper: ClientHelper) -> None:
 
     while True:
         print("getting the balances")
