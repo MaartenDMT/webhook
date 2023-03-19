@@ -58,6 +58,8 @@ class TradeCrypto:
     def __str__(self) -> str:
         return "Succeeded"
 
+    #----------------------------------------------------------------------------------------------------------
+    
     # executing the params for the fast bot
     def fast_bot(self) -> None:
         leverage = 20
@@ -134,7 +136,8 @@ class TradeCrypto:
     # execute the margin trading
     def execute_margin_trade(self, exchange, symbol, side,  ProcessingMoney) -> None:
         self.margin = margin.BinanceMargin(exchange, symbol, side,  ProcessingMoney)
-
+        
+    #----------------------------------------------------------------------------------------------------------
 
 
 if __name__ == '__main__':
