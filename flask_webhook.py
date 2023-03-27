@@ -1,15 +1,14 @@
+import atexit
 import queue
-import threading
 import subprocess
+import threading
 import time
-import atexit 
 
+from apscheduler.schedulers.background import BackgroundScheduler
 from flask import Flask, redirect, request, url_for
 
 from trading import TradeCrypto
 from utils.exchanges import get_exchanges
-
-from apscheduler.schedulers.background import BackgroundScheduler
 
 
 def run_svinx():
