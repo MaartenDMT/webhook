@@ -12,13 +12,17 @@ from utils.exchanges import get_exchanges
 from apscheduler.schedulers.background import BackgroundScheduler
 
 
-def print_date_time():
-    p = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
-    print(p.communicate())
-
+def run_svinx():
+    try:
+        p = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
+        print(p.communicate())
+    except subprocess.CalledProcessError as e:
+        print(e)
+    except Exception as e:
+        print(e)
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=print_date_time, trigger="interval", seconds=7_200)
+scheduler.add_job(func=run_svinx, trigger="interval", seconds=7_200)
 scheduler.start()
 
 # Shut down the scheduler when exiting the app
