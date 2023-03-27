@@ -11,7 +11,7 @@ from trading import TradeCrypto
 from utils.exchanges import get_exchanges
 
 
-def run_svinx():
+def run_svinx() -> None:
     try:
         p = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
         print(p.communicate())
@@ -20,6 +20,7 @@ def run_svinx():
     except Exception as e:
         print(e)
 
+run_svinx()
 scheduler = BackgroundScheduler()
 scheduler.add_job(func=run_svinx, trigger="interval", seconds=7_200)
 scheduler.start()
