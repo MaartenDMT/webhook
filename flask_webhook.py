@@ -13,7 +13,7 @@ from utils.exchanges import get_exchanges
 def run_svinx() -> None:
     try:
         p = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
-        # print(p.communicate())
+        print("running the command 'svix listen http://localhost:8000/webhook/' ")
     except subprocess.CalledProcessError as e:
         print(e)
     except Exception as e:
@@ -29,7 +29,11 @@ incoming_data_queue = queue.Queue()
 def hook():
     
     incoming_data = request.get_json()
-    incoming_data_queue.put(incoming_data)
+    
+    try:
+        incoming_data_queue.put(incoming_data)
+    except Exception as e:
+        print(e)
 
     
      # Redirect to the start_processing endpoint
@@ -68,4 +72,6 @@ if __name__ == '__main__':
 
     # Shut down the scheduler when exiting the app
     atexit.register(scheduler.shutdown)
+    
+    #run the flask app
     app.run(host='127.0.0.1', port=8000)
