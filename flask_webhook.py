@@ -10,7 +10,6 @@ from flask import Flask, redirect, request, url_for
 from trading import TradeCrypto
 from utils.exchanges import get_exchanges
 
-
 def run_svinx() -> None:
     try:
         p = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
@@ -19,14 +18,6 @@ def run_svinx() -> None:
         print(e)
     except Exception as e:
         print(e)
-
-run_svinx()
-scheduler = BackgroundScheduler()
-scheduler.add_job(func=run_svinx, trigger="interval", seconds=7_200)
-scheduler.start()
-
-# Shut down the scheduler when exiting the app
-atexit.register(scheduler.shutdown)
 
 thread = None
 app = Flask(__name__)
@@ -70,4 +61,11 @@ def start_processing():
     return 'Data processing started'
 
 if __name__ == '__main__':
+    run_svinx()
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(func=run_svinx, trigger="interval", seconds=7_200)
+    scheduler.start()
+
+    # Shut down the scheduler when exiting the app
+    atexit.register(scheduler.shutdown)
     app.run(host='127.0.0.1', port=8000)
