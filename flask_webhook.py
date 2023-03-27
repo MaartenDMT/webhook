@@ -13,7 +13,7 @@ from utils.exchanges import get_exchanges
 def run_svinx() -> None:
     try:
         p = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
-        print(p.communicate())
+        # print(p.communicate())
     except subprocess.CalledProcessError as e:
         print(e)
     except Exception as e:
