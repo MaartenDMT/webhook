@@ -58,11 +58,10 @@ class BinanceFuturesUsdtm:
         #init the count of how much has been 
         count: int = 1
         
-        if not float(free_balance["USDT"]) > 5 and not float(free_balance["BUSD"]) > 5:
+        if not float(free_balance["USDT"]) > 2 and not float(free_balance["BUSD"]) > 2:
             self.logger.info(f'no trading, there is USDT: {free_balance["USDT"]} and BUSD: {free_balance["BUSD"]}')
             return
         
-        if inPosition == False:
             exchange.fapiPrivate_post_leverage(
                 {"symbol": symbol, "leverage": leverage, })
         if symbol in ["WAVESUSDT"]:
