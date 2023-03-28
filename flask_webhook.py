@@ -72,7 +72,7 @@ if __name__ == '__main__':
 
     
     # Shut down the scheduler and thread when exiting the app
-    atexit.register(scheduler.shutdown())
+    atexit.register(scheduler.shutdown)
     
     # Register signal handlers
     signal.signal(signal.SIGINT, handle_signal)
