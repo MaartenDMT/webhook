@@ -54,6 +54,8 @@ def handle_signal(signal_number, frame):
     logging.info(f"Received signal {signal_number}. Shutting down...")
     stop_event.set()
     thread.join()
+    #Shut down the scheduler and thread when exiting the app
+    atexit.register(scheduler.shutdown)
     request.environ.get('werkzeug.server.shutdown')()
 
 if __name__ == '__main__':
@@ -70,10 +72,6 @@ if __name__ == '__main__':
     scheduler.add_job(func=run_svinx, trigger="interval", seconds=7200)
     scheduler.start()
 
-    
-    # Shut down the scheduler and thread when exiting the app
-    atexit.register(scheduler.shutdown)
-    
     # Register signal handlers
     signal.signal(signal.SIGINT, handle_signal)
     signal.signal(signal.SIGTERM, handle_signal)
@@ -86,6 +84,9 @@ if __name__ == '__main__':
     # Signal the thread to stop and wait for it to finish
     stop_event.set()
     thread.join()
+    
+    #Shut down the scheduler and thread when exiting the app
+    atexit.register(scheduler.shutdown)
 
  
 
