@@ -76,6 +76,7 @@ if __name__ == '__main__':
     scheduler.add_job(func=run_svinx, trigger="interval", seconds=7200)
     scheduler.start()
 
+    print(scheduler.get_jobs())
     # Register signal handlers
     signal.signal(signal.SIGINT, handle_signal)
     signal.signal(signal.SIGTERM, handle_signal)
