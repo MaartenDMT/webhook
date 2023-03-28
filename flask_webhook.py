@@ -52,11 +52,15 @@ def hook():
 
 def handle_signal(signal_number, frame):
     logging.info(f"Received signal {signal_number}. Shutting down...")
+    stop()
+
+def stop():
     stop_event.set()
     thread.join()
-    #Shut down the scheduler and thread when exiting the app
-    atexit.register(scheduler.shutdown)
-    request.environ.get('werkzeug.server.shutdown')()
+    scheduler.shutdown()
+    func = request.environ.get('werkzeug.server.shutdown')
+    if func is not None:
+        func()
 
 if __name__ == '__main__':
     # Set up logging
@@ -75,19 +79,10 @@ if __name__ == '__main__':
     # Register signal handlers
     signal.signal(signal.SIGINT, handle_signal)
     signal.signal(signal.SIGTERM, handle_signal)
+    
+    # Shut down the scheduler and thread when exiting the app
+    atexit.register(stop)
 
     # Start the Flask app
     with app.app_context():
         app.run(host='127.0.0.1', port=8000)
-        
-
-    # Signal the thread to stop and wait for it to finish
-    stop_event.set()
-    thread.join()
-    
-    #Shut down the scheduler and thread when exiting the app
-    atexit.register(scheduler.shutdown)
-
- 
-
-    
