@@ -22,11 +22,12 @@ stop_event = threading.Event()
 def run_svinx():
     try:
         p = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
-        logging.info("Running the command 'svix listen http://localhost:8000/webhook/'")
     except subprocess.CalledProcessError as e:
         logging.error(e)
     except Exception as e:
         logging.error(e)
+    logging.info("Running the command 'svix listen http://localhost:8000/webhook/'")
+    
 
 def process_data():
     exchanges = get_exchanges()
