@@ -57,7 +57,6 @@ def handle_signal(signal_number, frame):
 def stop():
     stop_event.set()
     thread.join()
-    scheduler.shutdown()
     func = request.environ.get('werkzeug.server.shutdown')
     if func is not None:
         func()
