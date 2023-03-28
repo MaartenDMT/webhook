@@ -56,6 +56,7 @@ def handle_signal(signal_number, frame):
     stop()
 
 def stop():
+    scheduler.shutdown
     stop_event.set()
     thread.join()
     request.environ.get('werkzeug.server.shutdown')()
@@ -80,7 +81,7 @@ if __name__ == '__main__':
     signal.signal(signal.SIGTERM, handle_signal)
     
     # Shut down the scheduler and thread when exiting the app
-    atexit.register(scheduler.shutdown)
+    atexit.register(stop)
 
     # Start the Flask app
     with app.app_context():
