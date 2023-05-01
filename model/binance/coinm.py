@@ -29,18 +29,24 @@ class BinanceFuturesCoinm:
         self.get_amount:float = 0
 
         add_log_info(logger, exchange)
+        
         self.logger = logger
         self.thread = None
         self.trade_info = trade_info
         self.profit_loss = profit_loss
+        
         self.trades = Trades(self.logger)
         
+        #starting the trading
         self.logger.info("COINM LOGGER ACTIVE")
         self.trading(exchange, symbol, side, t, leverage,tp1,tp2, 
                      tp3,stopLoss,ProcessingMoney)
+        
+        #starting the log of profit or loss
         start_thread(exchange, symbol, self.profit_loss, self.trade_info, 
                      self.thread, self.logger)
 
+    #trading function
     def trading(self, exchange:binancecoinm, symbol:str, side:int, t:str, leverage:int,
                 tp1:float,tp2:float, tp3:float,stopLoss:float,ProcessingMoney:float):
         
@@ -53,8 +59,10 @@ class BinanceFuturesCoinm:
         tick:str = tickers[symbol]
         tick2:str = tickers2[symbol]
 
-
+        #check if already in position and balance 
         inPosition,longPosition, shortPosition, balance, free_balance, current_positions,position_info = in_position_check(exchange, tick2, tick, self.logger)
+        
+        #init the count of how much has been
         count:int = 1
         
         if not float(balance) > 0:
@@ -62,7 +70,8 @@ class BinanceFuturesCoinm:
             return
         
         if inPosition == False:
-            exchange.dapiPrivate_post_leverage({"symbol": tick2, "leverage": leverage})  
+            exchange.set_leverage(leverage=leverage, symbol=tick2)
+           
               
         while inPosition == False or ((longPosition == False and side ==1) or (shortPosition == False and side == -1)):
             

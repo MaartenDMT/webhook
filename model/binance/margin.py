@@ -38,12 +38,15 @@ class BinanceMargin:
         
         self.trades = Trades(self.logger)
 
+        #starting the trading
         self.logger.info("SPOT LOGGER ACTIVE")
         self.trading(exchange, symbol, side, ProcessingMoney)
 
+        #starting the log of profit or loss
         start_thread(exchange, symbol, self.profit_loss, self.trade_info,
                      self.thread, self.logger)
-
+        
+    #trading function
     def trading(self, exchange, symbol: str, side: int, ProcessingMoney: float):
 
         self.logger.info(f"exchange: {exchange.name} ")

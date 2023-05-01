@@ -46,9 +46,10 @@ class BinanceFuturesUsdtm:
                      self.trade_info, self.thread, self.logger)
 
     #trading function
-    def trading(self, exchange: binance, symbol: str, side: int, t: str,
+    def trading(self, exchange, symbol: str, side: int, t: str,
                 leverage: int, tp1: float, tp2: float, tp3: float, stopLoss: float,
                 ProcessingMoney: float):
+        
         self.logger.info(f"exchange: {exchange.name} ")
 
         #check if already in position and balance 
@@ -62,11 +63,12 @@ class BinanceFuturesUsdtm:
             self.logger.info(f'no trading, there is USDT: {free_balance["USDT"]} and BUSD: {free_balance["BUSD"]}')
             return
         
-            exchange.fapiPrivate_post_leverage(
-                {"symbol": symbol, "leverage": leverage, })
+        if inPosition == False:
+            exchange.set_leverage(leverage=leverage, symbol=symbol)
+        
         if symbol in ["WAVESUSDT"]:
-            exchange.fapiPrivate_post_leverage(
-                {"symbol": symbol, "leverage": 8, })
+            exchange.set_leverage(leverage=8, symbol=symbol)
+
 
         while inPosition == False or ((longPosition == False and side == 1) or (shortPosition == False and side == -1)):
 
