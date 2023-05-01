@@ -1,5 +1,6 @@
 import atexit
 import logging
+import os
 import queue
 import signal
 import subprocess
@@ -20,14 +21,21 @@ incoming_data_queue = queue.Queue()
 stop_event = threading.Event()
 
 def run_svinx():
+    global svinx_process  # Declare the subprocess as a global variable
+    
     try:
-        p = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
+        # Check if the subprocess already exists and terminate it if it does
+        if svinx_process:
+            os.kill(svinx_process.pid, signal.SIGTERM)
+        # Create the new subprocess
+        svinx_process = subprocess.Popen("svix listen http://localhost:8000/webhook/", stdout=subprocess.PIPE, shell=True)
     except subprocess.CalledProcessError as e:
         logging.error(e)
     except Exception as e:
         logging.error(e)
     logging.info("Running the command 'svix listen http://localhost:8000/webhook/'")
-    
+
+svinx_process = None  # Initialize the subprocess variable to None
 
 def process_data():
     exchanges = get_exchanges()
