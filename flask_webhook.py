@@ -84,12 +84,14 @@ if __name__ == '__main__':
     scheduler.start()
 
     print(scheduler.get_jobs())
+    
+    # Shut down the scheduler and thread when exiting the app
+    atexit.register(stop)
+    
     # Register signal handlers
     signal.signal(signal.SIGINT, handle_signal)
     signal.signal(signal.SIGTERM, handle_signal)
     
-    # Shut down the scheduler and thread when exiting the app
-    atexit.register(stop)
 
     # Start the Flask app
     with app.app_context():
