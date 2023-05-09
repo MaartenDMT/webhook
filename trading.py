@@ -30,7 +30,7 @@ class TradeCrypto:
         self.tp2 = 6 / (self.leverage / 2)
         self.tp3 = 8 / (self.leverage / 2)
         self.stopLoss = 4 / (self.leverage / 2)
-        self.ProcessingMoney = 25
+        self.ProcessingMoney = 1
         self.exchanges = exchanges
         print(f"the exchanges are : {self.exchanges}")
         add_log_info(logger, "main")
@@ -40,7 +40,11 @@ class TradeCrypto:
 
         if self.symbol in ["BTCUSDT", "ETHUSDT"]:
             self.leverage = 50
-            self.ProcessingMoney = 7
+            self.tp1 = 4 / (self.leverage / 2)
+            self.tp2 = 6 / (self.leverage / 2)
+            self.tp3 = 8 / (self.leverage / 2)
+            self.stopLoss = 4 / (self.leverage / 2)
+            self.ProcessingMoney = 5
             self.trade_futures()
         if self.symbol in ["BNBUSDT", "ADAUSDT", "LINKUSDT"]:
             if self.symbol == "BNBUSDT":
