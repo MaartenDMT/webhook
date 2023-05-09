@@ -50,6 +50,10 @@ class TradeCrypto:
             if self.symbol == "BNBUSDT":
                 self.ProcessingMoney = 40
             self.leverage = 20
+            self.tp1 = 4 / (self.leverage / 2)
+            self.tp2 = 6 / (self.leverage / 2)
+            self.tp3 = 8 / (self.leverage / 2)
+            self.stopLoss = 4 / (self.leverage / 2)
             self.trade_futures()
         if self.data.get('shortbot') is not None:
             self.fast_bot()
